@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link rel="icon" href="icon-divers.png">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>slide menu</title>
+		<script src="https://kit.fontawesome.com/8383e75d7d.js" crossorigin="anonymous"></script>
 	</head>
 	<link rel = "stylesheet" href = "style.css"/>
 	<body>
+		<a name = "head"></a>
 		<div class = "banner">
-			<div id = "menubtn">
-				<button onclick = "active()">Menu</button>
+			<div id = "menubtn" onclick = "active()">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+			<div class = "divers-img">
+				<img height = "" src = "divers.png"/>
 			</div>
 		</div>
 		<div class = "theme">
-			<div style = "position:absolute;top:20px;left:20px;">
-				<button onclick="delete_menu()">X</button>
+			<div class = "closing_btn" onclick = "delete_menu()">
+				<i class="fa-regular fa-circle-xmark"></i>
 			</div>
-			<ul>
+			<ul class = "list-el">
+				<li onclick = "dark_theme()" class = "dark-light">Tema Întunecată <i class="fa-solid fa-moon"></i></li>
 				<li>Produse</li>
-				<li>About Us</li>
-				<li>Services</li>
-				<li>Contact Us</li>
+				<li>Despre Noi</li>
+				<li>Servicii</li>
+				<li>Contacte</li>
+				<p>Categorii: </p>
+				<li class = "categorie">Petrecere / Distracții</li>
+				<li class = "categorie">Lumea Copiilor</li>
+				<li class = "categorie">Rechizite Școlare</li>
+				<li class = "categorie">Suvenire</li>
+				<li class = "categorie">Accesorii</li>
+				<li class = "categorie">Îmbrăcăminte</li>
+				<li class = "categorie">Ustensile de Bucătărie</li>
+				<li class = "categorie">Dispozitive Digitale</li>
+				<li class = "categorie">Îmbrăcăminte</li>
+				<li class = "categorie">Produse Igienice</li>
+				<br>
+				<br>
 			</ul>
 		</div>
 		
 		<div class = "container">
 			<div class = "box">
+				<div class = "product-photo">
+					<img width = "230" src = "icon-divers.png"/>
+				</div>
+				<p>Produs Divers</p>
+				<p>Pret 10.40 <sup>-10%<sup></p>
 			</div>
 			<div class = "box">
 			</div>
@@ -43,6 +68,9 @@
 			</div>
 			<div class = "box">
 			</div>
+		</div>
+		<div class = "home-arrow">
+			<a href = "#head"><i style = "color:black;" class="fa-solid fa-arrow-up"></i></a>
 		</div>
 	</body>
 	<script type="text/javascript" src="script.js"></script>
