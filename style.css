@@ -211,6 +211,39 @@ body{
 
 }
 
+.banner .links{
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left:600px;
+	position: relative;
+	top:40px;
+	right:12%px;
+	max-width: 800px;
+	transition: 0.3s;
+}
+
+.banner .links .ban_link{
+
+	color:white;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	transition: 0.2s;
+
+}
+
+.banner .links .ban_link:hover{
+
+	border-bottom-color: green;
+	border-bottom-width: 5px;
+	border-bottom-style: solid;
+
+
+}
+
 .fa-bars{
 	color:white;
 	font-size: 55px;
@@ -241,17 +274,31 @@ body{
 	height: 110px;
 }
 
-@media all and (max-width: 900px)
+@media all and (max-width: 1100px)
 {
 
 	.banner .divers-img img{
 
 	height: 90px;
 	}
+
 	.banner .divers-img{
 
 		top:10px;
 	}
+
+
+	.banner .links{
+
+	width:0px;
+	heigth:0px;
+	border:none;
+}
+
+.banner .links .ban_link{
+
+	font-size: 0px;
+}
 
 
 }
@@ -266,29 +313,43 @@ body{
 	.banner .divers-img{
 
 		top:20px;
-		left:90px;
+		left:30%;
 	}
 
 
 }
-/*
-@media all and (min-width: 900px)
+
+@media all and (min-width: 1100px)
 {
 
 	.banner .divers-img{
 
 		top:10px;
-		left:90px;
+		left:100px;
+	}
+	.banner #menubtn{
+
+	position:absolute;
+	top:0px;
+	left:0px;
+	color:white;
+	cursor:pointer;
+	transition: 0.2s;
+	font-size: 0px;
+
 	}
 
+	.fa-bars{
+	color:white;
+	font-size: 0px;
+	font-weight: bold;
+	cursor:pointer;
 
-
-
-
+}
 
 
 }
-*/
+
 
 .home-arrow{
 
@@ -313,3 +374,47 @@ body{
 .home-arrow a{
 	text-decoration: none;
 }
+
+.banner .links .dropdown{
+
+	display: none;
+	z-index:7;
+	position: absolute;
+	border-style: solid;
+	border-color: white;
+	list-style: none;
+	background-color: #383435;
+	width:290px;
+	top:10px;
+	left:-80px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+} 
+
+.banner .links .dropdown li{
+
+	border-width: 1px;
+	margin-right: 40px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Arial;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+
+.banner .links .dropdown li a{
+
+	text-decoration: none;
+	color:white;
+	text-align: center;
+	transition: 0.2s;
+}
+
+.banner .links .dropdown li a:hover{
+
+	border-bottom-color: green;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+}
+

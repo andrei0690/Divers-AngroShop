@@ -1,6 +1,8 @@
 let elements = document.getElementsByTagName("li");
 let promotion = document.querySelector(".promotion");
 let container = document.querySelector(".container");
+let category = document.querySelector(".category");
+let list = document.querySelector(".dropdown");
 let change = true;
 let theme = document.querySelector(".theme");
 theme.classList.add("remover");
@@ -35,3 +37,17 @@ function destroy_promotion(){
 	container.classList.add("unblur");
 }
 
+function show_list(){
+
+	list.style.display = "block";
+
+}
+
+function hide_list(){
+
+	list.style.display = "none";
+
+}
+
+category.addEventListener("mouseover",show_list);
+category.addEventListener("mouseout",hide_list);
