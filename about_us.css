@@ -97,6 +97,13 @@ body
 {
 	opacity: 0.8;
 }
+.page-header-div
+{
+	margin-top: 50px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
 .divers-logo
 {
 	width: 300px;
