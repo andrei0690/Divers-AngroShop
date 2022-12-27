@@ -139,7 +139,17 @@ body
 {
 	margin-top: 50px;
 	display: flex;
+	flex-direction: column;
 	align-content: center;
+	justify-content: center;
+}
+.divers-orar-div
+{
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	text-align: center;
 	justify-content: center;
 }
 .divers-description
@@ -210,14 +220,20 @@ body
 	border-width: 10px;
 	border-radius: 200%;
 }
-/*.header
+.orar-text
 {
-	margin-top: 50px;
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	color: var(--green);
-	font-weight: 700;
 	font-size: 51px;
-
-}*/
+	font-weight: 500;
+	color: var(--white);
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.harta-div
+{
+	display: flex;
+	margin-top: 50px;
+	justify-content: center;
+	align-content: center;
+	margin-bottom: 60px;
+}
