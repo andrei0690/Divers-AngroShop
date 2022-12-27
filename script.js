@@ -3,6 +3,8 @@ let promotion = document.querySelector(".promotion");
 let container = document.querySelector(".container");
 let category = document.querySelector(".category");
 let list = document.querySelector(".dropdown");
+let desktop_theme = document.getElementById("moon_sun");
+console.log(desktop_theme);
 let change = true;
 let theme = document.querySelector(".theme");
 theme.classList.add("remover");
@@ -17,6 +19,7 @@ function delete_menu(){
 function change_theme(){
 
 	if (change == false){
+		desktop_theme.innerHTML = `<i class="fa-solid fa-moon"></i>`;
 		elements[0].innerHTML = `Tema Intunecata <i class="fa-solid fa-moon"></i>`;
 		document.body.style.backgroundColor = "white";
 		change = true;
@@ -24,6 +27,7 @@ function change_theme(){
 	}
 	else if(change = true)
 	{
+		desktop_theme.innerHTML = `<i class="fa-solid fa-sun"></i>`;
 		elements[0].innerHTML = `Tema Luminoasa <i class="fa-solid fa-sun"></i>`;
 		document.body.style.backgroundColor = "#2F2F2F";
 		change = false;

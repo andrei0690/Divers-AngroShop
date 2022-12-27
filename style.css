@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Roboto;
+    user-select: none;
+}
+
 body{
 	padding: 0px;
 	margin:0px;
@@ -34,7 +42,7 @@ body{
 .promotion h1{
 	text-align: center;
 	font-size: 45px;
-	font-family: Arial;
+	font-family: Roboto;
 }
 
 .promotion .fa-x{
@@ -70,7 +78,9 @@ body{
 .remover{
 	left:-300px;
 }
+
 .theme{
+
 	width:300px;
 	height:100vh;
 	background-color: black;
@@ -82,7 +92,9 @@ body{
 	transition: 0.5s;
 	overflow-y:scroll;
 	padding-bottom:-20px;
-	}
+
+}
+
 .theme ul{
 	position: relative;
 	top:120px;
@@ -91,7 +103,6 @@ body{
 .theme ul p{
 	margin-left:10px;
 	font-weight: bold;
-	font-family: Arial;
 	font-size: 40px;
 	left:5px;
 }
@@ -100,7 +111,6 @@ body{
 	padding-bottom: 20px;
 	margin-left:10px;
 	list-style: none;
-	font-family: Arial;
 	font-weight: bold;
 	transition:0.4s;
 	display: block;
@@ -127,10 +137,7 @@ body{
 	background-color: #191516;
 	position: sticky;
 	top:0px;
-	box-shadow: 0px 0px 70px black;
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: red;
+	box-shadow: 0px 0px 10px black;
 	z-index: 2;
 }
 	
@@ -169,7 +176,7 @@ body{
 
 .container .box{
 	width:320px;
-	height:420px;
+	height:470px;
 	border-style: solid;
 	border-width: 2px;
 	border-radius: 15px;
@@ -178,37 +185,52 @@ body{
 	transition:0.3s;
 	background-color: whitesmoke;
 	opacity:0.3s;
-	box-shadow: 0px 0px 7px gray;
-	align-content: center;
-
+	box-shadow: 3px 3px 7px gray;
+	position:relative;
 }
 
 .container .box:hover{
 
-	transform:scale(1.04);
-	box-shadow: 0px 0px 15px;
+	box-shadow: 0px 0px 10px;
 }
 
-.container .box p{
-	margin-top: 2px;
-	margin-left: 30px;
-	font-size: 25px;
+.container .box .nume{
+	font-size: 20px;
 	font-weight: bold;
+	display: block;
+	margin-top:0px;
 	display: inline-block;
+	padding: 0px;
+	position: absolute;
+	margin:10px;
+
 }
 
-.container .box .product-photo{
+.container .box .pret{
+	font-size: 25px;
+	display: block;
+	margin-bottom: 10px;
+	display: inline-block;
+	position:absolute;
+	padding:0px;
+	bottom:0px;
+	margin-top:15px;
+	margin-left:70px;
+}
 
-	font-family: Arial;
-	margin-left:30px;
-	margin-top:5px;
+.container .box .pret .price{
+	color:green;
+	
+}
 
+.container .box .pret .dis{
+	color:red;
 }
 
 .container .box .product-photo img{
-	border-style: solid;
-	border-radius:10px;
-
+	border-radius: 10px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
 }
 
 .banner .links{
@@ -228,10 +250,30 @@ body{
 
 	color:white;
 	text-decoration: none;
-	font-family: Arial;
 	font-size: 20px;
 	font-weight: bold;
 	transition: 0.2s;
+	cursor:pointer;
+
+}
+
+.banner .links #moon_sun{
+
+	font-size:30px;
+	color:white;
+	cursor: pointer;
+	transition: 0.2s;
+	transition: 0.5s;
+
+}
+
+.banner .links #moon_sun:hover{
+
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: green;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
 
 }
 
@@ -240,6 +282,8 @@ body{
 	border-bottom-color: green;
 	border-bottom-width: 5px;
 	border-bottom-style: solid;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
 
 
 }
@@ -276,7 +320,6 @@ body{
 
 @media all and (max-width: 1100px)
 {
-
 	.banner .divers-img img{
 
 	height: 90px;
@@ -286,7 +329,6 @@ body{
 
 		top:10px;
 	}
-
 
 	.banner .links{
 
@@ -299,8 +341,12 @@ body{
 
 	font-size: 0px;
 }
+.banner .links #moon_sun{
 
+	font-size:0px;
+	color:white;
 
+}
 }
 
 @media all and (max-width: 600px)
@@ -308,7 +354,21 @@ body{
 
 	.banner .divers-img img{
 
-	height: 75px;
+	height: 70px;
+	}
+	.banner .divers-img{
+
+		top:20px;
+		left:30%;
+	}
+}
+
+@media all and (max-width: 300px)
+{
+
+	.banner .divers-img img{
+
+	height: 50px;
 	}
 	.banner .divers-img{
 
@@ -316,8 +376,11 @@ body{
 		left:30%;
 	}
 
-
+	.container .box{
+		height:100;
+	}
 }
+
 
 @media all and (min-width: 1100px)
 {
@@ -344,36 +407,24 @@ body{
 	font-size: 0px;
 	font-weight: bold;
 	cursor:pointer;
+}
 
 }
 
-
+@media all and (max-width: 400px)
+{
+	.container .box{
+		height:420px;
+	}
 }
 
-
-.home-arrow{
-
-	position:fixed;
-	font-size: 45px;
-	background-color: #0BAF00;
-	padding-top: 5px;
-	border-radius: 40px;
-	padding-left: 15px;
-	border-style:solid;
-	border-color:green;
-	border-width: 5px;
-	font-weight: bold;
-	box-shadow: 0px 0px 15px green;
-	bottom:25px;
-	right:25px;
-	width:50px;
-	height:50px;
-	color:black;
+@media all and (max-width: 345px)
+{
+	.container .box{
+		height:340px;
+	}
 }
 
-.home-arrow a{
-	text-decoration: none;
-}
 
 .banner .links .dropdown{
 
@@ -397,9 +448,9 @@ body{
 	margin-right: 40px;
 	font-size: 20px;
 	font-weight: bold;
-	font-family: Arial;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	display: block;
 
 }
 
@@ -416,5 +467,6 @@ body{
 	border-bottom-color: green;
 	border-bottom-style: solid;
 	border-bottom-width: 2px;
+
 }
 
