@@ -157,6 +157,7 @@ body
 .divers-orar-div
 {
 	margin-top: 50px;
+	margin-bottom: 100px;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
@@ -212,7 +213,7 @@ body
 	object-fit: cover;
 	border-style: solid;
 	border-color: var(--white);
-	border-width: 5px;
+	border-width: 7px;
 	border-radius: 200%;
 }
 .owner-photo-div
@@ -254,22 +255,33 @@ body
 	.staff-photos
 	{
 		flex-direction: column;
-		gap: 25px;
+		gap: 35px;
 	}
 	.staff-photo
 	{
-		width: 350px;
-		height: 350px;
-		border-width: 3px;
+		width: 170px;
+		height: 170px;
+		border-width: 2px;
 	}
 }
 
-@media(min-width: 650px)
+@media(min-width: 750px)
 {
 	.owner-photo
 	{
-		width: 70vw;
-		height: 70vw;
+		width: 65vw;
+		height: 65vw;
+		
+	}
+	.staff-photo
+	{
+		width: 200px;
+		height: 200px;
+		border-width: 3px;
+	}
+	.staff-photos
+	{
+		flex-direction: row;
 		
 	}
 }
@@ -287,8 +299,8 @@ body
 
 	.staff-photo
 	{
-		width: 450px;
-		height: 450px;
+		width: 25vw;
+		height: 25vw;
 	}
 }
 
@@ -297,7 +309,6 @@ body
 {
 	.staff-photos
 	{
-		flex-direction: row;
 		gap: 50px;
 	}
 	.owner-photo
@@ -308,9 +319,8 @@ body
 	}
 	.staff-photo
 	{
-		width: 400px;
-		height: 400px;
-		border-width: 4px;
+		width: 335px;
+		height: 335px;
 	}
 }
 
@@ -326,6 +336,6 @@ body
 	{
 		width: 450px;
 		height: 450px;
-		border-width: 5px;
+		border-width: 7px;
 	}
 }
