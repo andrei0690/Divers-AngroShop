@@ -11,6 +11,10 @@ body{
 	margin:0px;
 	user-select: none;
 	transition:0.4s;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size:cover;
 }
 
 ::-webkit-scrollbar{
@@ -203,19 +207,21 @@ body{
 	padding: 0px;
 	position: absolute;
 	margin:10px;
+	letter-spacing: 1px;
 
 }
 
 .container .box .pret{
 	font-size: 25px;
-	display: block;
 	margin-bottom: 10px;
-	display: inline-block;
 	position:absolute;
+	display: inline-block;
 	padding:0px;
-	bottom:0px;
+	bottom:5px;
 	margin-top:15px;
-	margin-left:70px;
+	margin-left:20px;
+	font-weight: bold;
+	text-align: center;
 }
 
 .container .box .pret .price{
@@ -255,6 +261,19 @@ body{
 	transition: 0.2s;
 	cursor:pointer;
 
+}
+.container h1{
+
+	width:100%;
+	font-weight: bold;
+	text-align: center;
+	font-size: 70px;
+
+}
+
+.container .dash{
+
+	color:#167330;
 }
 
 .banner .links #moon_sun{
@@ -360,6 +379,10 @@ body{
 
 		top:20px;
 		left:30%;
+	}
+
+	.container h1{
+		font-size: 40px;
 	}
 }
 
@@ -469,4 +492,3 @@ body{
 	border-bottom-width: 2px;
 
 }
-
