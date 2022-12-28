@@ -8,6 +8,9 @@
 	--lightgreen: #69b370;
 	--bifaC: #167330;
 	--superlightGreen: #a1ffa2;
+	--mheader: 6vw;
+	--mdescription: 3vw;
+
 }
 *
 {
@@ -172,10 +175,7 @@ a
 	color: var(--white);
 	transition: all 1s;
 }
-.contact-form
-{
-	margin-bottom: 500px;
-}
+
 .info-div
 {
 	margin-top: 50px;
