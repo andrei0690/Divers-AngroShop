@@ -1,6 +1,6 @@
 :root
 {
-		--gray: #383435;
+	--gray: #383435;
 	--green: #3CCF4E;
 	--white: #FFF;
 	--darkergreen: #146356;
@@ -24,7 +24,11 @@
 	font-family: Roboto;
 	user-select: none;
 }
-
+img
+{
+	pointer-events: none;
+	user-select: none;
+}
 .hidden
 {
 	opacity: 0;
@@ -71,6 +75,15 @@ html
 body
 {
 	background-color: var(--gray);
+}
+.green-text
+{
+	color: var(--superlightGreen);
+}
+.green-c
+{
+	color: var(--lightgreen);
+	font-weight: 700;
 }
 .top-bar
 {
@@ -131,14 +144,14 @@ body
 }
 .divers-header-div
 {
-	margin-top: 150px;
+	margin-top: 10vw;
 	display: flex;
 	align-content: center;
 	justify-content: center;
 }
 .divers-header
 {
-	font-size: var(--mheader);
+	font-size: var(--msmallbigheader);	
 	font-weight: 700;
 	color: var(--white);
 }
@@ -152,7 +165,7 @@ body
 }
 .divers-description
 {
-	font-size: var(--mtext);
+	font-size: var(--mdescriptionbig);
 	font-weight: 500;
 	color: var(--white);
 	text-align: center;
@@ -171,7 +184,7 @@ body
 }
 .orar-text
 {
-	font-size: var(--mtext);
+	font-size: var(--mdescriptionbig);
 	font-weight: 500;
 	color: var(--white);
 	text-align: center;
@@ -179,24 +192,19 @@ body
 	margin-right: 10%;
 }
 
-.green-c
-{
-	color: var(--bifaC);
-	font-weight: 700;
-}
 .staff
 {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	gap: 2vw;
 }
 .staff-header
 {
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	margin-top: 150px;
-	font-size: 6vw;
+	margin-top: 10vw;
+	font-size: var(--msmallbigheader);
 	font-weight: 700;
 	color: var(--white);
 }
@@ -211,7 +219,7 @@ body
 }
 .staff-photos
 {
-	margin-top: 50px;
+	margin-top: 5vw;
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -223,18 +231,22 @@ body
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	cursor: pointer;
 	border-radius: 200%;
 }
 .staff-photo
 {
-	width: 450px;
-	height: 450px;
+	width: 45vw;
+	height: 45vw;
 	object-fit: cover;
 	border-style: solid;
 	border-color: var(--white);
-	border-width: 7px;
 	border-radius: 200%;
+	border-width: 0.5vw;
+}
+
+#owner-name
+{
+	font-size: var(--msmallbigheader);
 }
 
 .owner-photo-div
@@ -242,6 +254,7 @@ body
 	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
+	gap: 5vw;
 }
 .owner-photo-2div
 {
@@ -257,13 +270,13 @@ body
 	object-fit: cover;
 	border-style: solid;
 	border-color: var(--white);
-	border-width: 10px;
 	border-radius: 200%;
+	border-width: 0.8vw;
 }
 .harta-div
 {
 	display: flex;
-	margin-top: 50px;
+	margin-top: 10vw;
 	justify-content: center;
 	align-content: center;
 }
@@ -274,63 +287,34 @@ body
 }
 #additional-info
 {
-	margin-top: 50px;
+	margin-top: 10vw;
 }
 
-@media(min-width: 100px)
+
+@media(min-width: 0px)
 {
 	.staff-photos
 	{
 		flex-direction: column;
 		gap: 35px;
 	}
-	.staff-photo
-	{
-		width: 45vw;
-		height: 45vw;
-		border-width: 2px;
-	}
 	.owner-photo
+	{
+		border-width: 7px;
+	}
+	.staff-photo
 	{
 		border-width: 5px;
 	}
-	.divers-header
-	{
-		font-size: var(--msmallbigheader);
-	}
-	.staff-header
-	{
-		font-size: var(--msmallbigheader);
-	}
-	.divers-description
-	{
-		font-size: var(--mdescriptionbig);
-	}
-	.orar-text
-	{
-		font-size: var(--mdescriptionbig);
-	}
-	.staff
-	{
-		gap: 2vw;
-	}
-	.owner-photo-div
-	{
-		gap: 5vw;
-	}
-	#owner-name
-	{
-		font-size: var(--msmallbigheader);
-	}
+	
 }
 
 @media(min-width: 750px)
 {
 	.owner-photo
 	{
-		width: 65vw;
-		height: 65vw;
-		
+		width: 55vw;
+		height: 55vw;
 	}
 	.staff-photos
 	{
@@ -353,53 +337,62 @@ body
 
 @media(min-width: 950px)
 {
-	.owner-photo
-	{
-		border-width: 10px;
-	}
+
 	.staff-photos
 	{
 		gap: 40px;
 	}
 	.divers-header
 	{
-		font-size: var(--mheader);
+		font-size: var(--mdescriptionbig);
 	}
 	.staff-header
 	{
-		font-size: var(--mheader);
+		font-size: var(--mdescriptionbig);
 	}
 	.staff-header
 	{
-		font-size: var(--mheader);
+		font-size: var(--mdescriptionbig);
 	}
 	.divers-description
 	{
-		font-size: var(--mdescription);
+		font-size: var(--msmallbig);
 	}
 	.orar-text
 	{
-		font-size: var(--mdescription);
+		font-size: var(--msmallbig);
 	}
+	.owner-photo
+	{
+		border-width: 0.8vw;
+	}
+	.staff-photo
+	{
+		border-width: 0.5vw;
+	}
+
 }
 
 
 @media(min-width: 1350px)
 {
+	.owner-photo
+	{
+		width: 45vw;
+		height: 45vw;
+	}
 	.staff-photos
 	{
 		gap: 50px;
 	}
-	.owner-photo
+	
+	#owner-name
 	{
-		width: 850px;
-		height: 850px;
-		border-width: 10px;
+		font-size: var(--mdescriptionbig);
 	}
-	.staff-photo
+	.harta
 	{
-		width: 335px;
-		height: 335px;
+		width: 80%;
 	}
 }
 
@@ -410,11 +403,5 @@ body
 	.staff-photos
 	{
 		gap: 150px;
-	}
-	.staff-photo
-	{
-		width: 450px;
-		height: 450px;
-		border-width: 7px;
 	}
 }
