@@ -24,7 +24,11 @@
 	font-family: Roboto;
 	user-select: none;
 }
-
+img
+{
+	pointer-events: none;
+	user-select: none;
+}
 .hidden
 {
 	opacity: 0;
@@ -75,6 +79,11 @@ body
 .green-text
 {
 	color: var(--superlightGreen);
+}
+.green-c
+{
+	color: var(--lightgreen);
+	font-weight: 700;
 }
 .top-bar
 {
@@ -142,7 +151,7 @@ body
 }
 .divers-header
 {
-	font-size: var(--mheader);
+	font-size: var(--msmallbigheader);	
 	font-weight: 700;
 	color: var(--white);
 }
@@ -156,7 +165,7 @@ body
 }
 .divers-description
 {
-	font-size: var(--mtext);
+	font-size: var(--mdescriptionbig);
 	font-weight: 500;
 	color: var(--white);
 	text-align: center;
@@ -175,7 +184,7 @@ body
 }
 .orar-text
 {
-	font-size: var(--mtext);
+	font-size: var(--mdescriptionbig);
 	font-weight: 500;
 	color: var(--white);
 	text-align: center;
@@ -183,16 +192,11 @@ body
 	margin-right: 10%;
 }
 
-.green-c
-{
-	color: var(--bifaC);
-	font-weight: 700;
-}
 .staff
 {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	gap: 2vw;
 }
 .staff-header
 {
@@ -200,7 +204,7 @@ body
 	align-content: center;
 	justify-content: center;
 	margin-top: 10vw;
-	font-size: 6vw;
+	font-size: var(--msmallbigheader);
 	font-weight: 700;
 	color: var(--white);
 }
@@ -227,18 +231,22 @@ body
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	cursor: pointer;
 	border-radius: 200%;
 }
 .staff-photo
 {
-	width: 450px;
-	height: 450px;
+	width: 45vw;
+	height: 45vw;
 	object-fit: cover;
 	border-style: solid;
 	border-color: var(--white);
-	border-width: 7px;
 	border-radius: 200%;
+	border-width: 0.5vw;
+}
+
+#owner-name
+{
+	font-size: var(--msmallbigheader);
 }
 
 .owner-photo-div
@@ -246,6 +254,7 @@ body
 	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
+	gap: 5vw;
 }
 .owner-photo-2div
 {
@@ -261,8 +270,8 @@ body
 	object-fit: cover;
 	border-style: solid;
 	border-color: var(--white);
-	border-width: 10px;
 	border-radius: 200%;
+	border-width: 0.8vw;
 }
 .harta-div
 {
@@ -281,60 +290,31 @@ body
 	margin-top: 10vw;
 }
 
-@media(min-width: 100px)
+
+@media(min-width: 0px)
 {
 	.staff-photos
 	{
 		flex-direction: column;
 		gap: 35px;
 	}
-	.staff-photo
-	{
-		width: 45vw;
-		height: 45vw;
-		border-width: 2px;
-	}
 	.owner-photo
+	{
+		border-width: 7px;
+	}
+	.staff-photo
 	{
 		border-width: 5px;
 	}
-	.divers-header
-	{
-		font-size: var(--msmallbigheader);
-	}
-	.staff-header
-	{
-		font-size: var(--msmallbigheader);
-	}
-	.divers-description
-	{
-		font-size: var(--mdescriptionbig);
-	}
-	.orar-text
-	{
-		font-size: var(--mdescriptionbig);
-	}
-	.staff
-	{
-		gap: 2vw;
-	}
-	.owner-photo-div
-	{
-		gap: 5vw;
-	}
-	#owner-name
-	{
-		font-size: var(--msmallbigheader);
-	}
+	
 }
 
 @media(min-width: 750px)
 {
 	.owner-photo
 	{
-		width: 65vw;
-		height: 65vw;
-		
+		width: 55vw;
+		height: 55vw;
 	}
 	.staff-photos
 	{
@@ -382,6 +362,15 @@ body
 	{
 		font-size: var(--msmallbig);
 	}
+	.owner-photo
+	{
+		border-width: 0.8vw;
+	}
+	.staff-photo
+	{
+		border-width: 0.5vw;
+	}
+
 }
 
 
@@ -389,20 +378,14 @@ body
 {
 	.owner-photo
 	{
-		width: 700px;
-		height: 700px;
-		border-width: 10px;
+		width: 45vw;
+		height: 45vw;
 	}
 	.staff-photos
 	{
 		gap: 50px;
 	}
 	
-	.staff-photo
-	{
-		width: 335px;
-		height: 335px;
-	}
 	#owner-name
 	{
 		font-size: var(--mdescriptionbig);
@@ -420,11 +403,5 @@ body
 	.staff-photos
 	{
 		gap: 150px;
-	}
-	.staff-photo
-	{
-		width: 450px;
-		height: 450px;
-		border-width: 7px;
 	}
 }
