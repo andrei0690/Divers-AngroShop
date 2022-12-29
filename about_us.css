@@ -1,6 +1,6 @@
 :root
 {
-		--gray: #383435;
+	--gray: #383435;
 	--green: #3CCF4E;
 	--white: #FFF;
 	--darkergreen: #146356;
@@ -72,6 +72,10 @@ body
 {
 	background-color: var(--gray);
 }
+.green-text
+{
+	color: var(--superlightGreen);
+}
 .top-bar
 {
 	width: 100%;
@@ -131,7 +135,7 @@ body
 }
 .divers-header-div
 {
-	margin-top: 150px;
+	margin-top: 10vw;
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -195,7 +199,7 @@ body
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	margin-top: 150px;
+	margin-top: 10vw;
 	font-size: 6vw;
 	font-weight: 700;
 	color: var(--white);
@@ -211,7 +215,7 @@ body
 }
 .staff-photos
 {
-	margin-top: 50px;
+	margin-top: 5vw;
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -263,7 +267,7 @@ body
 .harta-div
 {
 	display: flex;
-	margin-top: 50px;
+	margin-top: 10vw;
 	justify-content: center;
 	align-content: center;
 }
@@ -274,7 +278,7 @@ body
 }
 #additional-info
 {
-	margin-top: 50px;
+	margin-top: 10vw;
 }
 
 @media(min-width: 100px)
