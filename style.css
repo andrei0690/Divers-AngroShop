@@ -15,7 +15,7 @@ body{
 	padding: 0px;
 	margin:0px;
 	user-select: none;
-	transition:0.4s;
+	transition:0.8s;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
@@ -200,7 +200,7 @@ body{
 .container .box:hover{
 
 	box-shadow: 0px 0px 10px;
-	transform: scale(1.02);
+
 }
 
 .container .box .nume{
@@ -466,16 +466,14 @@ body{
 	display: none;
 	z-index:7;
 	position: absolute;
-	border-style: solid;
-	border-color: white;
 	list-style: none;
 	background-color: #383435;
 	width:320px;
-	top:10px;
+	top:7px;
 	left:-50px;
-	border-bottom-left-radius:10px;
-	border-bottom-right-radius:10px;
-	opacity: 0.99;
+	border-radius: 10px;
+	padding-left: 0px;
+	opacity:0.99;
 } 
 
 .banner .links .dropdown li{
@@ -487,6 +485,9 @@ body{
 	padding-top: 20px;
 	padding-bottom: 20px;
 	display: block;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 50px;
 
 }
 
@@ -498,12 +499,9 @@ body{
 	transition: 0.2s;
 }
 
-.banner .links .dropdown li a:hover{
+.banner .links .dropdown li:hover{
 
-	border-bottom-color: green;
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
-
+	background-color: green;
 }
 
 .arrow{
@@ -529,8 +527,8 @@ body{
 {
 	.arrow{
 		font-size: 30px;
-		right:10px;
-		bottom:10px;
+		right:18px;
+		bottom:18px;
 		padding-left: 6px;
 		padding-right: 6px;
 	}
