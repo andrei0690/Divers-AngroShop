@@ -357,53 +357,59 @@ body
 
 @media(min-width: 950px)
 {
-	.owner-photo
-	{
-		border-width: 10px;
-	}
+
 	.staff-photos
 	{
 		gap: 40px;
 	}
 	.divers-header
 	{
-		font-size: var(--mheader);
+		font-size: var(--mdescriptionbig);
 	}
 	.staff-header
 	{
-		font-size: var(--mheader);
+		font-size: var(--mdescriptionbig);
 	}
 	.staff-header
 	{
-		font-size: var(--mheader);
+		font-size: var(--mdescriptionbig);
 	}
 	.divers-description
 	{
-		font-size: var(--mdescription);
+		font-size: var(--msmallbig);
 	}
 	.orar-text
 	{
-		font-size: var(--mdescription);
+		font-size: var(--msmallbig);
 	}
 }
 
 
 @media(min-width: 1350px)
 {
+	.owner-photo
+	{
+		width: 700px;
+		height: 700px;
+		border-width: 10px;
+	}
 	.staff-photos
 	{
 		gap: 50px;
 	}
-	.owner-photo
-	{
-		width: 850px;
-		height: 850px;
-		border-width: 10px;
-	}
+	
 	.staff-photo
 	{
 		width: 335px;
 		height: 335px;
+	}
+	#owner-name
+	{
+		font-size: var(--mdescriptionbig);
+	}
+	.harta
+	{
+		width: 80%;
 	}
 }
 
