@@ -9,6 +9,7 @@ let category_name = document.getElementsByClassName("category_name");
 let desktop_theme = document.getElementById("moon_sun");
 let change = true;
 let theme = document.querySelector(".theme");
+localStorage.setItem('theme','light');
 theme.classList.add("remover");
 document.title = "Divers AgroShop";
 function active(){
@@ -24,7 +25,7 @@ function change_theme(){
 		desktop_theme.innerHTML = `<i class="fa-solid fa-moon"></i>`;
 		elements[0].innerHTML = `Tema Intunecata <i class="fa-solid fa-moon"></i>`;
 		document.body.style.backgroundColor = "white";
-
+		localStorage.setItem('name','light');
 		for (let index = 0;index < category_name.length;index++)
 		{
 			category_name[index].style.color = "black";
@@ -37,6 +38,7 @@ function change_theme(){
 		desktop_theme.innerHTML = `<i class="fa-solid fa-sun"></i>`;
 		elements[0].innerHTML = `Tema Luminoasa <i class="fa-solid fa-sun"></i>`;
 		document.body.style.backgroundColor = "#383435";
+		localStorage.setItem('name','dark');
 		for (let index = 0;index < category_name.length;index++)
 		{
 			category_name[index].style.color = "white";
