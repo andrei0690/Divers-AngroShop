@@ -63,12 +63,12 @@ main .news .new{
 
 	width:750px;
 	height:280px;
-	background-color:ghostwhite;
+	background-color:white;
 	margin:20px;
 	position:relative;
 	border-radius: 10px;
-	border-style: solid;
 	margin-bottom: 40px;
+	box-shadow: 2px 2px 5px;
 
 }
 
@@ -123,7 +123,7 @@ main .news .new .photo{
 
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 612px){
 
 
 	main .news .new{
@@ -145,6 +145,9 @@ main .news .new .photo{
 		font-size: 17px;
 		width:60vw;
 		top:10px;
+	}
+	header .info h1{
+		font-size:40px;
 	}
 }
 
@@ -181,6 +184,10 @@ main .news .new .photo{
 	header .banner .divers img{
 		height:25vw;
 	}
+
+	header .info h1{
+		font-size:30px;
+	}
 }
 
 @media all and (max-width: 300px){
@@ -192,4 +199,12 @@ main .news .new .photo{
 		width:55vw;
 		top:1.5vh;
 	}
+}
+
+.copyright{
+
+	font-weight: 700;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 2px;
 }
