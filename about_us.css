@@ -5,19 +5,6 @@
 	--bifaC: #167330;
 	--superlightGreen: #a1ffa2;
 
-
-/*FIRST*/
-/*	--fourthDark: #43503A;
-	--thirdDark: #323E2A;
-	--secondDark: #25311F;
-	--firstDark: #1D2818;
-
-	--fourthGreen: #A9E94B;
-	--thirdGreen: #92D734;
-	--secondGreen: #6AB809;
-	--firstGreen: #549708;*/
-
-/*SECOND*/
 	--fourthDark: #424D3F;
 	--thirdDark: #323C2F;
 	--secondDark: #262F24;
@@ -27,17 +14,7 @@
 	--thirdGreen: #98C066;
 	--secondGreen: #7BA64A;
 	--firstGreen: #5E8832;
-/*THIRD*/
 
-/*	--fourthDark: #444E3C;
-	--thirdDark: #323D2C;
-	--secondDark: #263021;
-	--firstDark: #1E281A;
-
-	--fourthGreen: #A8DE5D;
-	--thirdGreen: #93CC48;
-	--secondGreen: #73AF2A;
-	--firstGreen: #50900A;*/
 
 	--mbigheader: 12vw;
 	--msmallbigheader: 10vw;
@@ -66,8 +43,25 @@ img
 	user-select: none;
 	filter: blur(5px);
 	transform: translateX(-100%);
-	transition: all 1.5s;
+	transition: all 1s;
+}
 
+.header
+{
+	opacity: 0;
+	user-select: none;
+	pointer-events: none;
+	transform: scaleX(.1);
+	transition: all .5s;
+
+}
+
+.intersect
+{
+	opacity: 1;
+	user-select: auto;
+	pointer-events: all;
+	transform: scaleX(1);
 }
 
 .show
@@ -78,17 +72,18 @@ img
 	transform: translateX(0);
 }
 
-.staff-photo-div:nth-child(1)
+
+#staff01
 {
-	transition-delay: 0.1s;
+	transition-delay: .2s;
 }
-.staff-photo-div:nth-child(2)
+#staff02
 {
-	transition-delay: 0.2s;
+	transition-delay: .4s;
 }
-.staff-photo-div:nth-child(3)
+#staff03
 {
-	transition-delay: 0.3s;
+	transition-delay: .6s;
 }
 
 @media(prefers-reduced-motion)
@@ -111,11 +106,13 @@ body
 {
 	color: var(--fourthGreen);
 }
-.green-c
+
+.green-text-glow
 {
-	color: var(--bifaC);
-	font-weight: 700;
+	color: var(--fourthGreen);
+	text-shadow: 1px 0px 0.15em var(--fourthGreen);
 }
+
 .top-bar
 {
 	width: 100%;
@@ -187,7 +184,8 @@ body
 {
 	font-size: var(--msmallbigheader);	
 	font-weight: 700;
-	color: var(--white);
+	font-family: Dangrek;
+	color: var(--secondDark);
 }
 .divers-description-div
 {
@@ -239,9 +237,10 @@ body
 	justify-content: center;
 	background-color: var(--fourthGreen);
 	margin-top: 10vw;
+	font-family: Dangrek;
 	font-size: var(--msmallbigheader);
 	font-weight: 700;
-	color: var(--firstDark);
+	color: var(--secondDark);
 }
 .staff-name
 {
@@ -259,6 +258,7 @@ body
 	align-content: center;
 	justify-content: center;
 	gap: 150px;
+	
 
 }
 .staff-photo-div
@@ -415,8 +415,8 @@ body
 {
 	.owner-photo
 	{
-		width: 45vw;
-		height: 45vw;
+		width: 40vw;
+		height: 40vw;
 	}
 	.staff-photos
 	{
