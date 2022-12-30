@@ -1,13 +1,44 @@
 :root
 {
 	--gray: #383435;
-	--green: #3CCF4E;
 	--white: #FFF;
-	--darkergreen: #146356;
-	--black: #585858;
-	--lightgreen: #69b370;
 	--bifaC: #167330;
 	--superlightGreen: #a1ffa2;
+
+
+/*FIRST*/
+/*	--fourthDark: #43503A;
+	--thirdDark: #323E2A;
+	--secondDark: #25311F;
+	--firstDark: #1D2818;
+
+	--fourthGreen: #A9E94B;
+	--thirdGreen: #92D734;
+	--secondGreen: #6AB809;
+	--firstGreen: #549708;*/
+
+/*SECOND*/
+	--fourthDark: #424D3F;
+	--thirdDark: #323C2F;
+	--secondDark: #262F24;
+	--firstDark: #1E271D;
+
+	--fourthGreen: #ACD279;
+	--thirdGreen: #98C066;
+	--secondGreen: #7BA64A;
+	--firstGreen: #5E8832;
+/*THIRD*/
+
+/*	--fourthDark: #444E3C;
+	--thirdDark: #323D2C;
+	--secondDark: #263021;
+	--firstDark: #1E281A;
+
+	--fourthGreen: #A8DE5D;
+	--thirdGreen: #93CC48;
+	--secondGreen: #73AF2A;
+	--firstGreen: #50900A;*/
+
 	--mbigheader: 12vw;
 	--msmallbigheader: 10vw;
 	--mheader: 6vw;
@@ -74,15 +105,15 @@ html
 }
 body
 {
-	background-color: var(--gray);
+	background-color: var(--secondDark);
 }
 .green-text
 {
-	color: var(--superlightGreen);
+	color: var(--fourthGreen);
 }
 .green-c
 {
-	color: var(--lightgreen);
+	color: var(--bifaC);
 	font-weight: 700;
 }
 .top-bar
@@ -92,7 +123,7 @@ body
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	background-color: var(--gray);
+	background-color: var(--firstDark);
 	border-style: none;
 	box-shadow: 0 2px 10px 0px rgba(0, 0, 0, .2);
 
@@ -109,7 +140,7 @@ body
 	border-style: none;
 	color: var(--white);
 	font-size: 25px;
-	background-color: var(--gray);
+	background-color: var(--firstDark);
 	border-radius: 150%;
 	padding: 10px;
 	transition: all 0.1s;
@@ -120,10 +151,11 @@ body
 }
 .page-header-div
 {
-	margin-top: 50px;
+	margin-top: 5vw;
 	display: flex;
 	align-content: center;
 	justify-content: center;
+	background-color: var(--fourthGreen);
 }
 .divers-logo
 {
@@ -146,8 +178,10 @@ body
 {
 	margin-top: 10vw;
 	display: flex;
+	background-color: var(--fourthGreen);
 	align-content: center;
 	justify-content: center;
+	
 }
 .divers-header
 {
@@ -157,7 +191,7 @@ body
 }
 .divers-description-div
 {
-	margin-top: 50px;
+	margin-top: 5vw;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
@@ -174,7 +208,7 @@ body
 }
 .divers-orar-div
 {
-	margin-top: 50px;
+	margin-top: 5vw;
 	margin-bottom: 150px;
 	display: flex;
 	flex-direction: column;
@@ -203,10 +237,11 @@ body
 	display: flex;
 	align-content: center;
 	justify-content: center;
+	background-color: var(--fourthGreen);
 	margin-top: 10vw;
 	font-size: var(--msmallbigheader);
 	font-weight: 700;
-	color: var(--white);
+	color: var(--firstDark);
 }
 .staff-name
 {
@@ -239,9 +274,10 @@ body
 	height: 45vw;
 	object-fit: cover;
 	border-style: solid;
-	border-color: var(--white);
+	border-color: var(--fourthGreen);
 	border-radius: 200%;
 	border-width: 0.5vw;
+
 }
 
 #owner-name
@@ -251,7 +287,7 @@ body
 
 .owner-photo-div
 {
-	margin-top: 50px;
+	margin-top: 5vw;
 	display: flex;
 	flex-direction: column;
 	gap: 5vw;
@@ -269,7 +305,7 @@ body
 	height: 70vw;
 	object-fit: cover;
 	border-style: solid;
-	border-color: var(--white);
+	border-color: var(--fourthGreen);
 	border-radius: 200%;
 	border-width: 0.8vw;
 }
@@ -282,6 +318,7 @@ body
 }
 .harta
 {
+	filter: invert(100%);
 	width: 100%;
 	height: 50vh;
 }

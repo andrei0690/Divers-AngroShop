@@ -2,7 +2,6 @@ const observer = new IntersectionObserver((entries) =>
 {
 	entries.forEach((entry) =>
 	{
-		console.log(entry);
 		if(entry.isIntersecting)
 		{
 			entry.target.classList.add("show");	
@@ -11,6 +10,20 @@ const observer = new IntersectionObserver((entries) =>
 	})
 })
 
+const headerObserver = new IntersectionObserver((entries) =>
+{
+	entries.forEach((entry) =>
+	{
+		if(entry.isIntersecting)
+		{
+			entry.target.classList.add("intersect");
+		}
+		
+	})
+})
+
+const hiddenHeaders = document.querySelectorAll('.header');
+
 const hiddenElements = document.querySelectorAll('.hidden');
 
 hiddenElements.forEach((el) =>
@@ -18,3 +31,7 @@ hiddenElements.forEach((el) =>
 	observer.observe(el);
 })
 
+hiddenHeaders.forEach((el) =>
+{
+	observer.observe(el);
+})
