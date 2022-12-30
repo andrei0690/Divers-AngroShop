@@ -18,6 +18,7 @@ const headerObserver = new IntersectionObserver((entries) =>
 		{
 			entry.target.classList.add("intersect");
 		}
+
 		
 	})
 })
@@ -33,5 +34,5 @@ hiddenElements.forEach((el) =>
 
 hiddenHeaders.forEach((el) =>
 {
-	observer.observe(el);
+	headerObserver.observe(el);
 })
