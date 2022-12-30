@@ -38,13 +38,12 @@ header .info{
 	position: relative;
 }
 
-header .info h1{
-	position: absolute;
-	top:20px;
-	margin-top: 0px;
-	font-size: 60px;
-	color: white;
-	margin-left:30px;
+header h1{
+	margin-top: 1px;
+	font-size: 70px;
+	text-align: center;
+	margin-top:15px;
+	color:black;
 }
 
 header .banner .divers{
@@ -53,7 +52,7 @@ header .banner .divers{
 }
 
 main .news{
-	margin-top:70px;
+	margin-top:120px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -67,8 +66,7 @@ main .news .new{
 	margin:20px;
 	position:relative;
 	border-radius: 10px;
-	border-style: solid;
-	margin-bottom: 40px;
+	box-shadow: 2px 2px 5px;
 
 }
 
@@ -121,6 +119,10 @@ main .news .new .photo{
 	top:40px;
 }
 
+header h1{
+	font-size:50px;
+}
+
 }
 
 @media all and (max-width: 600px){
@@ -146,6 +148,9 @@ main .news .new .photo{
 		width:60vw;
 		top:10px;
 	}
+	header h1{
+	font-size:20px;
+}
 }
 
 
@@ -181,6 +186,14 @@ main .news .new .photo{
 	header .banner .divers img{
 		height:25vw;
 	}
+
+	.copyright{
+		font-size: 14;
+	}
+
+		header h1{
+	font-size:15px;
+	}
 }
 
 @media all and (max-width: 300px){
@@ -192,4 +205,13 @@ main .news .new .photo{
 		width:55vw;
 		top:1.5vh;
 	}
+
+		header h1{
+	font-size:10px;
+	}
+}
+
+.copyright{
+	text-align: center;
+	font-weight: 500
 }
