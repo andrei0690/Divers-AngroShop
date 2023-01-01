@@ -36,3 +36,13 @@ hiddenHeaders.forEach((el) =>
 {
 	headerObserver.observe(el);
 })
+
+
+
+// Progress Bar
+
+const progressBar = document.querySelector('.progress-bar');
+
+progressBar.addEventListener('scroll', (e) => {
+  
+})
