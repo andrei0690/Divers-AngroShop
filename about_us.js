@@ -43,6 +43,27 @@ hiddenHeaders.forEach((el) =>
 
 const progressBar = document.querySelector('.progress-bar');
 
-progressBar.addEventListener('scroll', (e) => {
+window.addEventListener('scroll', () => {
   
+  	if (window.pageYOffset > 100) 
+  	{
+		progressBar.classList.add('progressBarAnim');
+
+	}
+	else
+	{
+		progressBar.classList.remove('progressBarAnim');
+	}
 })
+
+function updateProgressBar() 
+{
+	const {scrollTop, scrollHeight} = document.documentElement;
+
+	const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100 + '%';
+
+	progressBar.style.setProperty('--progress', scrollPercent);  
+}
+
+document.addEventListener('scroll', updateProgressBar);
+  

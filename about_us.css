@@ -24,7 +24,7 @@
 	--msmallbig: 2vw;
 	--msmall: 1.5vw;
 
-	--distance: 5vw;
+	--distance: 7vw;
 	--distancee: 10vw;
 }
 *
@@ -39,6 +39,16 @@ img
 {
 	pointer-events: none;
 	user-select: none;
+}
+
+section
+{
+	padding-bottom: var(--distance);
+}
+.divers-header-div,
+.staff-header
+{
+	margin-bottom: var(--distance);
 }
 .hidden
 {
@@ -56,7 +66,6 @@ img
 	filter: blur(0);
 	transform: translateX(0);
 }
-
 .header
 {
 	opacity: 0;
@@ -111,6 +120,7 @@ body
 {
 	background-color: var(--secondDark);
 }
+
 .green-text
 {
 	color: var(--fourthGreen);
@@ -156,9 +166,7 @@ body
 	opacity: 0.8;
 }
 .page-header-div
-{
-	margin-top: var(--distance);
-	display: flex;
+{	display: flex;
 	align-content: center;
 	justify-content: center;
 	background-color: var(--fourthGreen);
@@ -167,9 +175,28 @@ body
 {
 	width: 300px;
 }
-.about-divers-front
+
+.progress-bar
 {
-	margin-top: var(--distance);
+	--progress: 0;
+
+	z-index: 10;
+	top: 0px;
+	position: fixed;
+	height: 5px;
+	width: var(--progress);
+	background-color: var(--thirdGreen);
+
+	transform: translateX(-100%);
+}
+.progress-bar.progressBarAnim
+{
+	opacity: 1;
+	transform: translateX(0%);
+}
+
+.about-divers-front
+{	
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -182,7 +209,6 @@ body
 }
 .divers-header-div
 {
-	margin-top: var(--distancee);
 	display: flex;
 	background-color: var(--fourthGreen);
 	align-content: center;
@@ -197,8 +223,7 @@ body
 	color: var(--secondDark);
 }
 .divers-description-div
-{
-	margin-top: var(--distance);
+{	
 	display: flex;
 	flex-direction: column;
 	align-content: center;
@@ -215,8 +240,6 @@ body
 }
 .divers-orar-div
 {
-	margin-top: var(--distance);
-	margin-bottom: 150px;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
@@ -245,7 +268,6 @@ body
 	align-content: center;
 	justify-content: center;
 	background-color: var(--fourthGreen);
-	margin-top: var(--distancee);
 	font-family: Dangrek;
 	font-size: var(--msmallbigheader);
 	font-weight: 700;
@@ -261,9 +283,7 @@ body
 	font-weight: 700;
 }
 .staff-photos
-{
-	margin-top: var(--distance);
-	display: flex;
+{	display: flex;
 	align-content: center;
 	justify-content: center;
 	gap: 150px;
@@ -295,11 +315,9 @@ body
 }
 
 .owner-photo-div
-{
-	margin-top: var(--distance);
-	display: flex;
+{	display: flex;
 	flex-direction: column;
-	gap: 5vw;
+	gap: 2vw;
 }
 .owner-photo-2div
 {
@@ -321,7 +339,6 @@ body
 .harta-div
 {
 	display: flex;
-	margin-top: var(--distancee);
 	justify-content: center;
 	align-content: center;
 }
@@ -333,7 +350,6 @@ body
 }
 #additional-info
 {
-	margin-top: var(--distancee);
 }
 
 
@@ -396,10 +412,6 @@ body
 	{
 		font-size: var(--mdescriptionbig);
 	}
-	.staff-header
-	{
-		font-size: var(--mdescriptionbig);
-	}
 	.divers-description
 	{
 		font-size: var(--msmallbig);
@@ -424,8 +436,8 @@ body
 {
 	.owner-photo
 	{
-		width: 40vw;
-		height: 40vw;
+		width: 30vw;
+		height: 30vw;
 	}
 	.staff-photos
 	{
@@ -434,7 +446,7 @@ body
 	
 	#owner-name
 	{
-		font-size: var(--mdescriptionbig);
+		font-size: 4vw;
 	}
 	.harta
 	{
