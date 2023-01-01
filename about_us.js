@@ -18,6 +18,7 @@ const headerObserver = new IntersectionObserver((entries) =>
 		{
 			entry.target.classList.add("intersect");
 		}
+
 		
 	})
 })
@@ -33,5 +34,36 @@ hiddenElements.forEach((el) =>
 
 hiddenHeaders.forEach((el) =>
 {
-	observer.observe(el);
+	headerObserver.observe(el);
 })
+
+
+
+// Progress Bar
+
+const progressBar = document.querySelector('.progress-bar');
+
+window.addEventListener('scroll', () => {
+  
+  	if (window.pageYOffset > 100) 
+  	{
+		progressBar.classList.add('progressBarAnim');
+
+	}
+	else
+	{
+		progressBar.classList.remove('progressBarAnim');
+	}
+})
+
+function updateProgressBar() 
+{
+	const {scrollTop, scrollHeight} = document.documentElement;
+
+	const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100 + '%';
+
+	progressBar.style.setProperty('--progress', scrollPercent);  
+}
+
+document.addEventListener('scroll', updateProgressBar);
+  
