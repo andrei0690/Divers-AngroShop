@@ -67,3 +67,156 @@ function updateProgressBar()
 
 document.addEventListener('scroll', updateProgressBar);
   
+
+
+// Carusel
+
+// Radio Carousel Buttons
+const carouselRadiop01 = document.querySelector('#r1');
+const carouselRadiop02 = document.querySelector('#r2');
+const carouselRadiop03 = document.querySelector('#r3');
+const carouselRadiop04 = document.querySelector('#r4');
+const carouselRadiop05 = document.querySelector('#r5');
+
+// Radio Carousel Labels
+const carouselBar01 = document.querySelector('#bar01');
+const carouselBar02 = document.querySelector('#bar02');
+const carouselBar03 = document.querySelector('#bar03');
+const carouselBar04 = document.querySelector('#bar04');
+const carouselBar05 = document.querySelector('#bar05');
+
+// Carousel Interval
+
+let carousel;
+GlobalPrevious = 0;
+
+// Starts the Carosel
+start_carousel();
+fill_radio()
+
+// Click and change slide
+carouselRadiop01.addEventListener('change', (e) => {
+  carousel_remove_fill_all()
+  carouselBar01.style.backgroundColor = '#ACD279';
+  reset_carousel()
+})
+carouselRadiop02.addEventListener('change', (e) => {
+  carousel_remove_fill_all()
+  carouselBar02.style.backgroundColor = '#ACD279';
+  reset_carousel()
+})
+carouselRadiop03.addEventListener('change', (e) => {
+  carousel_remove_fill_all()
+  carouselBar03.style.backgroundColor = '#ACD279';
+  reset_carousel()
+})
+carouselRadiop04.addEventListener('change', (e) => {
+  carousel_remove_fill_all()
+  carouselBar04.style.backgroundColor = '#ACD279';
+  reset_carousel()
+})
+carouselRadiop05.addEventListener('change', (e) => {
+  carousel_remove_fill_all()
+  carouselBar05.style.backgroundColor = '#ACD279';
+  reset_carousel()
+})
+
+
+
+function start_carousel() {
+  carousel = setInterval(change_slide, 5000);
+}
+
+function reset_carousel() {
+  GlobalPrevious = 0;
+  clearInterval(carousel);
+  start_carousel();
+}
+
+function carousel_remove_fill_all()
+{
+  const CarouselBars = document.querySelectorAll('.bar');
+
+  CarouselBars.forEach(bar =>
+  {
+    bar.style.background = 'none';
+  })
+}
+
+// Changes slide, if it reaches the maximum capacity it goes in "Previous Mode" till it reaches a capacity again
+function change_slide() {
+  
+  let radio_checked;
+
+  const carouselRadioInputs = document.querySelectorAll('.carousel-radio');
+  const arrayofCarouselRadios = Array.from(carouselRadioInputs);
+
+  arrayofCarouselRadios.forEach(e =>
+  {
+    if(e.checked)
+    {
+      radio_checked = e;
+    }
+  })
+
+  if(radio_checked.previousElementSibling == null)
+  {
+    GlobalPrevious = 0;
+  }
+
+  
+  if(GlobalPrevious != 1)
+  {
+
+    if(radio_checked.nextElementSibling.classList.contains('slide') && radio_checked.nextElementSibling.nextElementSibling.classList.contains('slide'))
+    {
+      GlobalPrevious = 1;
+    }
+    else
+    {
+      radio_checked.nextElementSibling.checked = true;
+    }
+
+
+  }
+
+  if(GlobalPrevious == 1)
+  {
+    radio_checked.previousElementSibling.checked = true;
+  }
+
+  fill_radio();
+  
+}
+
+// Looks for the radios checked and updates the labels
+function fill_radio() {
+  const carouselRadioInputs = document.querySelectorAll('.carousel-radio');
+  const arrayofCarouselRadios = Array.from(carouselRadioInputs);
+
+  if(arrayofCarouselRadios[0].checked)
+  {
+    carousel_remove_fill_all();
+    carouselBar01.style.backgroundColor = '#ACD279';
+  }
+  if(arrayofCarouselRadios[1].checked)
+  {
+    carousel_remove_fill_all();
+    carouselBar02.style.backgroundColor = '#ACD279';
+  }
+  if(arrayofCarouselRadios[2].checked)
+  {
+    carousel_remove_fill_all();
+    carouselBar03.style.backgroundColor = '#ACD279';
+  }
+  if(arrayofCarouselRadios[3].checked)
+  {
+    carousel_remove_fill_all();
+    carouselBar04.style.backgroundColor = '#ACD279';
+  }
+  if(arrayofCarouselRadios[4].checked)
+  {
+    carousel_remove_fill_all();
+    carouselBar05.style.backgroundColor = '#ACD279';
+  }
+}

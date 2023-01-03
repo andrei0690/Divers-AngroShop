@@ -26,6 +26,8 @@
 
 	--distance: 7vw;
 	--distancee: 10vw;
+
+	--niceBorderRadius: 15px;
 }
 *
 {
@@ -119,8 +121,11 @@ html
 body
 {
 	background-color: var(--secondDark);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #262F24;
 }
-
 .green-text
 {
 	color: var(--fourthGreen);
@@ -175,7 +180,7 @@ body
 {
 	width: 300px;
 }
-
+/*PROGRESS BAR*/
 .progress-bar
 {
 	--progress: 0;
@@ -195,6 +200,7 @@ body
 	transform: translateX(0%);
 }
 
+/*ABOUT DIVERS*/
 .about-divers-front
 {	
 	display: flex;
@@ -203,10 +209,97 @@ body
 	width: 100%;
 	height: 1000px;
 }
-.divers-front-photo
+
+/*CARUSEL*/
+.carousel
 {
-	object-fit: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
 }
+.slidershow
+{
+  width: 65vw;
+  border-radius: var(--niceBorderRadius);
+  height: 42vw;
+  overflow: hidden;
+}
+
+.navigation
+{
+  display: flex;
+  margin-top: 1.5vw;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+
+}
+.bar
+{
+  width: 7vw;
+  border-radius: 3px;
+  height: 20px;
+  border: 2px solid #ACD279;
+  margin: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+}
+input[name="r"]
+{
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.slides
+{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.slide
+{
+  width: 20%;
+  transition: 0.6s;
+}
+
+.slide img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#r1:checked ~ .s1
+{
+  margin-left: 0%;
+}
+#r2:checked ~ .s1
+{
+  margin-left: -20%;
+}
+#r3:checked ~ .s1
+{
+  margin-left: -40%;
+}
+#r4:checked ~ .s1
+{
+  margin-left: -60%;
+}
+#r5:checked ~ .s1
+{
+  margin-left: -80%;
+}
+
+#r1:checked #bar01
+{
+  background: none;
+}
+
+
 .divers-header-div
 {
 	display: flex;
@@ -344,6 +437,7 @@ body
 }
 .harta
 {
+	border-radius: var(--niceBorderRadius);
 	filter: invert(100%);
 	width: 100%;
 	height: 50vh;
@@ -352,7 +446,7 @@ body
 {
 }
 
-
+/*MEDIA*/
 @media(min-width: 0px)
 {
 	.staff-photos
