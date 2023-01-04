@@ -137,6 +137,65 @@ body
 	text-shadow: 1px 0px 0.15em var(--fourthGreen);
 }
 
+/*BACKUP BUTTON*/
+#created-backup-div
+{
+	opacity: 1;
+	pointer-events: all;
+	transform: translateX(0);
+	filter: blur(0);
+	position: static;
+	margin-top: 3vw;
+
+}
+#created-backup-button
+{
+	color: var(--secondDark);
+	background-color: var(--fourthGreen);
+}
+.backup-div
+{
+	z-index: 10;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateX(100%);
+	filter: blur(15px);
+	transition: all 0.25s;
+}
+.backup-button
+{
+	border-radius: 100%;
+	padding: 22px 24px;
+	cursor: pointer;
+	border-style: solid;
+	border-width: 0.1px;
+	border-color: var(--secondDark);
+	background-color: var(--fourthGreen);
+	color: var(--secondDark);
+	font-size: 27px;
+}
+.backup-button:active
+{
+	background-color: var(--fourthGreen);
+	color: var(--secondDark);
+
+}
+
+.display-backup-button-div
+{
+	opacity: 1;
+	filter: blur(0px);
+	transform: translateX(0);
+	pointer-events: all;
+}
+
+.top-bar-section
+{
+	padding-bottom: 25px;
+}
 .top-bar
 {
 	width: 100%;
@@ -462,7 +521,11 @@ input[name="r"]
 	{
 		border-width: 5px;
 	}
-	
+	.display-backup-button-div
+	{
+		opacity: 0;
+		pointer-events: none;
+	}
 }
 
 @media(min-width: 750px)
@@ -521,6 +584,11 @@ input[name="r"]
 	.staff-photo
 	{
 		border-width: 0.5vw;
+	}
+	.display-backup-button-div
+	{
+		opacity: 1;
+		pointer-events: all;
 	}
 
 }
