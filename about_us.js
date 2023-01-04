@@ -37,6 +37,76 @@ hiddenHeaders.forEach((el) =>
 	headerObserver.observe(el);
 })
 
+// BackUp Button
+
+// Ca sa apara
+
+const backupButtons = document.querySelectorAll('.backup-button');
+const backUpButton = document.querySelector('.backup-div');
+
+console.log('mata');
+backUpButton.classList.remove('display-backup-button-div');
+console.log('tactu ;)');
+
+window.addEventListener('scroll', () => {
+  
+  	if (window.pageYOffset >= 1320) 
+  	{
+  		if(globalbackupbuttons == 1)
+  		{
+  			backUpButton.classList.add('display-backup-button-div');
+  		}
+	}
+	else
+	{
+		backUpButton.classList.remove('display-backup-button-div');
+	}
+})
+
+// Cand apesi te duce sus 
+backupButtons.forEach(button =>
+{
+	button.addEventListener('click', () => {
+	  window.scrollTo({
+	    top: 0,
+	    behavior: 'smooth'
+	  });
+	});
+})
+
+// Cand vede ultima sectiune sa dispara
+
+const OrarSection = document.querySelector('.orar-info-section');
+
+globalbackupbuttons = 1;
+
+const backUpbuttonObserver = new IntersectionObserver((entries) =>
+{
+	entries.forEach((entry) =>
+	{
+		if(entry.isIntersecting)
+		{
+			globalbackupbuttons = 2;
+			backUpButton.classList.remove('display-backup-button-div');
+
+		}
+		else
+		{
+			globalbackupbuttons = 1;
+			if (window.pageYOffset >= 1320)
+			{
+				backUpButton.classList.add('display-backup-button-div');
+			}
+			
+		}
+		
+	})
+})
+
+const createdBackupDiv = document.querySelector('#created-backup-div');
+const createdBackupButton = document.querySelector('#created-backup-button');
+
+backUpbuttonObserver.observe(OrarSection);
 
 
 // Progress Bar
