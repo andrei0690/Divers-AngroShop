@@ -158,33 +158,38 @@ GlobalPrevious = 0;
 
 // Starts the Carosel
 start_carousel();
-fill_radio()
+fill_radio();
 
 // Click and change slide
 carouselRadiop01.addEventListener('change', (e) => {
-  carousel_remove_fill_all()
+  carousel_remove_fill_all();
   carouselBar01.style.backgroundColor = '#ACD279';
-  reset_carousel()
+  check_elements();
+  reset_carousel();
 })
 carouselRadiop02.addEventListener('change', (e) => {
-  carousel_remove_fill_all()
+  carousel_remove_fill_all();
   carouselBar02.style.backgroundColor = '#ACD279';
-  reset_carousel()
+  check_elements();
+  reset_carousel();
 })
 carouselRadiop03.addEventListener('change', (e) => {
-  carousel_remove_fill_all()
+  carousel_remove_fill_all();
   carouselBar03.style.backgroundColor = '#ACD279';
-  reset_carousel()
+  check_elements();
+  reset_carousel();
 })
 carouselRadiop04.addEventListener('change', (e) => {
-  carousel_remove_fill_all()
+  carousel_remove_fill_all();
   carouselBar04.style.backgroundColor = '#ACD279';
-  reset_carousel()
+  check_elements();
+  reset_carousel();
 })
 carouselRadiop05.addEventListener('change', (e) => {
-  carousel_remove_fill_all()
+  carousel_remove_fill_all();
   carouselBar05.style.backgroundColor = '#ACD279';
-  reset_carousel()
+  check_elements();
+  reset_carousel();
 })
 
 
@@ -201,9 +206,9 @@ function reset_carousel() {
 
 function carousel_remove_fill_all()
 {
-  const CarouselBars = document.querySelectorAll('.bar');
+  const carouselBars = document.querySelectorAll('.bar');
 
-  CarouselBars.forEach(bar =>
+  carouselBars.forEach(bar =>
   {
     bar.style.background = 'none';
   })
@@ -212,25 +217,16 @@ function carousel_remove_fill_all()
 // Changes slide, if it reaches the maximum capacity it goes in "Previous Mode" till it reaches a capacity again
 function change_slide() {
   
-  let radio_checked;
+  radio_checked = get_current_radio();
 
-  const carouselRadioInputs = document.querySelectorAll('.carousel-radio');
-  const arrayofCarouselRadios = Array.from(carouselRadioInputs);
-
-  arrayofCarouselRadios.forEach(e =>
-  {
-    if(e.checked)
-    {
-      radio_checked = e;
-    }
-  })
+  
 
   if(radio_checked.previousElementSibling == null)
   {
     GlobalPrevious = 0;
   }
 
-  
+ 
   if(GlobalPrevious != 1)
   {
 
@@ -252,8 +248,60 @@ function change_slide() {
   }
 
   fill_radio();
-  
+  check_elements();
+
 }
+
+function get_current_radio() {
+	
+	let radio_checked;
+
+  const carouselRadioInputs = document.querySelectorAll('.carousel-radio');
+  const arrayofCarouselRadios = Array.from(carouselRadioInputs);
+
+  arrayofCarouselRadios.forEach(e =>
+  {
+    if(e.checked)
+    {
+      radio_checked = e;
+    }
+  })
+
+  return radio_checked;
+}
+
+function check_elements() {
+  
+	radio_checked = get_current_radio();
+	
+
+	radio_checked_id = radio_checked.getAttribute('id');
+
+
+	if (radio_checked_id == 'r1') 
+	{
+		 previousStaffArrow.style.opacity = '0';
+		 previousStaffArrow.style.pointerEvents = 'none';
+	}
+	else
+	{
+		 previousStaffArrow.style.opacity = '1';
+		 previousStaffArrow.style.pointerEvents = 'all';
+	}
+
+	if (radio_checked_id == 'r5') 
+	{
+		 nextStaffArrow.style.opacity = '0';
+		 nextStaffArrow.style.pointerEvents = 'none';
+	}
+	else
+	{
+		 nextStaffArrow.style.opacity = '1';
+		 nextStaffArrow.style.pointerEvents = 'all';
+	}
+
+}
+
 
 // Looks for the radios checked and updates the labels
 function fill_radio() {
@@ -287,6 +335,29 @@ function fill_radio() {
   }
 }
 
+previousStaffArrow = document.querySelector('#previous-carousel-arrow');
+nextStaffArrow = document.querySelector('#next-carousel-arrow');
+
+previousStaffArrow.addEventListener('click', () => {
+  
+  radio_checked = get_current_radio();
+  radio_checked.previousElementSibling.checked = true;
+  fill_radio();
+  check_elements();
+  reset_carousel();
+
+})
+
+nextStaffArrow.addEventListener('click', () => {
+  
+  radio_checked = get_current_radio();
+
+  radio_checked.nextElementSibling.checked = true;
+  fill_radio();
+  check_elements();
+  reset_carousel();
+
+})
 
 
 // FUZZ LA TEXT
@@ -295,15 +366,6 @@ let scrolling = false;
 timeoutfromscrollingforgreentext = false;
 
 const greenTexts = document.querySelectorAll('.green-text');
-
-
-function add_glow_to_green_text(text) {
-	text.style.textShadow = '1px 0px 0.15em var(--fourthGreen)';
-}
-
-function remove_glow_from_green_text(text) {
-	text.style.textShadow = 'none';
-}
 
 function start_glow_from_green_text_timeout(greenText) {
 	
@@ -315,7 +377,6 @@ function start_glow_from_green_text_timeout(greenText) {
 	    
 	  }, 200)
 }
-
 
 greenTexts.forEach(greenText =>
 {

@@ -295,6 +295,27 @@ body
   align-content: center;
 
 }
+.carousel-arrow
+{
+  position: absolute;
+  background-color: #ACD279;
+  font-size: 31px;
+  border-radius: 3px;
+  color: #262F24;
+  padding: 5px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+#previous-carousel-arrow
+{
+  top: 50px;
+}
+#next-carousel-arrow
+{
+	
+}
+
 .bar
 {
   width: 7vw;
