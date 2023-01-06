@@ -44,10 +44,6 @@ hiddenHeaders.forEach((el) =>
 const backupButtons = document.querySelectorAll('.backup-button');
 const backUpButton = document.querySelector('.backup-div');
 
-console.log('mata');
-backUpButton.classList.remove('display-backup-button-div');
-console.log('tactu ;)');
-
 window.addEventListener('scroll', () => {
   
   	if (window.pageYOffset >= 1320) 
@@ -290,3 +286,49 @@ function fill_radio() {
     carouselBar05.style.backgroundColor = '#ACD279';
   }
 }
+
+
+
+// FUZZ LA TEXT
+
+let scrolling = false;
+timeoutfromscrollingforgreentext = false;
+
+const greenTexts = document.querySelectorAll('.green-text');
+
+
+function add_glow_to_green_text(text) {
+	text.style.textShadow = '1px 0px 0.15em var(--fourthGreen)';
+}
+
+function remove_glow_from_green_text(text) {
+	text.style.textShadow = 'none';
+}
+
+function start_glow_from_green_text_timeout(greenText) {
+	
+	 scrollTimeout = setTimeout(() => {
+
+	  	scrolling = false;
+	  	greenText.style.textShadow = 'none';
+	  	timeoutfromscrollingforgreentext = true;
+	    
+	  }, 200)
+}
+
+
+greenTexts.forEach(greenText =>
+{
+	document.addEventListener('scroll', () => {
+	  
+	  if(!scrolling)
+	  {
+	  	greenText.style.textShadow = '1px 0px 0.15em var(--fourthGreen)';
+	  }
+
+
+	  start_glow_from_green_text_timeout(greenText);
+	  
+	 
+	})
+})

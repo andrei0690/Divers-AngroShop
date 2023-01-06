@@ -129,6 +129,7 @@ body
 .green-text
 {
 	color: var(--fourthGreen);
+	transition: all 0.15s ease-out;
 }
 
 .green-text-glow
