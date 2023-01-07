@@ -164,31 +164,26 @@ fill_radio();
 carouselRadiop01.addEventListener('change', (e) => {
   carousel_remove_fill_all();
   carouselBar01.style.backgroundColor = '#ACD279';
-  check_elements();
   reset_carousel();
 })
 carouselRadiop02.addEventListener('change', (e) => {
   carousel_remove_fill_all();
   carouselBar02.style.backgroundColor = '#ACD279';
-  check_elements();
   reset_carousel();
 })
 carouselRadiop03.addEventListener('change', (e) => {
   carousel_remove_fill_all();
   carouselBar03.style.backgroundColor = '#ACD279';
-  check_elements();
   reset_carousel();
 })
 carouselRadiop04.addEventListener('change', (e) => {
   carousel_remove_fill_all();
   carouselBar04.style.backgroundColor = '#ACD279';
-  check_elements();
   reset_carousel();
 })
 carouselRadiop05.addEventListener('change', (e) => {
   carousel_remove_fill_all();
   carouselBar05.style.backgroundColor = '#ACD279';
-  check_elements();
   reset_carousel();
 })
 
@@ -248,7 +243,6 @@ function change_slide() {
   }
 
   fill_radio();
-  check_elements();
 
 }
 
@@ -270,37 +264,7 @@ function get_current_radio() {
   return radio_checked;
 }
 
-function check_elements() {
-  
-	radio_checked = get_current_radio();
-	
 
-	radio_checked_id = radio_checked.getAttribute('id');
-
-
-	if (radio_checked_id == 'r1') 
-	{
-		 previousStaffArrow.style.opacity = '0';
-		 previousStaffArrow.style.pointerEvents = 'none';
-	}
-	else
-	{
-		 previousStaffArrow.style.opacity = '1';
-		 previousStaffArrow.style.pointerEvents = 'all';
-	}
-
-	if (radio_checked_id == 'r5') 
-	{
-		 nextStaffArrow.style.opacity = '0';
-		 nextStaffArrow.style.pointerEvents = 'none';
-	}
-	else
-	{
-		 nextStaffArrow.style.opacity = '1';
-		 nextStaffArrow.style.pointerEvents = 'all';
-	}
-
-}
 
 
 // Looks for the radios checked and updates the labels
@@ -335,30 +299,208 @@ function fill_radio() {
   }
 }
 
-previousStaffArrow = document.querySelector('#previous-carousel-arrow');
-nextStaffArrow = document.querySelector('#next-carousel-arrow');
+
+// Carusel la STAFF ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Carusel
+
+// Radio Carousel Buttons
+const carouselStaffRadiop01 = document.querySelector('#staff-r1');
+const carouselStaffRadiop02 = document.querySelector('#staff-r2');
+const carouselStaffRadiop03 = document.querySelector('#staff-r3');
+
+
+// Radio Carousel Labels
+carouselStaffBar01 = document.querySelector('#staff-bar01');
+carouselStaffBar02 = document.querySelector('#staff-bar02');
+carouselStaffBar03 = document.querySelector('#staff-bar03');
+
+
+// Carousel Interval
+
+let staffCarousel;
+GlobalStaffPrevious = 0;
+
+// Starts the Carosel
+start_staff_carousel();
+fill_staff_radio();
+
+
+// Click and change slide
+carouselStaffRadiop01.addEventListener('change', (e) => {
+  carousel_staff_remove_fill_all()
+  carouselStaffBar01.style.backgroundColor = '#ACD279';
+  check_staff_elements();
+  reset_staff_carousel();
+})
+carouselStaffRadiop02.addEventListener('change', (e) => {
+  carousel_staff_remove_fill_all()
+  carouselStaffBar02.style.backgroundColor = '#ACD279';
+  check_staff_elements();
+  reset_staff_carousel();
+})
+carouselStaffRadiop03.addEventListener('change', (e) => {
+  carousel_staff_remove_fill_all()
+  carouselStaffBar03.style.backgroundColor = '#ACD279';
+  check_staff_elements();
+  reset_staff_carousel();
+})
+
+function get_current_staff_radio()
+{
+	let radio_checked;
+
+  const carouselRadioInputs = document.querySelectorAll('.staff-carousel-radio');
+  const arrayofCarouselRadios = Array.from(carouselRadioInputs);
+
+  arrayofCarouselRadios.forEach(e =>
+  {
+    if(e.checked)
+    {
+      radio_checked = e;
+    }
+  })
+
+  return radio_checked;
+}
+function start_staff_carousel() {
+  staffCarousel = setInterval(change_staff_slide, 3000);
+}
+
+function reset_staff_carousel() {
+  GlobalStaffPrevious = 0;
+  clearInterval(staffCarousel);
+  start_staff_carousel();
+}
+
+function carousel_staff_remove_fill_all()
+{
+  const carouselBars = document.querySelectorAll('.staff-bar');
+
+  carouselBars.forEach(bar =>
+  {
+    bar.style.background = 'none';
+  })
+}
+
+// Changes slide, if it reaches the maximum capacity it goes in "Previous Mode" till it reaches the capacity again
+function change_staff_slide() {
+  
+  radio_checked = get_current_staff_radio();
+
+  
+
+  if(radio_checked.previousElementSibling == null)
+  {
+    GlobalStaffPrevious = 0;
+  }
+
+ 
+  if(GlobalStaffPrevious != 1)
+  {
+
+    if(radio_checked.nextElementSibling.classList.contains('staff-slide') && radio_checked.nextElementSibling.nextElementSibling.classList.contains('staff-slide'))
+    {
+      GlobalStaffPrevious = 1;
+    }
+    else
+    {
+      radio_checked.nextElementSibling.checked = true;
+    }
+
+
+  }
+
+  if(GlobalStaffPrevious == 1)
+  {
+    radio_checked.previousElementSibling.checked = true;
+  }
+
+  fill_staff_radio();
+  check_staff_elements();
+
+}
+
+function check_staff_elements() {
+  
+  radio_checked = get_current_staff_radio();
+  
+
+  radio_checked_id = radio_checked.getAttribute('id');
+
+
+  if (radio_checked_id == 'staff-r1') 
+  {
+     previousStaffArrow.style.opacity = '0.1';
+     previousStaffArrow.style.pointerEvents = 'none';
+  }
+  else
+  {
+     previousStaffArrow.style.opacity = '1';
+     previousStaffArrow.style.pointerEvents = 'all';
+  }
+
+  if (radio_checked_id == 'staff-r3') 
+  {
+     nextStaffArrow.style.opacity = '0.1';
+     nextStaffArrow.style.pointerEvents = 'none';
+  }
+  else
+  {
+     nextStaffArrow.style.opacity = '1';
+     nextStaffArrow.style.pointerEvents = 'all';
+  }
+
+}
+
+
+// Looks for the radios checked and updates the labels
+function fill_staff_radio(){
+
+  const carouselRadioInputs = document.querySelectorAll('.staff-carousel-radio');
+  const arrayofCarouselRadios = Array.from(carouselRadioInputs);
+
+  if(arrayofCarouselRadios[0].checked)
+  {
+    carousel_staff_remove_fill_all()
+    carouselStaffBar01.style.backgroundColor = 'var(--fourthGreen)';
+  }
+  if(arrayofCarouselRadios[1].checked)
+  {
+    carousel_staff_remove_fill_all()
+    carouselStaffBar02.style.backgroundColor = 'var(--fourthGreen)';
+  }
+  if(arrayofCarouselRadios[2].checked)
+  {
+    carousel_staff_remove_fill_all()
+    carouselStaffBar03.style.backgroundColor = 'var(--fourthGreen)';
+  }
+
+}
+
+previousStaffArrow = document.querySelector('#previous-carousel-staff-arrow');
+nextStaffArrow = document.querySelector('#next-carousel-staff-arrow');
+check_staff_elements();
 
 previousStaffArrow.addEventListener('click', () => {
   
-  radio_checked = get_current_radio();
+  radio_checked = get_current_staff_radio();
   radio_checked.previousElementSibling.checked = true;
-  fill_radio();
-  check_elements();
-  reset_carousel();
+  fill_staff_radio();
+  check_staff_elements()
+  reset_staff_carousel();
 
 })
 
 nextStaffArrow.addEventListener('click', () => {
   
-  radio_checked = get_current_radio();
+  radio_checked = get_current_staff_radio();
 
   radio_checked.nextElementSibling.checked = true;
-  fill_radio();
-  check_elements();
-  reset_carousel();
+  fill_staff_radio();
+  check_staff_elements();
+  reset_staff_carousel();
 
 })
-
 
 // FUZZ LA TEXT
 
