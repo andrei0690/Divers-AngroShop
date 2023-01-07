@@ -149,11 +149,6 @@ body
 	margin-top: 3vw;
 
 }
-#created-backup-button
-{
-	color: var(--secondDark);
-	background-color: var(--fourthGreen);
-}
 .backup-div
 {
 	z-index: 10;
@@ -169,7 +164,7 @@ body
 .backup-button
 {
 	border-radius: 100%;
-	padding: 22px 24px;
+	padding: clamp(10px,1.5vw,32px) clamp(15px,1.7vw,35px);
 	cursor: pointer;
 	border-style: solid;
 	border-width: 0.1px;
@@ -608,6 +603,13 @@ input[name="staff-r"]
 		opacity: 0;
 		pointer-events: none;
 	}
+	.slidershow
+	{
+	  width: 100%;
+	  border-radius: var(--niceBorderRadius);
+	  height: 80vw;
+	  overflow: hidden;
+	}
 }
 
 @media(min-width: 750px)
@@ -671,6 +673,13 @@ input[name="staff-r"]
 	{
 		opacity: 1;
 		pointer-events: all;
+	}
+	.slidershow
+	{
+	  width: 65vw;
+	  border-radius: var(--niceBorderRadius);
+	  height: 42vw;
+	  overflow: hidden;
 	}
 
 }
