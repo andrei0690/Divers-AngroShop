@@ -75,7 +75,6 @@ section
 	pointer-events: none;
 	transform: scaleX(.1);
 	transition: all .5s;
-
 }
 
 .intersect
@@ -124,7 +123,6 @@ body
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: #262F24;
 }
 .green-text
 {
@@ -300,15 +298,6 @@ body
   padding: 5px 8px;
   border: none;
   cursor: pointer;
-}
-
-#previous-carousel-arrow
-{
-  top: 50px;
-}
-#next-carousel-arrow
-{
-	
 }
 
 .bar
