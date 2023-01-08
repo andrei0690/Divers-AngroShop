@@ -65,6 +65,23 @@ section
 	filter: blur(0);
 	transform: translateX(0);
 }
+
+.divers-header-div
+{
+	display: flex;
+	background-color: var(--fourthGreen);
+	align-content: center;
+	justify-content: center;
+	
+}
+.divers-header
+{
+	font-size: var(--msmallbigheader);	
+	font-weight: 700;
+	font-family: Dangrek;
+	color: var(--secondDark);
+}
+
 @media(prefers-reduced-motion)
 {
 	.hidden
