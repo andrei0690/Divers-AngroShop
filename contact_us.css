@@ -76,7 +76,7 @@ section
 }
 .divers-header
 {
-	font-size: var(--msmallbigheader);	
+	font-size: var(--mheader);	
 	font-weight: 700;
 	font-family: Dangrek;
 	color: var(--secondDark);
