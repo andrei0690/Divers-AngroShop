@@ -1,20 +1,33 @@
 :root
 {
 	--gray: #383435;
-	--green: #3CCF4E;
 	--white: #FFF;
-	--darkergreen: #146356;
-	--black: #585858;
-	--lightgreen: #69b370;
 	--bifaC: #167330;
 	--superlightGreen: #a1ffa2;
+
+	--fourthDark: #424D3F;
+	--thirdDark: #323C2F;
+	--secondDark: #262F24;
+	--firstDark: #1E271D;
+
+	--fourthGreen: #ACD279;
+	--thirdGreen: #98C066;
+	--secondGreen: #7BA64A;
+	--firstGreen: #5E8832;
+
+
 	--mbigheader: 12vw;
+	--msmallbigheader: 10vw;
 	--mheader: 6vw;
 	--mdescriptionbig: 4.5vw;
 	--mdescription: 3vw;
 	--msmallbig: 2vw;
 	--msmall: 1.5vw;
 
+	--distance: 7vw;
+	--distancee: 10vw;
+
+	--niceBorderRadius: 15px;
 }
 *
 {
@@ -23,6 +36,16 @@
 	margin: 0;
 	font-family: Roboto;
 	user-select: none;
+}
+img
+{
+	pointer-events: none;
+	user-select: none;
+}
+
+section
+{
+	padding-bottom: var(--distance);
 }
 
 .hidden
@@ -42,6 +65,23 @@
 	filter: blur(0);
 	transform: translateX(0);
 }
+
+.divers-header-div
+{
+	display: flex;
+	background-color: var(--fourthGreen);
+	align-content: center;
+	justify-content: center;
+	
+}
+.divers-header
+{
+	font-size: var(--mheader);	
+	font-weight: 700;
+	font-family: Dangrek;
+	color: var(--secondDark);
+}
+
 @media(prefers-reduced-motion)
 {
 	.hidden
@@ -76,7 +116,7 @@ html
 }
 body
 {
-	background-color: var(--gray);
+	background-color: var(--secondDark);
 }
 a
 {
@@ -84,18 +124,18 @@ a
 }
 .green-c
 {
-	color: var(--lightgreen);
+	color: var(--fourthGreen);
 	font-weight: 700;
 }
 .green-icon
 {
-	color: var(--lightgreen);
+	color: var(--fourthGreen);
 	font-weight: 700;
 	font-size: var(--mheader);
 }
 .green-email-icon
 {
-	color: var(--lightgreen);
+	color: var(--fourthGreen);
 }
 .header
 {
@@ -120,7 +160,7 @@ a
 	display: flex;
 	justify-content: center;
 	align-content: center;
-	background-color: var(--gray);
+	background-color: var(--firstDark);
 	border-style: none;
 	box-shadow: 0 2px 10px 0px rgba(0, 0, 0, .2);
 
@@ -137,7 +177,7 @@ a
 	border-style: none;
 	color: var(--white);
 	font-size: 25px;
-	background-color: var(--gray);
+	background-color: var(--firstDark);
 	border-radius: 150%;
 	padding: 10px;
 	transition: all 0.1s;
@@ -217,7 +257,7 @@ a
 {
 	padding: 15px 5px 15px 10px;
 	width: 100%;
-	background-color: var(--gray);
+	background-color: var(--secondDark);
 	border-style: solid;
 	border-color: var(--white);
 	border-radius: 5px;
@@ -253,7 +293,7 @@ a
 	margin-top: 50px;
 	padding: 15px 100px 5px 305px;
 	width: 100%;
-	background-color: var(--gray);
+	background-color: var(--secondDark);
 	border-style: none none solid none;
 	border-color: var(--white);
 	color: var(--white);
@@ -283,7 +323,7 @@ a
 	width: 1000px;
 	height: 500px;
 	padding: 15px 20px;
-	background-color: var(--gray);
+	background-color: var(--secondDark);
 	border-style: solid;
 	border-width: 1px;
 	border-color: var(--white);
@@ -308,7 +348,7 @@ a
 {
 	cursor: pointer;
 	padding: 30px 60px;
-	background-color: var(--gray);
+	background-color: var(--secondDark);
 	border-style: solid;
 	border-width: 2px;
 	border-color: var(--white);
@@ -321,9 +361,9 @@ a
 }
 .submit-button:hover
 {
-	background-color: var(--superlightGreen);
-	border-color: var(--superlightGreen);
-	color: var(--gray);
+	background-color: var(--fourthGreen);
+	border-color: var(--fourthGreen);
+	color: var(--secondDark);
 }
 
 @media(min-width: 0px)
