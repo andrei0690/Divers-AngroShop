@@ -39,24 +39,30 @@ hiddenHeaders.forEach((el) =>
 
 // BackUp Button
 
-// Ca sa apara
+// Calculam procentul la pagina ca sa apara butonul mereu dupa o anumita josime
 
 const backupButtons = document.querySelectorAll('.backup-button');
 const backUpButton = document.querySelector('.backup-div');
 
 window.addEventListener('scroll', () => {
-  
-  	if (window.pageYOffset >= 1320) 
+    
+    const {scrollTop, scrollHeight} = document.documentElement;
+
+    const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100;
+
+
+
+  	if (scrollPercent >= 23) 
   	{
   		if(globalbackupbuttons == 1)
   		{
   			backUpButton.classList.add('display-backup-button-div');
   		}
-	}
-	else
-	{
+	 }
+	 else
+	 {
 		backUpButton.classList.remove('display-backup-button-div');
-	}
+	 }
 })
 
 // Cand apesi te duce sus 
@@ -111,8 +117,24 @@ const progressBar = document.querySelector('.progress-bar');
 
 window.addEventListener('scroll', () => {
   
-  	if (window.pageYOffset > 100) 
-  	{
+
+  const {scrollTop, scrollHeight} = document.documentElement;
+
+  const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100;
+
+  console.log();
+
+  if(scrollPercent == 100)
+  {
+    progressBar.style.backgroundColor = 'var(--superlightGreen)'
+  }
+  else
+  {
+    progressBar.style.backgroundColor = 'var(--thirdGreen)'
+  }
+
+  if (window.pageYOffset > 100) 
+  {
 		progressBar.classList.add('progressBarAnim');
 
 	}
@@ -517,7 +539,7 @@ function start_glow_from_green_text_timeout(greenText) {
 	  	greenText.style.textShadow = 'none';
 	  	timeoutfromscrollingforgreentext = true;
 	    
-	  }, 200)
+	  }, 100)
 }
 
 greenTexts.forEach(greenText =>
