@@ -28,6 +28,7 @@
 	--distancee: 10vw;
 
 	--niceBorderRadius: 15px;
+	--smallerBorderRadius: 5px;
 }
 *
 {
@@ -259,8 +260,8 @@ a
 	width: 100%;
 	background-color: var(--secondDark);
 	border-style: solid;
-	border-color: var(--white);
-	border-radius: 5px;
+	border-color: var(--superlightGreen);
+	border-radius: var(--smallerBorderRadius);
 	color: var(--white);
 	font-size: 21px;
 	font-weight: 500;
@@ -268,7 +269,7 @@ a
 }
 .input-user:focus
 {
-	border-color: var(--superlightGreen);
+	border-color: var(--white);
 }
 .email-text
 {
@@ -295,7 +296,7 @@ a
 	width: 100%;
 	background-color: var(--secondDark);
 	border-style: none none solid none;
-	border-color: var(--white);
+	border-color: var(--superlightGreen);
 	color: var(--white);
 	font-size: 23px;
 	font-weight: 500;
@@ -303,7 +304,7 @@ a
 }
 .subject-input:focus
 {
-	border-color: var(--superlightGreen);
+	border-color: var(--white);
 }
 .description-grid
 {
@@ -326,8 +327,8 @@ a
 	background-color: var(--secondDark);
 	border-style: solid;
 	border-width: 1px;
-	border-color: var(--white);
-	border-radius: 20px;
+	border-color: var(--superlightGreen);
+	border-radius: var(--niceBorderRadius);
 	color: var(--white);
 	font-size: 25px;
 	font-weight: 500;
@@ -335,7 +336,7 @@ a
 }
 .description-input:focus
 {
-	border-color: var(--superlightGreen);
+	border-color: var(--white);
 }
 .submit-div
 {
@@ -348,12 +349,12 @@ a
 {
 	cursor: pointer;
 	padding: 30px 60px;
-	background-color: var(--secondDark);
+	background-color: var(--fourthGreen);
+	border-color: var(--fourthGreen);
+	color: var(--secondDark);
 	border-style: solid;
 	border-width: 2px;
-	border-color: var(--white);
-	border-radius: 5px;
-	color: var(--white);
+	border-radius: var(--smallerBorderRadius);
 	font-size: 31px;
 	font-weight: 700;
 	transition: all 0.1s;
@@ -361,9 +362,9 @@ a
 }
 .submit-button:hover
 {
-	background-color: var(--fourthGreen);
-	border-color: var(--fourthGreen);
-	color: var(--secondDark);
+	background-color: var(--secondDark);
+	border-color: var(--white);
+	color: var(--white);
 }
 
 @media(min-width: 0px)
