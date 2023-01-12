@@ -1,3 +1,5 @@
+// Cand vede o sectiunea o arata cu animatie
+
 const observer = new IntersectionObserver((entries) =>
 {
 	entries.forEach((entry) =>
