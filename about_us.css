@@ -1,92 +1,7 @@
-:root
-{
-	--gray: #383435;
-	--white: #FFF;
-	--bifaC: #167330;
-	--superlightGreen: #a1ffa2;
-
-	--fourthDark: #424D3F;
-	--thirdDark: #323C2F;
-	--secondDark: #262F24;
-	--firstDark: #1E271D;
-
-	--fourthGreen: #ACD279;
-	--thirdGreen: #98C066;
-	--secondGreen: #7BA64A;
-	--firstGreen: #5E8832;
-
-
-	--mbigheader: 12vw;
-	--msmallbigheader: 10vw;
-	--mheader: 6vw;
-	--mdescriptionbig: 4.5vw;
-	--mdescription: 3vw;
-	--msmallbig: 2vw;
-	--msmall: 1.5vw;
-
-	--distance: 7vw;
-	--distancee: 10vw;
-
-	--niceBorderRadius: 15px;
-}
-*
-{
-	padding: 0;
-	box-sizing: border-box;
-	margin: 0;
-	font-family: Roboto;
-	user-select: none;
-}
-img
-{
-	pointer-events: none;
-	user-select: none;
-}
-
-section
-{
-	padding-bottom: var(--distance);
-}
-.divers-header-div,
 .staff-header
 {
 	margin-bottom: var(--distance);
 }
-.hidden
-{
-	opacity: 0;
-	user-select: none;
-	filter: blur(5px);
-	transform: translateX(-100%);
-	transition: all 1s;
-}
-
-.show
-{
-	opacity: 1;
-	user-select: auto;
-	filter: blur(0);
-	transform: translateX(0);
-}
-.header
-{
-	opacity: 0;
-	user-select: none;
-	pointer-events: none;
-	transform: scaleX(.1);
-	transition: all .5s;
-}
-
-.intersect
-{
-	opacity: 1;
-	user-select: auto;
-	pointer-events: all;
-	transform: scaleX(1);
-}
-
-
-
 
 #staff01
 {
@@ -99,41 +14,6 @@ section
 #staff03
 {
 	transition-delay: .6s;
-}
-
-@media(prefers-reduced-motion)
-{
-	.hidden
-	{
-		transition: all 0s;
-	}
-	.header
-	{
-		transition: all 0.1s;
-	}
-}
-
-html
-{
-	scroll-behavior: smooth;
-}
-body
-{
-	background-color: var(--secondDark);
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-.green-text
-{
-	color: var(--fourthGreen);
-	transition: all 0.15s ease-out;
-}
-
-.green-text-glow
-{
-	color: var(--fourthGreen);
-	text-shadow: 1px 0px 0.15em var(--fourthGreen);
 }
 
 /*BACKUP BUTTON*/
@@ -295,10 +175,10 @@ body
 .carousel-arrow
 {
   position: absolute;
-  background-color: #ACD279;
+  background-color: var(--fourthGreen);
   font-size: 31px;
   border-radius: 3px;
-  color: #262F24;
+  color: var(--secondDark);
   padding: 5px 8px;
   border: none;
   cursor: pointer;
@@ -309,7 +189,7 @@ body
   width: 7vw;
   border-radius: 3px;
   height: 20px;
-  border: 2px solid #ACD279;
+  border: 2px solid var(--fourthGreen);
   margin: 6px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -600,18 +480,10 @@ input[name="staff-r"]
 /*MEDIA*/
 @media(min-width: 0px)
 {
-	.staff-photos
-	{
-		flex-direction: column;
-		gap: 35px;
-	}
+
 	.owner-photo
 	{
 		border-width: 7px;
-	}
-	.staff-photo
-	{
-		border-width: 5px;
 	}
 	.display-backup-button-div
 	{
@@ -660,17 +532,9 @@ input[name="staff-r"]
 	{
 		gap: 40px;
 	}
-	.divers-header
-	{
-		font-size: var(--mdescriptionbig);
-	}
 	.staff-header
 	{
 		font-size: var(--mdescriptionbig);
-	}
-	.divers-description
-	{
-		font-size: var(--msmallbig);
 	}
 	.orar-text
 	{
