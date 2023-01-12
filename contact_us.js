@@ -18,3 +18,6 @@ hiddenElements.forEach((el) =>
 	observer.observe(el);
 })
 
+const contactDescription = document.querySelector('.description-input');
+
+contactDescription.value = '';
