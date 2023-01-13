@@ -1,141 +1,3 @@
-:root
-{
-	--gray: #383435;
-	--white: #FFF;
-	--bifaC: #167330;
-	--superlightGreen: #a1ffa2;
-
-	--fourthDark: #424D3F;
-	--thirdDark: #323C2F;
-	--secondDark: #262F24;
-	--firstDark: #1E271D;
-
-	--fourthGreen: #ACD279;
-	--thirdGreen: #98C066;
-	--secondGreen: #7BA64A;
-	--firstGreen: #5E8832;
-
-
-	--mbigheader: 12vw;
-	--msmallbigheader: 10vw;
-	--mheader: 6vw;
-	--mdescriptionbig: 4.5vw;
-	--mdescription: 3vw;
-	--msmallbig: 2vw;
-	--msmall: 1.5vw;
-
-	--distance: 7vw;
-	--distancee: 10vw;
-
-	--niceBorderRadius: 15px;
-	--smallerBorderRadius: 5px;
-}
-*
-{
-	padding: 0;
-	box-sizing: border-box;
-	margin: 0;
-	font-family: Roboto;
-	user-select: none;
-}
-img
-{
-	pointer-events: none;
-	user-select: none;
-}
-section
-{
-	padding-bottom: var(--distance);
-}
-
-.hidden
-{
-	opacity: 0;
-	user-select: none;
-	filter: blur(5px);
-	transform: translateX(-100%);
-	transition: all 0.5s;
-
-}
-
-.show
-{
-	opacity: 1;
-	user-select: auto;
-	filter: blur(0);
-	transform: translateX(0);
-}
-.header
-{
-	opacity: 0;
-	user-select: none;
-	pointer-events: none;
-	transform: scaleX(.1);
-	transition: all .5s;
-}
-
-.intersect
-{
-	opacity: 1;
-	user-select: auto;
-	pointer-events: all;
-	transform: scaleX(1);
-}
-.divers-header-div
-{
-	display: flex;
-	background-color: var(--fourthGreen);
-	align-content: center;
-	justify-content: center;
-	margin-bottom: var(--distance); 	
-	
-}
-.divers-header
-{
-	font-size: var(--mheader);	
-	font-weight: 700;
-	font-family: Dangrek;
-	color: var(--secondDark);
-}
-
-@media(prefers-reduced-motion)
-{
-	.hidden
-	{
-		transition: all 0s;
-	}
-	.header
-	{
-		transition: all 0.1s;
-	}
-}
-html
-{
-	scroll-behavior: smooth;
-}
-body
-{
-	background-color: var(--secondDark);
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-a
-{
-	text-decoration: none;
-}
-.green-text
-{
-	color: var(--fourthGreen);
-	transition: all 0.15s ease-out;
-}
-
-.green-text-glow
-{
-	color: var(--fourthGreen);
-	text-shadow: 1px 0px 0.15em var(--fourthGreen);
-}
-
 .contact-div:nth-child(1)
 {
 	transition-delay: 0.1s;
@@ -155,13 +17,6 @@ a
 .contact-div:nth-child(5)
 {
 	transition-delay: 0.5s;
-}
-
-
-.green-c
-{
-	color: var(--fourthGreen);
-	font-weight: 700;
 }
 .green-icon
 {
@@ -309,7 +164,7 @@ a
 
 .message-grid
 {
-	margin-top: 100px;
+	margin-top: var(--distance);
 	display: grid;
 	align-content: center;
 	justify-content: center;
@@ -322,7 +177,7 @@ a
 
 .subject-input
 {
-	margin-top: 50px;
+	margin-top: var(--distancee);
 	width: 100%;
 	text-align: center;
 	background-color: var(--secondDark);
