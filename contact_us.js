@@ -68,7 +68,7 @@ submitDiv.addEventListener('click', (e) => {
         emailSendSuccesPopup.style.backgroundColor = 'var(--fourthDark)';
         submitEmailButton.innerHTML = 'Fail';
         emailSendSuccesPopup.classList.add("show-popup");
-        succesPopupMessage.innerHTML = 'S-a intampinit o problema';
+        succesPopupMessage.innerHTML = 'Am detectat o problema';
 
     }
     setchangeValuesTimeout();
