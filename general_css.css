@@ -24,9 +24,12 @@
 	--msmallbig: 2vw;
 	--msmall: 1.5vw;
 
+	--distnac: 3vw;
 	--distance: 7vw;
 	--distancee: 10vw;
-
+	--clampdistance: clamp(4.5vw,5vw,7vw);
+	--clampdistancee: clamp(4.5vw,7vw,10vw);
+	
 	--niceBorderRadius: 15px;
 	--smallerBorderRadius: 5px;
 }
