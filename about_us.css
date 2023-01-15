@@ -42,13 +42,12 @@
 .backup-button
 {
 	border-radius: 100%;
-	padding: clamp(10px,1.5vw,32px) clamp(15px,1.7vw,35px);
+	padding: clamp(10px,1.4vw,32px) clamp(15px,1.7vw,35px);
 	cursor: pointer;
-	border-style: solid;
-	border-width: 0.1px;
-	border-color: var(--secondDark);
+	border-style: none;
 	background-color: var(--fourthGreen);
 	color: var(--secondDark);
+	box-shadow: 0 0 3px 1px rgba(38, 47, 36, 0.5);
 	font-size: 27px;
 }
 .backup-button:active
@@ -124,9 +123,8 @@
 	height: 5px;
 	width: var(--progress);
 	background-color: var(--thirdGreen);
-	border-style: none solid solid none;
-	border-color: var(--secondDark);
-	border-width: 1px;
+	border-style: none;
+	box-shadow: 0 1px 3px 1px rgba(38, 47, 36, 0.7);
 
 
 	transform: translateX(-100%);
