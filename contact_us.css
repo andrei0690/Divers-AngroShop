@@ -1,22 +1,23 @@
-.contact-div:nth-child(1)
+#name-input
 {
 	transition-delay: 0.1s;
 }
-.contact-div:nth-child(2)
+#nr-input
 {
 	transition-delay: 0.2s;
 }
-.contact-div:nth-child(3)
+#email-input
 {
 	transition-delay: 0.3s;
 }
-.contact-div:nth-child(4)
+.subject-input
 {
-	transition-delay: 0.4s;
+	transition-delay: 0.2s;
 }
-.contact-div:nth-child(5)
+.description-input
 {
-	transition-delay: 0.5s;
+	transition-delay: 0.3s;
+	
 }
 .green-icon
 {
