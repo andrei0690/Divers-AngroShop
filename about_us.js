@@ -346,7 +346,10 @@ function get_current_staff_radio()
 function start_staff_carousel() {
   staffCarousel = setInterval(change_staff_slide, 3000);
 }
-
+function stop_staff_carousel()
+{
+  clearInterval(staffCarousel);
+}
 function reset_staff_carousel() {
   GlobalStaffPrevious = 0;
   clearInterval(staffCarousel);
@@ -483,3 +486,78 @@ nextStaffArrow.addEventListener('click', () => {
 
 })
 
+// Cand sunt pe Desktop sa nu existe caruselul, deci sa existe 3 fotografii si nume
+let staffCarouselContainerAll = document.querySelector('.staff-carousel');
+let staffSection = document.querySelector('.staff-section');
+let staffDiv = document.querySelector('.staff');
+let staffSwithced = false;
+
+updateStaffSection();
+
+window.addEventListener("resize", () =>
+{
+  updateStaffSection();
+});
+
+function updateStaffSection()
+{
+  if(window.innerWidth >= 750 && staffSwithced == false)
+  {
+      staffCarouselContainerAll.innerHTML = '';
+      stop_staff_carousel();
+      create3Photos();
+      staffSwithced = true;
+  }
+  if(window.innerWidth <= 750 && staffSwithced == true)
+  {
+    console.log("ELSE");
+    staffDiv.innerHTML = '';
+    staffSwithced = false;
+    // reset_staff_carousel();
+  }
+
+}
+
+function create3Photos() {
+
+  console.log('CREATE');
+
+  let staffPhotos = document.createElement('div');
+  staffPhotos.classList.add('staff-photos');
+
+  let staffPhotoDiv01 = document.createElement('div');
+  staffPhotoDiv01.classList.add('staff-photo-div');
+
+  let staffPhotoDiv02 = document.createElement('div');
+  staffPhotoDiv02.classList.add('staff-photo-div');
+
+  let staffPhotoDiv03 = document.createElement('div');
+  staffPhotoDiv03.classList.add('staff-photo-div');
+
+
+  let staffPhoto01 = document.createElement('img');
+  staffPhoto01.classList.add('staff-photo');
+  staffPhoto01.src = 'staff02.jpg';
+  let staffPhoto02 = document.createElement('img');
+  staffPhoto02.classList.add('staff-photo');
+  staffPhoto02.src = 'staff02.jpg';
+
+  let staffPhoto03 = document.createElement('img');
+  staffPhoto03.classList.add('staff-photo');
+  staffPhoto03.src = 'staff02.jpg';
+
+
+
+  staffPhotoDiv01.appendChild(staffPhoto01);
+  staffPhotoDiv02.appendChild(staffPhoto02);
+  staffPhotoDiv03.appendChild(staffPhoto03);
+
+  staffPhotos.appendChild(staffPhotoDiv01);
+  staffPhotos.appendChild(staffPhotoDiv02);
+  staffPhotos.appendChild(staffPhotoDiv03);
+
+  staffDiv.appendChild(staffPhotos);
+
+  staffSection.appendChild(staffDiv);
+
+}

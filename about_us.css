@@ -1,7 +1,3 @@
-.staff-header
-{
-	margin-bottom: var(--distance);
-}
 
 #staff01
 {
@@ -475,6 +471,49 @@ input[name="staff-r"]
 	background-color: var(--secondDark);
 	color: var(--fourthGreen);
 }
+/*CREARE 3 POZE*/
+.staff
+{
+	display: flex;
+	flex-direction: column;
+	gap: 2vw;
+}
+.staff-name
+{
+	display: flex;
+	align-content: center;
+	font-size: var(--mheader);
+	justify-content: center;
+	color: var(--white);
+	font-weight: 700;
+}
+.staff-photos
+{
+	margin-top: var(--distance);
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	gap: 40px;
+	
+}
+.staff-photo-div
+{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	border-radius: 100%;
+}
+.staff-photo
+{
+	width: 45vw;
+	height: 45vw;
+	object-fit: cover;
+	border-style: solid;
+	border-color: var(--fourthGreen);
+	border-radius: 100%;
+	border-width: 0.5vw;
+}
+
 /*MEDIA*/
 @media(min-width: 0px)
 {
@@ -504,10 +543,6 @@ input[name="staff-r"]
 		width: 55vw;
 		height: 55vw;
 	}
-	.staff-photos
-	{
-		flex-direction: row;	
-	}
 	.staff-photo
 	{
 		width: 25vw;
@@ -525,15 +560,6 @@ input[name="staff-r"]
 
 @media(min-width: 950px)
 {
-
-	.staff-photos
-	{
-		gap: 40px;
-	}
-	.staff-header
-	{
-		font-size: var(--mdescriptionbig);
-	}
 	.orar-text
 	{
 		font-size: var(--msmallbig);
@@ -541,10 +567,6 @@ input[name="staff-r"]
 	.owner-photo
 	{
 		border-width: 0.8vw;
-	}
-	.staff-photo
-	{
-		border-width: 0.5vw;
 	}
 	.display-backup-button-div
 	{
@@ -558,9 +580,7 @@ input[name="staff-r"]
 	  height: 42vw;
 	  overflow: hidden;
 	}
-
 }
-
 
 @media(min-width: 1350px)
 {
