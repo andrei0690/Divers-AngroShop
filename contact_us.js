@@ -13,7 +13,9 @@ const succesPopupMessage = document.querySelector('.succes-popup-message');
 const emailInputs = document.querySelectorAll('.input-user');
 const subjectInput = document.querySelector('.subject-input');
 const submitDiv = document.querySelector('.submit-div');
+const submitButton = document.querySelector('.submit-button');
 let changeValuestimeout;
+let changeValuestimeout02;
 
 xButtonOfemail.addEventListener('click', (e) => {
     emailSendSuccesPopup.classList.remove("show-popup");
@@ -31,6 +33,7 @@ function clearInfo() {
 function setchangeValuesTimeout() {
     
     clearTimeout(changeValuestimeout);
+    clearTimeout(changeValuestimeout02);
     
     changeValuestimeout = setTimeout(() => {
         submitEmailButton.innerHTML = 'Trimite';
@@ -43,9 +46,14 @@ function setchangeValuesTimeout() {
     changeValuestimeout02 = setTimeout(() => {
         emailSendSuccesPopup.style.backgroundColor = 'var(--fourthGreen)';
         succesPopupMessage.innerHTML = 'Email trimis cu succes!';
-    }, 6000);
+    }, 10000);
 
-    setTimeout(clearInfo, 6000);
+    setTimeout(clearInfo, 3000);
+    setTimeout(() =>
+    {
+        submitDiv.style.pointerEvents = 'all';
+        submitDiv.style.cursor = 'pointer';
+    }, 3000);
 
 
 }
@@ -58,19 +66,23 @@ document.addEventListener('scroll', (e) => {
 })
 
 submitDiv.addEventListener('click', (e) => {
-    if (emailForm.checkValidity()) {
+    if (submitButton.innerHTML == "Trimite") {
+
+        if (emailForm.checkValidity()) {
 
         emailSendSuccesPopup.classList.add("show-popup");
         submitEmailButton.innerHTML = 'Succes';
         
-    } else {
-
-        emailSendSuccesPopup.style.backgroundColor = 'var(--fourthDark)';
-        submitEmailButton.innerHTML = 'Fail';
-        emailSendSuccesPopup.classList.add("show-popup");
-        succesPopupMessage.innerHTML = 'S-a intampinit o problema';
-
+        } 
+        else 
+        {
+            emailSendSuccesPopup.style.backgroundColor = 'var(--white)';
+            submitEmailButton.innerHTML = 'Erroare';
+            emailSendSuccesPopup.classList.add("show-popup");
+            succesPopupMessage.innerHTML = 'Am detectat o problema';
+        }
+        submitDiv.style.pointerEvents = 'none';
+        setchangeValuesTimeout();
     }
-    setchangeValuesTimeout();
 
 })
