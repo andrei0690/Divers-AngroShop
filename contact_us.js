@@ -5,6 +5,7 @@ contactDescription.value = '';
 
 
 //Cand apesi pe Trimite sa iti arate diferite popup-uri, sa dispara daca de duci sus de tot sau apesi pe X sau daca trec 5 secunde
+
 const emailSendSuccesPopup = document.querySelector('.succes-popup');
 const xButtonOfemail = document.querySelector('.x-at-the-end-of-flex');
 const submitEmailButton = document.querySelector('.submit-button');
