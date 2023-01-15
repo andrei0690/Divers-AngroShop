@@ -534,6 +534,18 @@ function create3Photos() {
   let staffPhotoDiv03 = document.createElement('div');
   staffPhotoDiv03.classList.add('staff-photo-div');
 
+  let staffName01 = document.createElement('h4');
+  staffName01.innerHTML = '<span class="green-text-glow">~</span>Aurora<span class="green-text-glow">~</span>';
+  staffName01.classList.add('staff-name')
+
+  let staffName02 = document.createElement('h4');
+  staffName02.innerHTML = '<span class="green-text-glow">~</span>Artemis<span class="green-text-glow">~</span>';
+  staffName02.classList.add('staff-name')
+
+  let staffName03 = document.createElement('h4');
+  staffName03.innerHTML = '<span class="green-text-glow">~</span>Astros<span class="green-text-glow">~</span>';
+  staffName03.classList.add('staff-name')
+
 
   let staffPhoto01 = document.createElement('img');
   staffPhoto01.classList.add('staff-photo');
@@ -546,7 +558,9 @@ function create3Photos() {
   staffPhoto03.classList.add('staff-photo');
   staffPhoto03.src = 'staff02.jpg';
 
-
+  staffPhotoDiv01.appendChild(staffName01);
+  staffPhotoDiv02.appendChild(staffName02);
+  staffPhotoDiv03.appendChild(staffName03);
 
   staffPhotoDiv01.appendChild(staffPhoto01);
   staffPhotoDiv02.appendChild(staffPhoto02);

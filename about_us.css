@@ -307,7 +307,7 @@ input[name="r"]
 }
 .staff-carousel
 {
-  margin-top: 50px;
+	margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -489,7 +489,6 @@ input[name="staff-r"]
 }
 .staff-photos
 {
-	margin-top: var(--distance);
 	display: flex;
 	align-content: center;
 	justify-content: center;
@@ -499,6 +498,8 @@ input[name="staff-r"]
 .staff-photo-div
 {
 	display: flex;
+	flex-direction: column;
+	gap: 15px;
 	align-content: center;
 	justify-content: center;
 	border-radius: 100%;
@@ -538,6 +539,14 @@ input[name="staff-r"]
 
 @media(min-width: 750px)
 {
+	.staff-carousel
+	{
+		margin-top: 0;
+	}
+	#staff-header
+	{
+		margin-bottom: 4.5vw;
+	}
 	.owner-photo
 	{
 		width: 55vw;
@@ -556,6 +565,7 @@ input[name="staff-r"]
 	{
 		font-size: var(--mheader);
 	}
+
 }
 
 @media(min-width: 950px)
