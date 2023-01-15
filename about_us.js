@@ -1,3 +1,10 @@
+// Carousel Interval
+
+let staffCarousel;
+GlobalStaffPrevious = 0;
+
+// Make Carousel
+
 let staffCarouselContainerAll = document.querySelector('.staff-carousel');
 let staffSection = document.querySelector('.staff-section');
 let staffDiv = document.querySelector('.staff');
@@ -7,6 +14,7 @@ if(window.innerWidth <= 750 && staffSwitched == false)
 {
     createStaffSlideShow()
 }
+
 updateStaffSection();
 
 
@@ -297,21 +305,16 @@ function fill_radio() {
 // Carusel
 
 // Radio Carousel Buttons
-const carouselStaffRadiop01 = document.querySelector('#staff-r1');
-const carouselStaffRadiop02 = document.querySelector('#staff-r2');
-const carouselStaffRadiop03 = document.querySelector('#staff-r3');
+let carouselStaffRadiop01 = document.querySelector('#staff-r1');
+let carouselStaffRadiop02 = document.querySelector('#staff-r2');
+let carouselStaffRadiop03 = document.querySelector('#staff-r3');
 
 
 // Radio Carousel Labels
-carouselStaffBar01 = document.querySelector('#staff-bar01');
-carouselStaffBar02 = document.querySelector('#staff-bar02');
-carouselStaffBar03 = document.querySelector('#staff-bar03');
+let carouselStaffBar01 = document.querySelector('#staff-bar01');
+let carouselStaffBar02 = document.querySelector('#staff-bar02');
+let carouselStaffBar03 = document.querySelector('#staff-bar03');
 
-
-// Carousel Interval
-
-let staffCarousel;
-GlobalStaffPrevious = 0;
 
 // Starts the Carosel
 start_staff_carousel();
@@ -473,8 +476,8 @@ function fill_staff_radio(){
 
 }
 
-previousStaffArrow = document.querySelector('#previous-carousel-staff-arrow');
-nextStaffArrow = document.querySelector('#next-carousel-staff-arrow');
+let previousStaffArrow = document.querySelector('#previous-carousel-staff-arrow');
+let nextStaffArrow = document.querySelector('#next-carousel-staff-arrow');
 check_staff_elements();
 
 previousStaffArrow.addEventListener('click', () => {
@@ -503,6 +506,7 @@ nextStaffArrow.addEventListener('click', () => {
 window.addEventListener("resize", () =>
 {
   updateStaffSection();
+
 });
 
 function updateStaffSection()
@@ -518,8 +522,67 @@ function updateStaffSection()
   {
     staffDiv.innerHTML = '';
     staffSwitched = false;
-    createStaffSlideShow()
+    createStaffSlideShow();
+    
+    carouselStaffRadiop01 = document.querySelector('#staff-r1');
+    carouselStaffRadiop02 = document.querySelector('#staff-r2');
+    carouselStaffRadiop03 = document.querySelector('#staff-r3');
+
+    carouselStaffBar01 = document.querySelector('#staff-bar01');
+    carouselStaffBar02 = document.querySelector('#staff-bar02');
+    carouselStaffBar03 = document.querySelector('#staff-bar03');
+    
+    previousStaffArrow = document.querySelector('#previous-carousel-staff-arrow');
+    nextStaffArrow = document.querySelector('#next-carousel-staff-arrow');
+    
+    carouselStaffRadiop01.addEventListener('change', (e) => {
+      carousel_staff_remove_fill_all()
+      carouselStaffBar01.style.backgroundColor = '#ACD279';
+      check_staff_elements();
+      reset_staff_carousel();
+    })
+    carouselStaffRadiop02.addEventListener('change', (e) => {
+      carousel_staff_remove_fill_all()
+      carouselStaffBar02.style.backgroundColor = '#ACD279';
+      check_staff_elements();
+      reset_staff_carousel();
+    })
+    carouselStaffRadiop03.addEventListener('change', (e) => {
+      carousel_staff_remove_fill_all()
+      carouselStaffBar03.style.backgroundColor = '#ACD279';
+      check_staff_elements();
+      reset_staff_carousel();
+    })
+
+    previousStaffArrow.addEventListener('click', () => {
+  
+      radio_checked = get_current_staff_radio();
+      radio_checked.previousElementSibling.checked = true;
+      fill_staff_radio();
+      check_staff_elements()
+      reset_staff_carousel();
+
+    })
+
+    nextStaffArrow.addEventListener('click', () => {
+      
+      radio_checked = get_current_staff_radio();
+
+      radio_checked.nextElementSibling.checked = true;
+      fill_staff_radio();
+      check_staff_elements();
+      reset_staff_carousel();
+
+    })
+
+
+
     reset_staff_carousel();
+
+    fill_staff_radio();
+    check_staff_elements();
+    
+        
   }
   
 }
@@ -685,7 +748,5 @@ function createStaffSlideShow()
   staffSliderShow.appendChild(staffSlides);
   staffCarouselContainerAll.appendChild(staffSliderShow);
   staffCarouselContainerAll.appendChild(staffNavigation);
-  
-
 
 }
