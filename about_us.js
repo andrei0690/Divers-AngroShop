@@ -1,3 +1,15 @@
+let staffCarouselContainerAll = document.querySelector('.staff-carousel');
+let staffSection = document.querySelector('.staff-section');
+let staffDiv = document.querySelector('.staff');
+let staffSwitched = false;
+
+if(window.innerWidth <= 750 && staffSwitched == false)
+{
+    createStaffSlideShow()
+}
+updateStaffSection();
+
+
 // BackUp Button
 
 // Calculam procentul la pagina ca sa apara butonul mereu dupa o anumita josime
@@ -487,12 +499,6 @@ nextStaffArrow.addEventListener('click', () => {
 })
 
 // Cand sunt pe Desktop sa nu existe caruselul, deci sa existe 3 fotografii si nume
-let staffCarouselContainerAll = document.querySelector('.staff-carousel');
-let staffSection = document.querySelector('.staff-section');
-let staffDiv = document.querySelector('.staff');
-let staffSwithced = false;
-
-updateStaffSection();
 
 window.addEventListener("resize", () =>
 {
@@ -501,26 +507,24 @@ window.addEventListener("resize", () =>
 
 function updateStaffSection()
 {
-  if(window.innerWidth >= 750 && staffSwithced == false)
+  if(window.innerWidth >= 750 && staffSwitched == false)
   {
       staffCarouselContainerAll.innerHTML = '';
       stop_staff_carousel();
       create3Photos();
-      staffSwithced = true;
+      staffSwitched = true;
   }
-  if(window.innerWidth <= 750 && staffSwithced == true)
+  if(window.innerWidth <= 750 && staffSwitched == true)
   {
-    console.log("ELSE");
     staffDiv.innerHTML = '';
-    staffSwithced = false;
-    // reset_staff_carousel();
+    staffSwitched = false;
+    createStaffSlideShow()
+    reset_staff_carousel();
   }
-
+  
 }
 
 function create3Photos() {
-
-  console.log('CREATE');
 
   let staffPhotos = document.createElement('div');
   staffPhotos.classList.add('staff-photos');
@@ -573,5 +577,115 @@ function create3Photos() {
   staffDiv.appendChild(staffPhotos);
 
   staffSection.appendChild(staffDiv);
+
+}
+
+function createStaffSlideShow()
+{
+
+  let staffSliderShow = document.createElement('div');
+  staffSliderShow.classList.add('staff-slidershow');
+
+  let staffSlides = document.createElement('div');
+  staffSlides.classList.add('staff-slides');
+
+  let inputStaffRadio01 = document.createElement('input');
+  inputStaffRadio01.type = 'radio';
+  inputStaffRadio01.classList.add('staff-carousel-radio');
+  inputStaffRadio01.name = 'staff-r';
+  inputStaffRadio01.setAttribute('id', 'staff-r1');
+  inputStaffRadio01.checked = true;
+
+  let inputStaffRadio02 = document.createElement('input');
+  inputStaffRadio02.type = 'radio';
+  inputStaffRadio02.classList.add('staff-carousel-radio');
+  inputStaffRadio02.name = 'staff-r';
+  inputStaffRadio02.setAttribute('id', 'staff-r2');
+
+  let inputStaffRadio03 = document.createElement('input');
+  inputStaffRadio03.type = 'radio';
+  inputStaffRadio03.classList.add('staff-carousel-radio');
+  inputStaffRadio03.name = 'staff-r';
+  inputStaffRadio03.setAttribute('id', 'staff-r3');
+
+  let staffSlide01 = document.createElement('div');
+  staffSlide01.classList.add('staff-slide');
+  staffSlide01.classList.add('s1');
+
+  let staffSlide02 = document.createElement('div');
+  staffSlide02.classList.add('staff-slide');
+
+  let staffSlide03 = document.createElement('div');
+  staffSlide03.classList.add('staff-slide');
+
+  let staffImage01 = document.createElement('img');
+  staffImage01.src = 'staff02.jpg';
+  staffImage01.alt = 'Staff de la Divers';
+
+  let staffImage02 = document.createElement('img');
+  staffImage02.src = 'staff02.jpg';
+  staffImage02.alt = 'Staff de la Divers';
+
+  let staffImage03 = document.createElement('img');
+  staffImage03.src = 'staff02.jpg';
+  staffImage03.alt = 'Staff de la Divers';
+ 
+ //
+
+  let staffNavigation = document.createElement('div');
+  staffNavigation.classList.add('staff-navigation');
+
+  let staffCarouselPreviousCreatedArrow = document.createElement('button');
+  staffCarouselPreviousCreatedArrow.classList.add('carousel-staff-arrow');
+  staffCarouselPreviousCreatedArrow.setAttribute('id', 'previous-carousel-staff-arrow');
+  staffCarouselPreviousCreatedArrow.innerHTML = '<';
+
+  let staffBar01 = document.createElement('label');
+  staffBar01.for = 'staff-r1';
+  staffBar01.setAttribute('id', 'staff-bar01');
+  staffBar01.classList.add('staff-bar')
+
+  let staffBar02 = document.createElement('label');
+  staffBar02.for = 'staff-r1';
+  staffBar02.setAttribute('id', 'staff-bar02');
+  staffBar02.classList.add('staff-bar')
+
+  let staffBar03 = document.createElement('label');
+  staffBar03.for = 'staff-r1';
+  staffBar03.setAttribute('id', 'staff-bar03');
+  staffBar03.classList.add('staff-bar')
+
+
+  let staffCarouselNextCreatedArrow = document.createElement('button');
+  staffCarouselNextCreatedArrow.classList.add('carousel-staff-arrow');
+  staffCarouselNextCreatedArrow.setAttribute('id', 'next-carousel-staff-arrow');
+  staffCarouselNextCreatedArrow.innerHTML = '>';
+
+  //
+
+  staffSlide01.appendChild(staffImage01);
+  staffSlide02.appendChild(staffImage02);
+  staffSlide03.appendChild(staffImage03);
+
+  staffSlides.appendChild(inputStaffRadio01);
+  staffSlides.appendChild(inputStaffRadio02);
+  staffSlides.appendChild(inputStaffRadio03);
+
+  staffSlides.appendChild(staffSlide01);
+  staffSlides.appendChild(staffSlide02);
+  staffSlides.appendChild(staffSlide03);
+
+
+  staffNavigation.appendChild(staffCarouselPreviousCreatedArrow);
+  staffNavigation.appendChild(staffBar01);
+  staffNavigation.appendChild(staffBar02);
+  staffNavigation.appendChild(staffBar03);
+  staffNavigation.appendChild(staffCarouselNextCreatedArrow);
+
+  staffSliderShow.appendChild(staffSlides);
+  staffCarouselContainerAll.appendChild(staffSliderShow);
+  staffCarouselContainerAll.appendChild(staffNavigation);
+  
+
 
 }
