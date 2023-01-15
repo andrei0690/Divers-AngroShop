@@ -5,6 +5,7 @@ contactDescription.value = '';
 
 
 //Cand apesi pe Trimite sa iti arate diferite popup-uri, sa dispara daca de duci sus de tot sau apesi pe X sau daca trec 5 secunde
+
 const emailSendSuccesPopup = document.querySelector('.succes-popup');
 const xButtonOfemail = document.querySelector('.x-at-the-end-of-flex');
 const submitEmailButton = document.querySelector('.submit-button');
@@ -55,11 +56,18 @@ function setchangeValuesTimeout() {
         submitDiv.style.cursor = 'pointer';
     }, 3000);
 
+    //Cand apesi pe buton si e gresit te duce sus de tot la inpu, asta inseamna ca inputul e blockat de popup, asta se rezolva cu ce am scris aici
+    setTimeout(() =>
+    {
+        window.scrollBy(0, -50);
+    }, 250)
+
 
 }
 
 
 document.addEventListener('scroll', (e) => {
+
     if (window.pageYOffset <= 100) {
         emailSendSuccesPopup.classList.remove("show-popup");
     }
@@ -82,7 +90,9 @@ submitDiv.addEventListener('click', (e) => {
             succesPopupMessage.innerHTML = 'Am detectat o problema';
         }
         submitDiv.style.pointerEvents = 'none';
+
         setchangeValuesTimeout();
+
     }
 
 })
