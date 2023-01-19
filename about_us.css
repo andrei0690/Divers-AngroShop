@@ -109,6 +109,24 @@
 	width: 300px;
 }
 /*PROGRESS BAR*/
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.progress-bar-anim
+{
+	background: linear-gradient(90deg, #a1ffa2 0%, #ACD279 100%);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
 .progress-bar
 {
 	--progress: 0;
@@ -118,9 +136,9 @@
 	position: fixed;
 	height: 5px;
 	width: var(--progress);
-	background-color: var(--thirdGreen);
+	background-color: var(--superlightGreen);
 	border-style: none;
-	box-shadow: 0 1px 3px 1px rgba(38, 47, 36, 0.7);
+	box-shadow: 0 1px 3px 1px rgba(38, 47, 36, 0.5);
 
 
 	transform: translateX(-100%);
@@ -152,7 +170,6 @@
 .slidershow
 {
   width: 65vw;
-  border-radius: var(--niceBorderRadius);
   height: 42vw;
   overflow: hidden;
 }
@@ -301,8 +318,8 @@ input[name="r"]
 {
 	margin-left: auto;
 	margin-right: auto;
-  width: clamp(300px,500px, 35vw);
-  height: clamp(300px,500px, 35vw);
+  width: 55vw;
+  height: 55vw;
   overflow: hidden;
 }
 .staff-carousel
@@ -353,7 +370,6 @@ input[name="r"]
   height: 20px;
   border: 2px solid var(--fourthGreen);
   margin: 6px;
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
 
 }
@@ -428,7 +444,7 @@ input[name="staff-r"]
 	height: 70vw;
 	object-fit: cover;
 	border-style: solid;
-	border-color: var(--fourthGreen);
+	border-color: var(--superlightGreen);
 	border-radius: 200%;
 	border-width: 0.8vw;
 }
@@ -531,7 +547,6 @@ input[name="staff-r"]
 	.slidershow
 	{
 	  width: 100%;
-	  border-radius: var(--niceBorderRadius);
 	  height: 80vw;
 	  overflow: hidden;
 	}
@@ -565,6 +580,10 @@ input[name="staff-r"]
 	{
 		font-size: var(--mheader);
 	}
+	.slidershow
+	{
+	  border-radius: var(--niceBorderRadius);
+	}
 
 }
 
@@ -586,7 +605,6 @@ input[name="staff-r"]
 	.slidershow
 	{
 	  width: 65vw;
-	  border-radius: var(--niceBorderRadius);
 	  height: 42vw;
 	  overflow: hidden;
 	}
