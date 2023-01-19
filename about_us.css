@@ -447,6 +447,7 @@ input[name="staff-r"]
 	border-color: var(--superlightGreen);
 	border-radius: 200%;
 	border-width: 0.8vw;
+
 }
 .harta-div
 {
@@ -534,10 +535,9 @@ input[name="staff-r"]
 /*MEDIA*/
 @media(min-width: 0px)
 {
-
 	.owner-photo
 	{
-		border-width: 7px;
+		border-width: 1.5vw;
 	}
 	.display-backup-button-div
 	{
