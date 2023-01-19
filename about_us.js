@@ -775,10 +775,10 @@ function createStaffSlideShow()
 // Resize pentru piramida
 
 if(window.innerWidth >= 1350)
-  {
+{
      proprietarHeader.innerHTML = 'Staff';
-  }
-  else
-  {
+}
+else
+{
     proprietarHeader.innerHTML = 'Proprietar';
-  }
+}
