@@ -538,7 +538,7 @@ input[name="staff-r"]
 {
 	.owner-photo
 	{
-		border-width: 1.5vw;
+		border-width: 1vw;
 	}
 	.display-backup-button-div
 	{
@@ -565,8 +565,8 @@ input[name="staff-r"]
 	}
 	.owner-photo
 	{
-		width: 55vw;
-		height: 55vw;
+		width: 45vw;
+		height: 45vw;
 	}
 	.staff-photo
 	{
@@ -602,7 +602,7 @@ input[name="staff-r"]
 	}
 	.owner-photo
 	{
-		border-width: 0.8vw;
+		border-width: 0.6vw;
 	}
 	.display-backup-button-div
 	{
@@ -636,6 +636,10 @@ input[name="staff-r"]
 	.harta
 	{
 		width: 80%;
+	}
+	#staff-header
+	{
+		display: none;
 	}
 }
 

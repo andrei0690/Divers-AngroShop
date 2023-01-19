@@ -1,3 +1,7 @@
+// Piramida cu staff
+
+const proprietarHeader = document.querySelector('#staff-proprietar-name');
+
 // Carousel Interval
 
 let staffCarousel;
@@ -510,7 +514,18 @@ function fill_staff_radio(){
 
 window.addEventListener("resize", () =>
 {
+  //Update la staff carusel
   updateStaffSection();
+
+  //Piramida la staff
+  if(window.innerWidth >= 1350)
+  {
+     proprietarHeader.innerHTML = 'Staff';
+  }
+  else
+  {
+    proprietarHeader.innerHTML = 'Proprietar';
+  }
 
 });
 
@@ -753,5 +768,7 @@ function createStaffSlideShow()
   staffSliderShow.appendChild(staffSlides);
   staffCarouselContainerAll.appendChild(staffSliderShow);
   staffCarouselContainerAll.appendChild(staffNavigation);
-
 }
+
+
+
