@@ -457,10 +457,11 @@ input[name="staff-r"]
 }
 .harta
 {
-	border-radius: var(--niceBorderRadius);
+	
 	filter: invert(100%);
+/*	filter: saturate(50%);*/
 	width: 100%;
-	height: 50vh;
+	height: 35vh;
 }
 
 .main-page-button-div
@@ -584,6 +585,12 @@ input[name="staff-r"]
 	{
 	  border-radius: var(--niceBorderRadius);
 	}
+	.harta
+	{
+		border-radius: var(--niceBorderRadius);
+		height: 50vh;
+	}
+	
 
 }
 
