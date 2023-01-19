@@ -170,7 +170,6 @@
 .slidershow
 {
   width: 65vw;
-  border-radius: var(--niceBorderRadius);
   height: 42vw;
   overflow: hidden;
 }
@@ -319,8 +318,8 @@ input[name="r"]
 {
 	margin-left: auto;
 	margin-right: auto;
-  width: clamp(300px,500px, 35vw);
-  height: clamp(300px,500px, 35vw);
+  width: 55vw;
+  height: 55vw;
   overflow: hidden;
 }
 .staff-carousel
@@ -445,7 +444,7 @@ input[name="staff-r"]
 	height: 70vw;
 	object-fit: cover;
 	border-style: solid;
-	border-color: var(--fourthGreen);
+	border-color: var(--superlightGreen);
 	border-radius: 200%;
 	border-width: 0.8vw;
 }
@@ -548,7 +547,6 @@ input[name="staff-r"]
 	.slidershow
 	{
 	  width: 100%;
-	  border-radius: var(--niceBorderRadius);
 	  height: 80vw;
 	  overflow: hidden;
 	}
@@ -582,6 +580,10 @@ input[name="staff-r"]
 	{
 		font-size: var(--mheader);
 	}
+	.slidershow
+	{
+	  border-radius: var(--niceBorderRadius);
+	}
 
 }
 
@@ -603,7 +605,6 @@ input[name="staff-r"]
 	.slidershow
 	{
 	  width: 65vw;
-	  border-radius: var(--niceBorderRadius);
 	  height: 42vw;
 	  overflow: hidden;
 	}

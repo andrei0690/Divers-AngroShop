@@ -304,42 +304,71 @@ function fill_radio() {
 // Carusel la STAFF ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Carusel
 
-// Radio Carousel Buttons
-let carouselStaffRadiop01 = document.querySelector('#staff-r1');
-let carouselStaffRadiop02 = document.querySelector('#staff-r2');
-let carouselStaffRadiop03 = document.querySelector('#staff-r3');
-
-
-// Radio Carousel Labels
-let carouselStaffBar01 = document.querySelector('#staff-bar01');
-let carouselStaffBar02 = document.querySelector('#staff-bar02');
-let carouselStaffBar03 = document.querySelector('#staff-bar03');
-
-
 // Starts the Carosel
-start_staff_carousel();
-fill_staff_radio();
+if(window.innerWidth <= 750)
+{
+  // Radio Carousel Buttons
+  carouselStaffRadiop01 = document.querySelector('#staff-r1');
+  carouselStaffRadiop02 = document.querySelector('#staff-r2');
+  carouselStaffRadiop03 = document.querySelector('#staff-r3');
 
 
-// Click and change slide
-carouselStaffRadiop01.addEventListener('change', (e) => {
-  carousel_staff_remove_fill_all()
-  carouselStaffBar01.style.backgroundColor = '#ACD279';
+  // Radio Carousel Labels
+  carouselStaffBar01 = document.querySelector('#staff-bar01');
+  carouselStaffBar02 = document.querySelector('#staff-bar02');
+  carouselStaffBar03 = document.querySelector('#staff-bar03');
+  start_staff_carousel();
+  fill_staff_radio();
+
+    // Click and change slide
+  carouselStaffRadiop01.addEventListener('change', (e) => {
+    carousel_staff_remove_fill_all()
+    carouselStaffBar01.style.backgroundColor = '#ACD279';
+    check_staff_elements();
+    reset_staff_carousel();
+  })
+  carouselStaffRadiop02.addEventListener('change', (e) => {
+    carousel_staff_remove_fill_all()
+    carouselStaffBar02.style.backgroundColor = '#ACD279';
+    check_staff_elements();
+    reset_staff_carousel();
+  })
+  carouselStaffRadiop03.addEventListener('change', (e) => {
+    carousel_staff_remove_fill_all()
+    carouselStaffBar03.style.backgroundColor = '#ACD279';
+    check_staff_elements();
+    reset_staff_carousel();
+  })
+  previousStaffArrow = document.querySelector('#previous-carousel-staff-arrow');
+  nextStaffArrow = document.querySelector('#next-carousel-staff-arrow');
   check_staff_elements();
-  reset_staff_carousel();
-})
-carouselStaffRadiop02.addEventListener('change', (e) => {
-  carousel_staff_remove_fill_all()
-  carouselStaffBar02.style.backgroundColor = '#ACD279';
-  check_staff_elements();
-  reset_staff_carousel();
-})
-carouselStaffRadiop03.addEventListener('change', (e) => {
-  carousel_staff_remove_fill_all()
-  carouselStaffBar03.style.backgroundColor = '#ACD279';
-  check_staff_elements();
-  reset_staff_carousel();
-})
+
+
+  previousStaffArrow.addEventListener('click', () => {
+    
+    radio_checked = get_current_staff_radio();
+    radio_checked.previousElementSibling.checked = true;
+    fill_staff_radio();
+    check_staff_elements()
+    reset_staff_carousel();
+
+  })
+
+  nextStaffArrow.addEventListener('click', () => {
+    
+    radio_checked = get_current_staff_radio();
+
+    radio_checked.nextElementSibling.checked = true;
+    fill_staff_radio();
+    check_staff_elements();
+    reset_staff_carousel();
+
+  })
+}
+
+
+
+
 
 function get_current_staff_radio()
 {
@@ -474,32 +503,8 @@ function fill_staff_radio(){
     carouselStaffBar03.style.backgroundColor = 'var(--fourthGreen)';
   }
 
+
 }
-
-let previousStaffArrow = document.querySelector('#previous-carousel-staff-arrow');
-let nextStaffArrow = document.querySelector('#next-carousel-staff-arrow');
-check_staff_elements();
-
-previousStaffArrow.addEventListener('click', () => {
-  
-  radio_checked = get_current_staff_radio();
-  radio_checked.previousElementSibling.checked = true;
-  fill_staff_radio();
-  check_staff_elements()
-  reset_staff_carousel();
-
-})
-
-nextStaffArrow.addEventListener('click', () => {
-  
-  radio_checked = get_current_staff_radio();
-
-  radio_checked.nextElementSibling.checked = true;
-  fill_staff_radio();
-  check_staff_elements();
-  reset_staff_carousel();
-
-})
 
 // Cand sunt pe Desktop sa nu existe caruselul, deci sa existe 3 fotografii si nume
 
