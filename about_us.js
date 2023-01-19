@@ -105,11 +105,11 @@ window.addEventListener('scroll', () => {
 
   if(scrollPercent == 100)
   {
-    progressBar.style.backgroundColor = 'var(--superlightGreen)'
+    progressBar.classList.add('progress-bar-anim');
   }
   else
   {
-    progressBar.style.backgroundColor = 'var(--thirdGreen)'
+    progressBar.classList.remove('progress-bar-anim');
   }
 
   if (window.pageYOffset > 100) 

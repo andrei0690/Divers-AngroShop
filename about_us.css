@@ -109,6 +109,24 @@
 	width: 300px;
 }
 /*PROGRESS BAR*/
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.progress-bar-anim
+{
+	background: linear-gradient(90deg, #a1ffa2 0%, #ACD279 100%);
+	background-size: 400% 400%;
+	animation: gradient 5s ease infinite;
+}
+
 .progress-bar
 {
 	--progress: 0;
@@ -118,9 +136,9 @@
 	position: fixed;
 	height: 5px;
 	width: var(--progress);
-	background-color: var(--thirdGreen);
+	background-color: var(--superlightGreen);
 	border-style: none;
-	box-shadow: 0 1px 3px 1px rgba(38, 47, 36, 0.7);
+	box-shadow: 0 1px 3px 1px rgba(38, 47, 36, 0.5);
 
 
 	transform: translateX(-100%);
@@ -353,7 +371,6 @@ input[name="r"]
   height: 20px;
   border: 2px solid var(--fourthGreen);
   margin: 6px;
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
 
 }
