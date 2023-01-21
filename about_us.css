@@ -23,6 +23,19 @@
 	margin-top: 3vw;
 
 }
+@keyframes stayMiddle
+{
+	0%
+	{
+		right: 0;
+	}
+	100% {
+		margin-left: auto;
+		margin-right: auto;
+		right: 50%;
+		transform: translateX(-50%);
+	}
+}
 .backup-div
 {
 	z-index: 10;
@@ -34,6 +47,8 @@
 	transform: translateX(100%);
 	filter: blur(15px);
 	transition: all 0.25s;
+
+	
 }
 .backup-button
 {
@@ -57,9 +72,17 @@
 {
 	opacity: 1;
 	filter: blur(0px);
-	transform: translateX(0);
 	pointer-events: all;
+	transform: translateX(0);
+	
 }
+.postion-backup-button-div
+{
+	right: 50%;
+	transform: translateX(50%);
+	transition: all 0.25s;
+}
+
 
 .top-bar-section
 {
@@ -291,6 +314,7 @@ input[name="r"]
 .divers-orar-div
 {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	align-content: center;
 	text-align: center;
@@ -671,8 +695,6 @@ input[name="staff-r"]
 		display: none;
 	}
 }
-
-
 
 @media(min-width: 1700px)
 {

@@ -64,6 +64,7 @@ backupButtons.forEach(button =>
 // Cand vede ultima sectiune sa dispara
 
 const OrarSection = document.querySelector('.orar-info-section');
+const endSection =  document.querySelector('.end-section');
 
 globalbackupbuttons = 1;
 
@@ -74,7 +75,7 @@ const backUpbuttonObserver = new IntersectionObserver((entries) =>
 		if(entry.isIntersecting)
 		{
 			globalbackupbuttons = 2;
-			backUpButton.classList.remove('display-backup-button-div');
+			backUpButton.classList.add('postion-backup-button-div');
 
 		}
 		else
@@ -84,6 +85,7 @@ const backUpbuttonObserver = new IntersectionObserver((entries) =>
 			{
 				backUpButton.classList.add('display-backup-button-div');
 			}
+      backUpButton.classList.remove('postion-backup-button-div');
 			
 		}
 		
@@ -93,7 +95,7 @@ const backUpbuttonObserver = new IntersectionObserver((entries) =>
 const createdBackupDiv = document.querySelector('#created-backup-div');
 const createdBackupButton = document.querySelector('#created-backup-button');
 
-backUpbuttonObserver.observe(OrarSection);
+backUpbuttonObserver.observe(endSection);
 
 
 // Progress Bar
