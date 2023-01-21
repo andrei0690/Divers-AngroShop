@@ -512,6 +512,22 @@ function fill_staff_radio(){
 
 // Cand sunt pe Desktop sa nu existe caruselul, deci sa existe 3 fotografii si nume
 
+const ownerbarElements = document.querySelectorAll('.owner-');
+
+function removeOwnerbars() {
+  ownerbarElements.forEach(e =>
+  {
+    e.classList.add('owner--dissapear');
+  })
+}
+
+function addOwnerbars() {
+  ownerbarElements.forEach(e =>
+  {
+    e.classList.remove('owner--dissapear');
+  })
+}
+
 window.addEventListener("resize", () =>
 {
   //Update la staff carusel
@@ -521,10 +537,13 @@ window.addEventListener("resize", () =>
   if(window.innerWidth >= 1350)
   {
      proprietarHeader.innerHTML = 'Staff';
+     addOwnerbars();
+
   }
   else
   {
     proprietarHeader.innerHTML = 'Proprietar';
+    removeOwnerbars();
   }
 
 });
@@ -777,8 +796,10 @@ function createStaffSlideShow()
 if(window.innerWidth >= 1350)
 {
      proprietarHeader.innerHTML = 'Staff';
+     addOwnerbars();
 }
 else
 {
     proprietarHeader.innerHTML = 'Proprietar';
+    removeOwnerbars();
 }

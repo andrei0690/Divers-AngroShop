@@ -172,6 +172,9 @@
   width: 65vw;
   height: 42vw;
   overflow: hidden;
+  border-style: solid none;
+	border-width: 0.5vw;
+	border-color: var(--white);
 }
 
 .navigation
@@ -431,10 +434,28 @@ input[name="staff-r"]
 	flex-direction: column;
 	gap: 2vw;
 }
+.owner-
+{
+	color: var(--white);
+	font-size: 5vw;
+}
+#-left
+{
+	margin-right: 2vw;
+}
+#-right
+{
+	margin-left: 2vw;
+}
+.owner--dissapear
+{
+	opacity: 0;
+	pointer-events: none;
+}
 .owner-photo-2div
 {
 	display: flex;
-	align-content: center;
+	align-items: center;
 	justify-content: center;
 	width: 100%;
 }
@@ -454,6 +475,9 @@ input[name="staff-r"]
 	display: flex;
 	justify-content: center;
 	align-content: center;
+	border-style: solid none;
+	border-width: 0.5wv;
+	border-color: var(--white);
 }
 .harta
 {
@@ -589,6 +613,15 @@ input[name="staff-r"]
 	{
 		border-radius: var(--niceBorderRadius);
 		height: 50vh;
+
+	}
+	.harta-div
+	{
+		border: none;
+	}
+	.slidershow
+	{
+		border: none;
 	}
 	
 
