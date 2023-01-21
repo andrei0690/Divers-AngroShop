@@ -23,19 +23,6 @@
 	margin-top: 3vw;
 
 }
-@keyframes stayMiddle
-{
-	0%
-	{
-		right: 0;
-	}
-	100% {
-		margin-left: auto;
-		margin-right: auto;
-		right: 50%;
-		transform: translateX(-50%);
-	}
-}
 .backup-div
 {
 	z-index: 10;
@@ -46,7 +33,7 @@
 	pointer-events: none;
 	transform: translateX(100%);
 	filter: blur(15px);
-	transition: all 0.25s;
+	transition: all 0.15s;
 
 	
 }
@@ -80,7 +67,7 @@
 {
 	right: 50%;
 	transform: translateX(50%);
-	transition: all 0.25s;
+	transition: all 0.15s;
 }
 
 
@@ -197,7 +184,7 @@
   overflow: hidden;
   border-style: solid none;
 	border-width: 0.8vw;
-	border-color: var(--white);
+	border-color: var(--superlightGreen);
 }
 
 .navigation
@@ -503,7 +490,7 @@ input[name="staff-r"]
 	align-content: center;
 	border-style: solid none;
 	border-width: 0.5wv;
-	border-color: var(--white);
+	border-color: var(--fourthGreen);
 }
 .harta
 {
@@ -581,6 +568,38 @@ input[name="staff-r"]
 	border-color: var(--fourthGreen);
 	border-radius: 100%;
 	border-width: 0.5vw;
+}
+/*EMD SECTION*/
+.end-section-start
+{
+	position: relative;
+}
+.end-section
+{
+	position: relative;
+	background-color: var(--fourthGreen);
+}
+
+.custom-shape-divider-bottom-1674320019 {
+    z-index: -5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1674320019 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 171px;
+}
+
+.custom-shape-divider-bottom-1674320019 .shape-fill {
+    fill: var(--fourthGreen);
 }
 
 /*MEDIA*/

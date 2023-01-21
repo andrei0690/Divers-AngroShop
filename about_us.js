@@ -65,7 +65,7 @@ backupButtons.forEach(button =>
 
 const OrarSection = document.querySelector('.orar-info-section');
 const endSection =  document.querySelector('.end-section');
-
+const endSectionStart = document.querySelector('.end-section-start')
 globalbackupbuttons = 1;
 
 const backUpbuttonObserver = new IntersectionObserver((entries) =>
@@ -95,7 +95,7 @@ const backUpbuttonObserver = new IntersectionObserver((entries) =>
 const createdBackupDiv = document.querySelector('#created-backup-div');
 const createdBackupButton = document.querySelector('#created-backup-button');
 
-backUpbuttonObserver.observe(endSection);
+backUpbuttonObserver.observe(endSectionStart);
 
 
 // Progress Bar
