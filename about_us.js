@@ -720,6 +720,17 @@ function createStaffSlideShow()
   let staffSlide03 = document.createElement('div');
   staffSlide03.classList.add('staff-slide');
 
+  let staffName01 = document.createElement('div');
+  staffName01.innerHTML = '<span class="green-text-glow">~</span>Aurora<span class="green-text-glow">~</span>';
+  staffName01.classList.add('staff-name');
+  let staffName02 = document.createElement('div');
+  staffName02.innerHTML = '<span class="green-text-glow">~</span>Artemis<span class="green-text-glow">~</span>';
+  staffName02.classList.add('staff-name');
+  let staffName03 = document.createElement('div');
+  staffName03.innerHTML = '<span class="green-text-glow">~</span>Astros<span class="green-text-glow">~</span>';
+  staffName03.classList.add('staff-name');
+
+
   let staffImage01 = document.createElement('img');
   staffImage01.src = 'staff02.jpg';
   staffImage01.alt = 'Staff de la Divers';
@@ -765,9 +776,15 @@ function createStaffSlideShow()
 
   //
 
+  staffSlide01.appendChild(staffName01);
+  staffSlide02.appendChild(staffName02);
+  staffSlide03.appendChild(staffName03);
+
   staffSlide01.appendChild(staffImage01);
   staffSlide02.appendChild(staffImage02);
   staffSlide03.appendChild(staffImage03);
+
+  
 
   staffSlides.appendChild(inputStaffRadio01);
   staffSlides.appendChild(inputStaffRadio02);
