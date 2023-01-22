@@ -633,6 +633,14 @@ input[name="staff-r"]
 {
 	color: var(--fourthGreen);
 }
+.contact-bttn-div
+{
+	margin-top: 3vw;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+
+}
 
 /*MEDIA*/
 @media(min-width: 0px)
