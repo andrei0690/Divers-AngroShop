@@ -30,7 +30,13 @@
 	filter: blur(0);
 	position: static;
 	margin-top: 3vw;
+	z-index: 10;
+}
+#created-backup-button
+{
 
+	width: 55px;
+	height: 60px;
 }
 .backup-div
 {
@@ -49,7 +55,7 @@
 .backup-button
 {
 	border-radius: 100%;
-	padding: clamp(10px,1.4vw,32px) clamp(15px,1.7vw,35px);
+	padding: clamp(14px,1.4vw,34px) clamp(15px,1.7vw,35px);
 	cursor: pointer;
 	border-style: none;
 	background-color: var(--fourthGreen);
@@ -455,7 +461,7 @@ input[name="staff-r"]
 /*OWNER*/
 #owner-name
 {
-	font-size: var(--msmallbigheader);
+	font-size: 8vw;
 }
 
 .owner-photo-div
@@ -619,6 +625,23 @@ input[name="staff-r"]
     fill: var(--fourthGreen);
 }
 
+#left-middle--
+{
+	color: var(--fourthGreen);
+}
+#right-middle--
+{
+	color: var(--fourthGreen);
+}
+.contact-bttn-div
+{
+	margin-top: 3vw;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+
+}
+
 /*MEDIA*/
 @media(min-width: 0px)
 {
@@ -681,6 +704,12 @@ input[name="staff-r"]
 	{
 		border: none;
 	}
+	#created-backup-button
+	{
+
+	width: 85px;
+	height: 95px;
+	}
 }
 
 @media(min-width: 950px)
@@ -697,6 +726,12 @@ input[name="staff-r"]
 	{
 		opacity: 1;
 		pointer-events: all;
+	}
+	#created-backup-div
+	{
+		display: none;
+		opacity: 0;
+		pointer-events: none;
 	}
 	.slidershow
 	{
