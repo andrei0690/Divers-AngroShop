@@ -455,7 +455,7 @@ input[name="staff-r"]
 /*OWNER*/
 #owner-name
 {
-	font-size: var(--msmallbigheader);
+	font-size: 8vw;
 }
 
 .owner-photo-div
