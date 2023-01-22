@@ -30,7 +30,13 @@
 	filter: blur(0);
 	position: static;
 	margin-top: 3vw;
+	z-index: 10;
+}
+#created-backup-button
+{
 
+	width: 55px;
+	height: 60px;
 }
 .backup-div
 {
@@ -681,6 +687,12 @@ input[name="staff-r"]
 	{
 		border: none;
 	}
+	#created-backup-button
+	{
+
+	width: 85px;
+	height: 95px;
+	}
 }
 
 @media(min-width: 950px)
@@ -697,6 +709,12 @@ input[name="staff-r"]
 	{
 		opacity: 1;
 		pointer-events: all;
+	}
+	#created-backup-div
+	{
+		display: none;
+		opacity: 0;
+		pointer-events: none;
 	}
 	.slidershow
 	{
