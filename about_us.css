@@ -625,6 +625,15 @@ input[name="staff-r"]
     fill: var(--fourthGreen);
 }
 
+#left-middle--
+{
+	color: var(--fourthGreen);
+}
+#right-middle--
+{
+	color: var(--fourthGreen);
+}
+
 /*MEDIA*/
 @media(min-width: 0px)
 {
