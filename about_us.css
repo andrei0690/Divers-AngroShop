@@ -663,12 +663,15 @@ input[name="staff-r"]
 	flex-direction: column;
 	width: auto;
 	height: 650px;
+	gap: 25px;
 }
 
 .end-section-div-header
 {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
+	gap: 50px;
 	justify-content: center;
 	width: 100%;
 	background-color: var(--fourthGreen);
@@ -676,6 +679,9 @@ input[name="staff-r"]
 }
 .end-section-header
 {
+	display: flex;
+	align-content: center;
+	justify-content: center;
 	font-size: 2vw;
 	color: var(--thirdDark);
 	font-family: Dangrek;
@@ -683,10 +689,48 @@ input[name="staff-r"]
 .end-section-div-content
 {
 	display: flex;
-	margin-right: 25px;
+	margin-top: 25px;
 	flex-direction: column;
 }
+.end-section-items
+{
+	margin-top: 1vw;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 2vw;
+	text-align: center;
+}
+.end-section-item
+{
+	display: flex;
+	gap: 1.25vw;
+	justify-content: center;
+/*	margin-left: 25%;
+	transform: translateX(-25%);*/
 
+}
+.end-section-text
+{
+	font-size: 1.50vw;
+	color: var(--white);
+	user-select: all;
+}
+.end-section-description
+{
+	display: flex;
+	flex-direction: column;
+	gap: .25vw;
+}
+.end-section-description-sign
+{
+	font-size: 2vw;
+}
+.end-section-link
+{
+	text-decoration: underline;
+}
 /*MEDIA*/
 @media(min-width: 0px)
 {
