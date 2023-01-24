@@ -100,17 +100,17 @@ const backUpbuttonObserver = new IntersectionObserver((entries) =>
 	entries.forEach((entry) =>
 	{
 
-    
+    const {scrollTop, scrollHeight} = document.documentElement;
 
+    const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100;
     if(entry.isIntersecting && buttonMoved == false)
     {
       setBackupButton();
     }
-    if(!entry.isIntersecting && buttonMoved == true)
+    if(!entry.isIntersecting && buttonMoved == true && scrollPercent <= 85)
     {
       unsetBackupButton();
     }
-    // if(!entry.isIntersecting && buttonMoved == false && )
   
   })
 }
@@ -214,27 +214,27 @@ fill_radio();
 // Click and change slide
 carouselRadiop01.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar01.style.backgroundColor = '#ACD279';
+  carouselBar01.style.backgroundColor = 'var(--fourthGreen)';
   reset_carousel();
 })
 carouselRadiop02.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar02.style.backgroundColor = '#ACD279';
+  carouselBar02.style.backgroundColor = 'var(--fourthGreen)';
   reset_carousel();
 })
 carouselRadiop03.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar03.style.backgroundColor = '#ACD279';
+  carouselBar03.style.backgroundColor = 'var(--fourthGreen)';
   reset_carousel();
 })
 carouselRadiop04.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar04.style.backgroundColor = '#ACD279';
+  carouselBar04.style.backgroundColor = 'var(--fourthGreen)';
   reset_carousel();
 })
 carouselRadiop05.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar05.style.backgroundColor = '#ACD279';
+  carouselBar05.style.backgroundColor = 'var(--fourthGreen)';
   reset_carousel();
 })
 
@@ -326,27 +326,27 @@ function fill_radio() {
   if(arrayofCarouselRadios[0].checked)
   {
     carousel_remove_fill_all();
-    carouselBar01.style.backgroundColor = '#ACD279';
+    carouselBar01.style.backgroundColor = 'var(--fourthGreen)';
   }
   if(arrayofCarouselRadios[1].checked)
   {
     carousel_remove_fill_all();
-    carouselBar02.style.backgroundColor = '#ACD279';
+    carouselBar02.style.backgroundColor = 'var(--fourthGreen)';
   }
   if(arrayofCarouselRadios[2].checked)
   {
     carousel_remove_fill_all();
-    carouselBar03.style.backgroundColor = '#ACD279';
+    carouselBar03.style.backgroundColor = 'var(--fourthGreen)';
   }
   if(arrayofCarouselRadios[3].checked)
   {
     carousel_remove_fill_all();
-    carouselBar04.style.backgroundColor = '#ACD279';
+    carouselBar04.style.backgroundColor = 'var(--fourthGreen)';
   }
   if(arrayofCarouselRadios[4].checked)
   {
     carousel_remove_fill_all();
-    carouselBar05.style.backgroundColor = '#ACD279';
+    carouselBar05.style.backgroundColor = 'var(--fourthGreen)';
   }
 }
 
@@ -373,19 +373,19 @@ if(window.innerWidth <= 750)
     // Click and change slide
   carouselStaffRadiop01.addEventListener('change', (e) => {
     carousel_staff_remove_fill_all()
-    carouselStaffBar01.style.backgroundColor = '#ACD279';
+    carouselStaffBar01.style.backgroundColor = 'var(--fourthGreen)';
     check_staff_elements();
     reset_staff_carousel();
   })
   carouselStaffRadiop02.addEventListener('change', (e) => {
     carousel_staff_remove_fill_all()
-    carouselStaffBar02.style.backgroundColor = '#ACD279';
+    carouselStaffBar02.style.backgroundColor = 'var(--fourthGreen)';
     check_staff_elements();
     reset_staff_carousel();
   })
   carouselStaffRadiop03.addEventListener('change', (e) => {
     carousel_staff_remove_fill_all()
-    carouselStaffBar03.style.backgroundColor = '#ACD279';
+    carouselStaffBar03.style.backgroundColor = 'var(--fourthGreen)';
     check_staff_elements();
     reset_staff_carousel();
   })
@@ -637,19 +637,19 @@ function updateStaffSection()
     
     carouselStaffRadiop01.addEventListener('change', (e) => {
       carousel_staff_remove_fill_all()
-      carouselStaffBar01.style.backgroundColor = '#ACD279';
+      carouselStaffBar01.style.backgroundColor = 'var(--fourthGreen)';
       check_staff_elements();
       reset_staff_carousel();
     })
     carouselStaffRadiop02.addEventListener('change', (e) => {
       carousel_staff_remove_fill_all()
-      carouselStaffBar02.style.backgroundColor = '#ACD279';
+      carouselStaffBar02.style.backgroundColor = 'var(--fourthGreen)';
       check_staff_elements();
       reset_staff_carousel();
     })
     carouselStaffRadiop03.addEventListener('change', (e) => {
       carousel_staff_remove_fill_all()
-      carouselStaffBar03.style.backgroundColor = '#ACD279';
+      carouselStaffBar03.style.backgroundColor = 'var(--fourthGreen)';
       check_staff_elements();
       reset_staff_carousel();
     })
@@ -716,13 +716,19 @@ function create3Photos() {
 
   let staffPhoto01 = document.createElement('img');
   staffPhoto01.classList.add('staff-photo');
+  staffPhoto01.classList.add('hidden');
+  staffPhoto01.setAttribute('id', 'staff-row-photo01');
   staffPhoto01.src = 'staff02.jpg';
   let staffPhoto02 = document.createElement('img');
   staffPhoto02.classList.add('staff-photo');
+  staffPhoto02.classList.add('hidden');
+  staffPhoto02.setAttribute('id', 'staff-row-photo02');
   staffPhoto02.src = 'staff02.jpg';
 
   let staffPhoto03 = document.createElement('img');
   staffPhoto03.classList.add('staff-photo');
+  staffPhoto03.classList.add('hidden');
+  staffPhoto03.setAttribute('id', 'staff-row-photo03');
   staffPhoto03.src = 'staff02.jpg';
 
   staffPhotoDiv01.appendChild(staffName01);
