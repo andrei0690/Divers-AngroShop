@@ -603,6 +603,7 @@ input[name="staff-r"]
 	display: flex;
 	align-content: center;
 	justify-content: center;
+	position: relative;
 	background-color: var(--thirdDark);
 	height: 100%;
 }
@@ -649,10 +650,10 @@ input[name="staff-r"]
 	display: grid;
 	align-content: center;
 	justify-content: center;
-	margin-top: 10vw;
-	width: 85%;
-	height: 550px;
-	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 5vw;
+	width: 100%;
+	height: 100%;
+	grid-template-columns: 1fr;
 	grid-column-gap: 50px;
 	grid-row-gap: 5vw;
 }
@@ -662,7 +663,7 @@ input[name="staff-r"]
 	display: flex;
 	flex-direction: column;
 	width: auto;
-	height: 650px;
+	height: 100%;
 	gap: 25px;
 }
 
@@ -682,7 +683,7 @@ input[name="staff-r"]
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	font-size: 2vw;
+	font-size: 8vw;
 	color: var(--thirdDark);
 	font-family: Dangrek;
 }
@@ -713,7 +714,7 @@ input[name="staff-r"]
 }
 .end-section-text
 {
-	font-size: 1.50vw;
+	font-size: 4vw;
 	color: var(--white);
 	user-select: all;
 }
@@ -725,11 +726,19 @@ input[name="staff-r"]
 }
 .end-section-description-sign
 {
-	font-size: 2vw;
+	font-size: 5vw;
 }
 .end-section-link
 {
 	text-decoration: underline;
+}
+.copyright-div
+{
+	position: absolute;
+	bottom: 15px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
 }
 /*MEDIA*/
 @media(min-width: 0px)
@@ -750,7 +759,21 @@ input[name="staff-r"]
 	  overflow: hidden;
 	}
 }
-
+@media(min-width: 550px)
+{
+	.end-section-text
+	{
+		font-size: 2.8vw;
+	}
+	.end-section-header
+	{
+		font-size: 4.5vw;
+	}
+	.end-section-description-sign
+	{
+		font-size: 4.5vw;
+	}
+}
 @media(min-width: 750px)
 {
 	.staff-carousel
@@ -796,8 +819,8 @@ input[name="staff-r"]
 	#created-backup-button
 	{
 
-	width: 85px;
-	height: 95px;
+		width: 85px;
+		height: 95px;
 	}
 }
 
@@ -828,6 +851,7 @@ input[name="staff-r"]
 	  height: 42vw;
 	  overflow: hidden;
 	}
+	
 }
 
 @media(min-width: 1350px)
@@ -854,6 +878,24 @@ input[name="staff-r"]
 	{
 		display: none;
 	}
+	.end-section-content
+	{
+		grid-template-columns: 1fr 1fr;
+		width: 85%;
+	}
+	.end-section-text
+	{
+		font-size: 1.50vw;
+	}
+	.end-section-header
+	{
+		font-size: 2vw;
+	}
+	.end-section-description-sign
+	{
+		font-size: 4vw;
+	}
+
 }
 
 @media(min-width: 1700px)
