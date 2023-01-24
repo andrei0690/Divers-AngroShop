@@ -154,9 +154,9 @@
 }
 .progress-bar-anim
 {
-	background: linear-gradient(90deg, #a1ffa2 0%, #ACD279 100%);
+	background: linear-gradient(90deg, #a1ffa2 0%, #c7ffc7 100%);
 	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
+	animation: gradient 2.5s ease infinite;
 }
 
 .progress-bar
@@ -593,15 +593,15 @@ input[name="staff-r"]
 }
 #staff-row-photo01
 {
-	transition-delay: 0.2s;
+	transition-delay: 0.05s;
 }
 #staff-row-photo02
 {
-	transition-delay: 0.4s;
+	transition-delay: 0.1s;
 }
 #staff-row-photo03
 {
-	transition-delay: 0.6s;
+	transition-delay: 0.15s;
 }
 /*EMD SECTION*/
 .end-section-start
@@ -777,6 +777,14 @@ input[name="staff-r"]
 	display: flex;
 	align-content: center;
 	justify-content: center;
+}
+#end-section-first-table
+{
+	transition-delay: 0.05s;
+}
+#end-section-second-table
+{
+	transition-delay: 0.1s;
 }
 /*MEDIA*/
 @media(min-width: 0px)
