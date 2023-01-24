@@ -100,17 +100,17 @@ const backUpbuttonObserver = new IntersectionObserver((entries) =>
 	entries.forEach((entry) =>
 	{
 
-    
+    const {scrollTop, scrollHeight} = document.documentElement;
 
+    const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100;
     if(entry.isIntersecting && buttonMoved == false)
     {
       setBackupButton();
     }
-    if(!entry.isIntersecting && buttonMoved == true)
+    if(!entry.isIntersecting && buttonMoved == true && scrollPercent <= 85)
     {
       unsetBackupButton();
     }
-    // if(!entry.isIntersecting && buttonMoved == false && )
   
   })
 }
@@ -716,13 +716,19 @@ function create3Photos() {
 
   let staffPhoto01 = document.createElement('img');
   staffPhoto01.classList.add('staff-photo');
+  staffPhoto01.classList.add('hidden');
+  staffPhoto01.setAttribute('id', 'staff-row-photo01');
   staffPhoto01.src = 'staff02.jpg';
   let staffPhoto02 = document.createElement('img');
   staffPhoto02.classList.add('staff-photo');
+  staffPhoto02.classList.add('hidden');
+  staffPhoto02.setAttribute('id', 'staff-row-photo02');
   staffPhoto02.src = 'staff02.jpg';
 
   let staffPhoto03 = document.createElement('img');
   staffPhoto03.classList.add('staff-photo');
+  staffPhoto03.classList.add('hidden');
+  staffPhoto03.setAttribute('id', 'staff-row-photo03');
   staffPhoto03.src = 'staff02.jpg';
 
   staffPhotoDiv01.appendChild(staffName01);
