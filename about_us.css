@@ -581,6 +581,18 @@ input[name="staff-r"]
 	justify-content: center;
 	border-radius: 100%;
 }
+#staff-photo-div01
+{
+	transition-delay: 0.05s;
+}
+#staff-photo-div02
+{
+	transition-delay: 0.1s;
+}
+#staff-photo-div03
+{
+	transition-delay: 0.15s;
+}
 .staff-photo
 {
 	width: 45vw;
