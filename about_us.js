@@ -879,7 +879,7 @@ function createStaffSlideShow()
 
 if(window.innerWidth >= 1350)
 {
-     proprietarHeader.innerHTML = 'Staff';
+     proprietarHeader.innerHTML = 'Echipa Divers';
      addOwnerbars();
 }
 else
