@@ -687,6 +687,8 @@ function updateStaffSection()
   
 }
 
+
+
 function create3Photos() {
 
   let staffPhotos = document.createElement('div');
@@ -716,18 +718,17 @@ function create3Photos() {
 
   let staffPhoto01 = document.createElement('img');
   staffPhoto01.classList.add('staff-photo');
-  staffPhoto01.classList.add('hidden');
   staffPhoto01.setAttribute('id', 'staff-row-photo01');
   staffPhoto01.src = 'staff02.jpg';
   let staffPhoto02 = document.createElement('img');
   staffPhoto02.classList.add('staff-photo');
-  staffPhoto02.classList.add('hidden');
+
   staffPhoto02.setAttribute('id', 'staff-row-photo02');
   staffPhoto02.src = 'staff02.jpg';
 
   let staffPhoto03 = document.createElement('img');
   staffPhoto03.classList.add('staff-photo');
-  staffPhoto03.classList.add('hidden');
+
   staffPhoto03.setAttribute('id', 'staff-row-photo03');
   staffPhoto03.src = 'staff02.jpg';
 
@@ -746,6 +747,8 @@ function create3Photos() {
   staffDiv.appendChild(staffPhotos);
 
   staffSection.appendChild(staffDiv);
+
+  staffHidden = true;
 
 }
 
@@ -871,6 +874,7 @@ function createStaffSlideShow()
   staffSliderShow.appendChild(staffSlides);
   staffCarouselContainerAll.appendChild(staffSliderShow);
   staffCarouselContainerAll.appendChild(staffNavigation);
+
 }
 
 
@@ -879,7 +883,7 @@ function createStaffSlideShow()
 
 if(window.innerWidth >= 1350)
 {
-     proprietarHeader.innerHTML = 'Staff';
+     proprietarHeader.innerHTML = 'Echipa Divers';
      addOwnerbars();
 }
 else
