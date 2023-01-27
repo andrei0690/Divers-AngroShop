@@ -1,4 +1,12 @@
-
+.about-us-section
+{
+	background-image: url("Background-Photos//DiversBackgroundsuperlightGreen.png");
+}
+/*.owner-section,
+.staff-section
+{
+	background-image: url("Background-Photos//DiversBackgroundthirdDark.png");
+}*/
 #staff01
 {
 	transition-delay: .2s;
