@@ -206,7 +206,7 @@
   overflow: hidden;
   border-style: solid none;
 	border-width: 0.8vw;
-	border-color: var(--superlightGreen);
+	border-color: var(--fourthDark);
 }
 
 .navigation
@@ -512,7 +512,7 @@ input[name="staff-r"]
 	align-content: center;
 	border-style: solid none;
 	border-width: 0.8vw;
-	border-color: var(--superlightGreen);
+	border-color: var(--fourthDark);
 }
 .harta
 {

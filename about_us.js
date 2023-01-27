@@ -597,7 +597,7 @@ window.addEventListener("resize", () =>
   //Piramida la staff
   if(window.innerWidth >= 1350)
   {
-     proprietarHeader.innerHTML = 'Staff';
+     proprietarHeader.innerHTML = 'Echipa Noastra';
      addOwnerbars();
 
   }
@@ -883,7 +883,7 @@ function createStaffSlideShow()
 
 if(window.innerWidth >= 1350)
 {
-     proprietarHeader.innerHTML = 'Echipa Divers';
+     proprietarHeader.innerHTML = 'Echipa Noastra';
      addOwnerbars();
 }
 else
