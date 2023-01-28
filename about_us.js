@@ -214,27 +214,27 @@ fill_radio();
 // Click and change slide
 carouselRadiop01.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar01.style.backgroundColor = 'var(--fourthGreen)';
+  carouselBar01.style.backgroundColor = 'var(--superlightGreen)';
   reset_carousel();
 })
 carouselRadiop02.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar02.style.backgroundColor = 'var(--fourthGreen)';
+  carouselBar02.style.backgroundColor = 'var(--superlightGreen)';
   reset_carousel();
 })
 carouselRadiop03.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar03.style.backgroundColor = 'var(--fourthGreen)';
+  carouselBar03.style.backgroundColor = 'var(--superlightGreen)';
   reset_carousel();
 })
 carouselRadiop04.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar04.style.backgroundColor = 'var(--fourthGreen)';
+  carouselBar04.style.backgroundColor = 'var(--superlightGreen)';
   reset_carousel();
 })
 carouselRadiop05.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar05.style.backgroundColor = 'var(--fourthGreen)';
+  carouselBar05.style.backgroundColor = 'var(--superlightGreen)';
   reset_carousel();
 })
 
@@ -326,27 +326,27 @@ function fill_radio() {
   if(arrayofCarouselRadios[0].checked)
   {
     carousel_remove_fill_all();
-    carouselBar01.style.backgroundColor = 'var(--fourthGreen)';
+    carouselBar01.style.backgroundColor = 'var(--superlightGreen)';
   }
   if(arrayofCarouselRadios[1].checked)
   {
     carousel_remove_fill_all();
-    carouselBar02.style.backgroundColor = 'var(--fourthGreen)';
+    carouselBar02.style.backgroundColor = 'var(--superlightGreen)';
   }
   if(arrayofCarouselRadios[2].checked)
   {
     carousel_remove_fill_all();
-    carouselBar03.style.backgroundColor = 'var(--fourthGreen)';
+    carouselBar03.style.backgroundColor = 'var(--superlightGreen)';
   }
   if(arrayofCarouselRadios[3].checked)
   {
     carousel_remove_fill_all();
-    carouselBar04.style.backgroundColor = 'var(--fourthGreen)';
+    carouselBar04.style.backgroundColor = 'var(--superlightGreen)';
   }
   if(arrayofCarouselRadios[4].checked)
   {
     carousel_remove_fill_all();
-    carouselBar05.style.backgroundColor = 'var(--fourthGreen)';
+    carouselBar05.style.backgroundColor = 'var(--superlightGreen)';
   }
 }
 
@@ -373,19 +373,19 @@ if(window.innerWidth <= 750)
     // Click and change slide
   carouselStaffRadiop01.addEventListener('change', (e) => {
     carousel_staff_remove_fill_all()
-    carouselStaffBar01.style.backgroundColor = 'var(--fourthGreen)';
+    carouselStaffBar01.style.backgroundColor = 'var(--superlightGreen)';
     check_staff_elements();
     reset_staff_carousel();
   })
   carouselStaffRadiop02.addEventListener('change', (e) => {
     carousel_staff_remove_fill_all()
-    carouselStaffBar02.style.backgroundColor = 'var(--fourthGreen)';
+    carouselStaffBar02.style.backgroundColor = 'var(--superlightGreen)';
     check_staff_elements();
     reset_staff_carousel();
   })
   carouselStaffRadiop03.addEventListener('change', (e) => {
     carousel_staff_remove_fill_all()
-    carouselStaffBar03.style.backgroundColor = 'var(--fourthGreen)';
+    carouselStaffBar03.style.backgroundColor = 'var(--superlightGreen)';
     check_staff_elements();
     reset_staff_carousel();
   })
@@ -540,17 +540,17 @@ function fill_staff_radio(){
   if(arrayofCarouselRadios[0].checked)
   {
     carousel_staff_remove_fill_all()
-    carouselStaffBar01.style.backgroundColor = 'var(--fourthGreen)';
+    carouselStaffBar01.style.backgroundColor = 'var(--superlightGreen)';
   }
   if(arrayofCarouselRadios[1].checked)
   {
     carousel_staff_remove_fill_all()
-    carouselStaffBar02.style.backgroundColor = 'var(--fourthGreen)';
+    carouselStaffBar02.style.backgroundColor = 'var(--superlightGreen)';
   }
   if(arrayofCarouselRadios[2].checked)
   {
     carousel_staff_remove_fill_all()
-    carouselStaffBar03.style.backgroundColor = 'var(--fourthGreen)';
+    carouselStaffBar03.style.backgroundColor = 'var(--superlightGreen)';
   }
 
 
