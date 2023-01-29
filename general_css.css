@@ -3,16 +3,16 @@
 	--gray: #383435;
 	--white: #FFF;
 	--bifaC: #167330;
-	--superlightGreen: #a1ffa2;
+	--superlightGreen: #a1ffa2; /*#a1ffa2*/ /*#bffaff*/
 
 	--fourthDark: #424D3F;
 	--thirdDark: #323C2F;
-	--secondDark: #262F24;
+	--secondDark: #262F24; /*#3d4a3d*/ /*#262F24*/
 	--firstDark: #1E271D;
 
-	--fourthGreen: #ACD279;
+	--fourthGreen: #ACD279; /* #ACD279*/ /*#167330*/
 	--thirdGreen: #98C066;
-	--secondGreen: #7BA64A;
+	--secondGreen: #7BA64A; 
 	--firstGreen: #5E8832;
 
 
@@ -280,10 +280,6 @@ a
 	display: flex;
 	gap: 1.25vw;
 	justify-content: center;
-
-/*	margin-left: 25%;
-	transform: translateX(-25%);*/
-
 }
 .end-section-text
 {

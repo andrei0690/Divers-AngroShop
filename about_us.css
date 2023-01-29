@@ -51,8 +51,8 @@
 	right: 50px;
 	opacity: 0;
 	pointer-events: none;
-	transform: translateX(100%);
-	filter: blur(15px);
+	transform: translateY(100%);
+	filter: blur(3px);
 	transition: all 0.25s;
 
 	
@@ -84,7 +84,7 @@
 	opacity: 1;
 	filter: blur(0px);
 	pointer-events: all;
-	transform: translateX(0);
+	transform: translateY(0);
 	
 }
 .postion-backup-button-div
@@ -159,7 +159,7 @@
 }
 .progress-bar-anim
 {
-	background: linear-gradient(90deg, #a1ffa2 0%, #c7ffc7 100%);
+	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 	background-size: 400% 400%;
 	animation: gradient 2.5s ease infinite;
 }
@@ -196,7 +196,6 @@
 }
 .slidershow
 {
-  width: 65vw;
   height: 42vw;
   overflow: hidden;
   border-style: solid none;
@@ -384,7 +383,7 @@ input[name="r"]
   width: 20px;
   border-radius: 3px;
   height: 20px;
-  border: 2px solid var(--superlightGreen);
+  border: 2px solid var(--fourthGreen);
   margin: 6px;
   transition: all 0.3s ease-in-out;
 
@@ -482,7 +481,7 @@ input[name="staff-r"]
 	height: 70vw;
 	object-fit: cover;
 	border-style: solid;
-	border-color: var(--superlightGreen);
+	border-color: var(--fourthGreen);
 	border-radius: 200%;
 	border-width: 0.8vw;
 
@@ -714,7 +713,7 @@ input[name="staff-r"]
 	}
 	.slidershow
 	{
-	  width: 65vw;
+	  width: 70vw;
 	  height: 42vw;
 	  overflow: hidden;
 	}

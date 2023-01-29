@@ -373,19 +373,19 @@ if(window.innerWidth <= 750)
     // Click and change slide
   carouselStaffRadiop01.addEventListener('change', (e) => {
     carousel_staff_remove_fill_all()
-    carouselStaffBar01.style.backgroundColor = 'var(--superlightGreen)';
+    carouselStaffBar01.style.backgroundColor = 'var(--fourthGreen)';
     check_staff_elements();
     reset_staff_carousel();
   })
   carouselStaffRadiop02.addEventListener('change', (e) => {
     carousel_staff_remove_fill_all()
-    carouselStaffBar02.style.backgroundColor = 'var(--superlightGreen)';
+    carouselStaffBar02.style.backgroundColor = 'var(--fourthGreen)';
     check_staff_elements();
     reset_staff_carousel();
   })
   carouselStaffRadiop03.addEventListener('change', (e) => {
     carousel_staff_remove_fill_all()
-    carouselStaffBar03.style.backgroundColor = 'var(--superlightGreen)';
+    carouselStaffBar03.style.backgroundColor = 'var(--fourthGreen)';
     check_staff_elements();
     reset_staff_carousel();
   })
@@ -540,17 +540,17 @@ function fill_staff_radio(){
   if(arrayofCarouselRadios[0].checked)
   {
     carousel_staff_remove_fill_all()
-    carouselStaffBar01.style.backgroundColor = 'var(--superlightGreen)';
+    carouselStaffBar01.style.backgroundColor = 'var(--fourthGreen)';
   }
   if(arrayofCarouselRadios[1].checked)
   {
     carousel_staff_remove_fill_all()
-    carouselStaffBar02.style.backgroundColor = 'var(--superlightGreen)';
+    carouselStaffBar02.style.backgroundColor = 'var(--fourthGreen)';
   }
   if(arrayofCarouselRadios[2].checked)
   {
     carousel_staff_remove_fill_all()
-    carouselStaffBar03.style.backgroundColor = 'var(--superlightGreen)';
+    carouselStaffBar03.style.backgroundColor = 'var(--fourthGreen)';
   }
 
 
