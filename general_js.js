@@ -25,9 +25,24 @@ const headerObserver = new IntersectionObserver((entries) =>
 	})
 })
 
+const downAnimationObserver = new IntersectionObserver((entries) =>
+{
+	entries.forEach((entry) =>
+	{
+		if(entry.isIntersecting)
+		{
+			entry.target.classList.add("down-up-anim");
+		}
+
+		
+	})
+})
+
 const hiddenHeaders = document.querySelectorAll('.header');
 
 const hiddenElements = document.querySelectorAll('.hidden');
+
+const downElements = document.querySelectorAll('.down-up-preset');
 
 hiddenElements.forEach((el) =>
 {
@@ -37,6 +52,11 @@ hiddenElements.forEach((el) =>
 hiddenHeaders.forEach((el) =>
 {
 	headerObserver.observe(el);
+})
+
+downElements.forEach((el) =>
+{
+	downAnimationObserver.observe(el);
 })
 
 // FUZZ LA TEXT
