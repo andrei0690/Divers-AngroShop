@@ -81,6 +81,24 @@ section
 	pointer-events: all;
 	transform: scaleX(1);
 }
+.down-up-preset
+{
+	opacity: 0;
+	user-select: none;
+	pointer-events: none;
+	transform: translateY(75%);
+	filter: blur(15px) brightness(2.5);
+	transition: all .25s;
+}
+.down-up-anim
+{
+	opacity: 1;
+	user-select: auto;
+	pointer-events: all;
+	transform: translateY(0);
+	filter: blur(0) brightness(1);
+}
+
 .divers-header-div
 {
 	display: flex;
