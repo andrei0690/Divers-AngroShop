@@ -8,11 +8,14 @@ Lucruri de facut la proiect in sine:
   ✔ De facut poze de background mai bune NU MAI ESTE NECESAR @done (22-12-28 14:49)
   ☐ {Mai multe limbi}
   ☐ {Cookies}
+  ☐ Redesign la tot ce a facut Andrei
   ✔ Light Mode si Dark mode sa se tina minte @done (23-01-01 14:51)
   ✔ Fa un end section GATA @done (23-01-25 21:20)
   ✔ Primul Headar sa fie de o culoare diferita? NU @done (23-01-25 21:20)
   ✔ Css cu toate proprietatile | show | header | buton | variabile | .. @done (23-01-15 14:26)
-  ☐ Fa Backgroundurile
+  ✔ Fa Backgroundurile @done (23-01-27 23:32)
+  ✔ Rezolva problema cu alea 2 triunghiuri de la background @done (23-01-28 18:52)
+  ✔ Rezolva problema ca backgroundul are un fel de margin in stanga @done (23-01-28 18:52)
   ✔ {ANUNT} || la stiri @done (23-01-25 21:20)
 
 Lucruri de facut in viata reala:
@@ -97,14 +100,15 @@ Lucruri de facut la About Us:
   ✔ Ceva bonus la piramida {linii pe langa poza cu ----Owner----} @done (23-01-21 15:32)
   ✔ Adauga ceva clasna la END SECTION SI ADAUGA SI CEVA CULOARE CLASNA :) @done (23-01-25 20:54)
   ☐ Ceva de adaugat la owner dektop {Linii de la staff spre owner} {Poze sau vector, svg prin parti la owner} {Background}
-  
-  ☐ FAQ
-  ☐ Pune la mijlod butoanele de la staff
+  ✔ Spatiu la home si contact button mai mare pe telefon @done (23-01-29 13:21)
+  ☐ Background la carousel pe telefon mai mic
+  ✔ FAQ NU @done (23-01-27 22:34)
+  ✔ Pune la mijlod butoanele de la staff @done (23-01-28 22:50)
   ✔ Pune end section la general @done (23-01-25 21:19)
   
   ✔ Rezolva problema ca stafful nu apare | Incepe de la hidden @done (23-01-26 01:09)
   ✔ Staff-Carousel animatie cand o vezi @done (23-01-26 01:09)
-  ☐ Adauga Background la Carusel
+  ✔ Adauga Background la Carusel @done (23-01-28 18:52)
   ✔ {Program de lucru sa fie ca un TABEL} NU @done (23-01-25 21:18)
   ✔ Scrie ceva la a 2-a tablita la descriere @done (23-01-25 21:18)
   ✔ Fa ca pe telefon end section sa arate mai special nu cu HEADARURI|| hehe tehnic gata @done (23-01-25 21:18)
@@ -148,6 +152,7 @@ Lucruri de facut la About Us:
   ✔ Rezolva problema ca 2 staff se misca la fel pe cand ultima se misca mai lent @done (22-12-30 22:50)
 
 Lucruri de facut la Contact Us:
+  
   ✔ diverslv20@gmail.com gmail @done (22-12-27 16:16)
   ✔ Mesanger NUSTIU @done (22-12-27 17:56)
   ✔ Telefon @done (22-12-27 16:51)
@@ -164,14 +169,13 @@ Lucruri de facut la Contact Us:
   ✔ Culoare normala la popup gand este erroare @done (23-01-15 13:05)
   ☐ Pune top-barul lui andrei
   ☐ Light mode
+  ☐ Adauga End Section
   ✔ Sa nu poti apasa butonul cat este in Fail sau Succes @done (23-01-15 12:49)
   ✔ Header scris mai mare pe telefon @done (23-01-15 13:21)
   ✔ Schimba textul cu diacritice @done (23-01-15 14:17)
   ✔ Butonul de X la popup nu are cursor pointer | Rezolvat @done (23-01-15 14:15)
   ✔ De ce popupul nu apare pe telefon? | Tehnic apare, daca aleg o presetare de telefon, altfel nu mere lol @done (23-01-15 13:21)
-  
   ☐ Fa ca sa nu poti pune litere la nr de telefon 
-  ☐ Adauga End Section
   ✔ {Pune background la tot contact us} NU @done (23-01-25 20:32)
   ✔ Rezolva problema cand e pe telefon apare o bara in jos | APARE DIN CAUZA LA TOP BAR CA POZA DE LA DIVERS E PREA MARE lol | @done (23-01-15 14:18)
   ✔ Animatii clasna @done (23-01-15 14:15)
@@ -211,7 +215,7 @@ Idei:
   ✔ Gradient de folosit undeva? DA | ceva foarte deschis | La border la staff | progress bar cand e gata si cand e normala sa fie superlight | @done (23-01-19 21:14)
   ✔ Progress bar cand e finalizata sa aiba gradient cu animatie infinita @done (23-01-19 21:13)
   ☐ About us Ca Landing Page | NECESAR
-  ☐ Mai mult firstDark prin proiect
+  ✔ Mai mult firstDark prin proiect @done (23-01-28 18:52)
   ✔ Gradient la border la harta si carosuel | NU @done (23-01-22 19:40)
   ✔ Sa poti apasa pe textul verde si sa te duca la main page? |NU @done (23-01-22 19:40)
   ✔ Background pentru header-uri | DA @done (23-01-12 21:20)
@@ -258,7 +262,7 @@ Carusel:
   ✔ Cand se misca periodic si ajunge la final sa se intoarca @done (23-01-03 20:53)
   ✔ Editeaza fotografiile NU ESTE NECESAR @done (23-01-03 22:58)
   ✔ Pune bari mici jos ca sa arate care este curenta si daca apesi pe vreo una sa te duca la aia respectiva @done (23-01-03 18:06)
-  ☐ Adauga un background la carusel
+  ✔ Adauga un background la carusel @done (23-01-28 18:52)
   ✔ Fa un design mai bun la bari || creca prosta o sa le pun jos || @done (23-01-03 21:14)
   ✔ Incadreaza proiectul in sine cu Divers. @done (23-01-03 22:58)
   ✔ Adaugat previous @done (23-01-03 00:07)
