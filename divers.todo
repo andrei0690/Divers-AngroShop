@@ -26,24 +26,50 @@ Lucruri de facut in viata reala:
   ✔ {Owner descriere} / {Interview} NU MAI ESTE NECESAR @done (22-12-29 18:21)
   ☐ De intrebat de promotii
 
-Lucruri pentru Andrei:
+Idei pentru main page:
 
   ✔ La dropdown la categorii si asa in sine sa fie inconite @done (22-12-29 18:21)
-  ☐ {Sort items || sa poti sorta de la ieftin la scump}
+  ✔ {Sort items || sa poti sorta de la ieftin la scump} NU @done (23-02-02 00:39)
   ✔ Noutati || pagina unde vor fi noutatile cu Divers @done (22-12-29 18:21)
   ✔ Sa fie iconite la categorii @done (22-12-29 18:21)
   ✔ Bara sa vine in jos cand dai in jos @done (23-01-01 14:51)
   ✔ Cand sa apas pe about us sau contact us sa ma duca la pagina respectiva @done (22-12-29 18:21)
-  ☐ Font diferit la pret 
-  ☐ lei la pret font mai mic
-  ☐ Cand apesi pe o casuta sa ti-o arate mare
-  ☐ {Sageata ca se te duci la urmatoarea pagina}
-  ☐ Sa fie la about us top bar cand dai hover sa-ti arate de ex. orar,adresa,staff,
-  ☐ Andrei top-bar animatie normala la linii
-  ☐ Animatie normala la hover
-  ☐ La main page sa fie o sectiune ce cele mai bune | Cele mai populare, de preferat cu carusel si ceva edit la poza
-  ☐ {Sa fie review-uri}
+  ✔ Font diferit la pret NU @done (23-02-02 00:39)
+  ✔ lei la pret font mai mic nustiu @done (23-02-02 00:40)
+  ✔ Cand apesi pe o casuta sa ti-o arate mare NU @done (23-02-02 00:39)
+  ✔ {Sageata ca se te duci la urmatoarea pagina} NU @done (23-02-02 00:39)
+  ✔ Sa fie la about us top bar cand dai hover sa-ti arate de ex. orar,adresa,staff,NU @done (23-02-02 00:39)
+  ✔ Andrei top-bar animatie normala la linii ignora @done (23-02-02 00:39)
+  ✔ Animatie normala la hover ignora @done (23-02-02 00:39)
+  ☐ La main page sa fie o sectiune ce cele mai bune | Cele mai populare, de preferat cu carusel si ceva edit la poza | posibil
+  ✔ {Sa fie review-uri} NU avem posibilitatea @done (23-02-02 00:40)
 
+Lucruri de facut la Produse:
+  
+  ☐ De sters tot contentul nenecesar
+  ☐ Fa top-barul normal
+  ☐ Adauga animatie la top-bar pe telefon
+  ☐ Fa ca Dark Mode chiar sa mearga
+  ☐ Pune culori normale
+  ☐ Fa ca Categoriile sa aiba culori normale
+  ☐ Fa ca cand dai hover sa fie un effect clasna
+  ☐ Gaseste o metoda sa faci logo-ul sa arate bine
+  ☐ Fa un desgin la content
+  ☐ Adauga toate schimbarile de la about_us -> butonul, end section, 
+  ☐ Carusele responsive la toate categoriile
+  ☐ Adauga ceva bonus intre categorii
+  ☐ Adauga ceva de landing
+  ☐ Fa ca produsele sa arate bine (design bun)
+  ☐ Modifica tot codul
+
+Lucururi de facut la Stiri:
+  
+  ☐ Fa ca stirile sa arate bine(design bun)
+  ☐ Adauga tot de la about_us -> end section, backup button, topbar, culori etc
+  ☐ Adauga mai multe stiri
+  ☐ Adauga ceva bonus daca apesi pe stire
+  ☐ Adauga ceva effecte foarte clasna
+  ☐ 
 Lucruri de facut la About Us:
 
   ✔ Bara de sus sa arate bine @done (22-12-26 18:29)
@@ -101,7 +127,8 @@ Lucruri de facut la About Us:
   ✔ Adauga ceva clasna la END SECTION SI ADAUGA SI CEVA CULOARE CLASNA :) @done (23-01-25 20:54)
   ☐ Ceva de adaugat la owner dektop {Linii de la staff spre owner} {Poze sau vector, svg prin parti la owner} {Background}
   ✔ Spatiu la home si contact button mai mare pe telefon @done (23-01-29 13:21)
-  ☐ Background la carousel pe telefon mai mic
+  ✔ Background la carousel pe telefon mai mic @done (23-02-02 00:40)
+  ☐ La adresa backgroundul lai mic brightness
   ✔ FAQ NU @done (23-01-27 22:34)
   ✔ Pune la mijlod butoanele de la staff @done (23-01-28 22:50)
   ✔ Pune end section la general @done (23-01-25 21:19)
@@ -207,7 +234,7 @@ Bonus Informatie:
   ✔ Saturday: 08:00 - 15:00 @done (22-12-27 17:54)
   ✔ Sunday: 08:00 - 15:00 @done (22-12-27 17:54)
   ✔ Strada strada Ștefan cel Mare 68 @done (22-12-27 16:18)
-  ☐ Programul de lucru în cadrul magazinului este de la 8:00- 18:00, de luni până vineri, sîmbătă și duminică de la ora 08:00 - 15:00.
+  ✔ Programul de lucru în cadrul magazinului este de la 8:00- 18:00, de luni până vineri, sîmbătă și duminică de la ora 08:00 - 15:00. @done (23-02-02 00:42)
   ✔ Abonează-te la rețelele noastre de socializare și fii primul care află de cele mai bune oferte! @done (23-01-24 21:25)
 
 
@@ -231,7 +258,7 @@ Idei:
   ✔ Invata keyframe-uri @done (23-01-12 21:20)
   ✔ Foloseste CSS libraries | Nu se permite @done (23-01-12 21:20)
   ✔ Invata before: after: | GATA @done (23-01-12 21:20)
-  ☐ Adauga ">" pe undeva {la butoane} {Contacteaza-ne >}
+  ☐ Adauga ">" pe undeva {la butoane} {Contacteaza-ne >} {Categorii}
   ✔ Headurile sa nu fie pe tot ecranul in width, doar textul sa aiba background color | NU @done (23-01-12 21:20)
   ✔ Animatie la progress-bar ca sa se vada cand este supusa peste verde | Poate daor sa se inchida mai tare la culoare {La final de bara sa fie un fel de glow4} @done (23-01-12 21:21)
   ✔ Daca apas pe o poza de pe carusel sa se intample ceva {Animatie clasna} {Sa se duca la productul respectiv} {} |.. | NU NU NU @done (23-01-25 21:20)
