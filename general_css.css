@@ -41,6 +41,19 @@
 	font-family: Roboto;
 	user-select: none;
 }
+::-webkit-scrollbar{
+	width: 12px;
+  	background-color: var(--thirdDark);
+}
+::-webkit-scrollbar-thumb{
+  border-radius:4px;
+  background-color: var(--fourthGreen);
+  border: none;
+}
+::-webkit-scrollbar-track{
+	border-radius: 3px;
+  	background-color: transparent;
+}
 img
 {
 	pointer-events: none;
@@ -326,6 +339,216 @@ a
 #end-section-second-table
 {
 	transition-delay: 0.1s;
+}
+/*BACKUP*/
+.backup-div
+{
+	z-index: 10;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(100%);
+	filter: blur(3px);
+	transition: all 0.25s;
+
+	
+}
+.backup-button
+{
+	border-radius: 100%;
+	padding: clamp(14px,1.4vw,34px) clamp(15px,1.7vw,35px);
+	cursor: pointer;
+	border-style: none;
+	background-color: var(--fourthGreen);
+	color: var(--secondDark);
+	box-shadow: 0 0 3px 1px rgba(38, 47, 36, 0.5);
+	font-size: 27px;
+}
+.backup-button:active
+{
+	background-color: var(--fourthGreen);
+	color: var(--secondDark);
+
+}
+.fixed-backup-button
+{
+	position: fixed;
+	right: 50px;
+}
+.display-backup-button-div
+{
+	opacity: 1;
+	filter: blur(0px);
+	pointer-events: all;
+	transform: translateY(0);
+	
+}
+.postion-backup-button-div
+{
+	position: absolute;
+	--top: 0;
+	top: var(--top);
+
+	right: 50%;
+	transform: translateX(50%);
+	transition: all 0.25s;
+}
+/*MORE MAIN PAGE ITEMS*/
+
+
+
+.header-top-bar
+{
+	z-index: 20;
+	display: flex;
+	position: fixed;
+	align-content: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 88px;
+	background-color: var(--secondDark);
+}
+.header-top-bar-bonus
+{
+	z-index: 10;
+	position: fixed;
+	align-content: center;
+	justify-content: center;
+	top: 88px;
+	width: 100%;
+	height: 8px;
+	background-color: var(--fourthGreen);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.divers-logo-div
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 88px;
+	margin-left: 86px;
+	cursor: pointer;
+}
+.divers-logo
+{
+	width: 200px;
+	height: 64px;
+	object-fit: cover;
+}
+.header-top-bar-content
+{
+	display: flex;
+	justify-content: center;
+	align-items: content;
+	gap: 64px;
+	width: 740px;
+	height: 88px;
+}
+.top-bar-content-item-flex
+{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+}
+.top-bar-content-text
+{
+	position: relative;
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	color: var(--white);
+}
+.top-bar-content-text::before
+{
+	content: '';
+	position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -2px;
+  left: 0;
+  background: var(--fourthGreen);
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .15s linear;
+}
+.top-bar-content-item-flex:hover .top-bar-content-text:before,
+.top-bar-content-item-flex:focus .top-bar-content-text:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.top-bar-content-icon
+{
+	width: 20px;
+	height: 20px;
+	color: var(--fourthGreen);
+}
+.welcome-text-div
+{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-top: 120px;
+}
+.naked-styled-header
+{
+	font-family: Dangrek;
+	font-size: 64px;
+	line-height: 86px;
+	font-weight: 400;
+	color: var(--white);
+}
+.green-styled-text
+{
+	color: var(--fourthGreen);
+	font-family: Dangrek;
+}
+.welcome-text-description
+{
+	margin-top: 16px;
+}
+.naked-header
+{
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 48px;
+	text-align: center;
+	color: var(--white);
+}
+.go-to-category-button-div
+{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-top: 120px;
+}
+.go-to-category-button
+{
+	cursor: pointer;
+	border-style: none;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	background-color: var(--fourthGreen);
+	border-radius: 100%;
+	padding: 18px;
+}
+.simple-icon
+{
+	width: 24px;
+	height: 24px;
+	color: var(--secondDark);
 }
 
 @media(min-width: 550px)
