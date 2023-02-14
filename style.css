@@ -1,3 +1,4 @@
+
 .products-page-header-div
 {
 	width: 100%;
@@ -89,8 +90,327 @@
 	color: var(--secondDark);
 }
 
-
 .bonus-space
 {
 	margin-top: 1500px;
+}
+
+
+/*NEW*/
+
+.product-slidershow
+{
+  margin-top: 48px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  scroll-snap-type: x mandatory;
+}
+
+.product-container {
+  display: flex;
+  width: 1250px;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 24px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+/*NECESARE*/
+.product-box
+{
+  position: relative;
+  flex: 0 0 auto;
+  width: 294px;
+  height: 423px;
+  background-color: var(--thirdDark);
+  border-radius: 16px;
+  scroll-snap-align: start;
+}
+.product-image-div
+{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 48px;
+}
+.product-image
+{
+  width: 152px;
+  height: 164px;
+}
+.product-name-div
+{
+  user-select: text;
+  margin-top: 48px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+.product-name
+{
+  user-select: text;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  text-align: center;
+  width: 200px;
+  height: 80px;
+  color: var(--white);
+}
+.product-price-div
+{
+  user-select: text;
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+.product-price
+{
+  user-select: text;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--fourthGreen);
+}
+.product-currency
+{
+  font-family: Roboto;
+  color: var(--fourhtGreen);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/*Buttons*/
+.slidershow-bttns-div
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.slider-show-arrow
+{
+  width: 24px;
+  height: 24px;
+  color: var(--secondDark);
+}
+.pre-btn,
+.nxt-btn
+{
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 13px;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--fourthGreen);
+}
+.slider-show-indicator-flex
+{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 16px;
+}
+.slider-show-indicator
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 50px;
+  height: 20px;
+  background-color: var(--fourthGreen);
+  border-radius: 8px;
+  border-style: none;
+}
+.slider-show-indicator-bonus
+{
+  cursor: pointer;
+  transform: scale(0.9);
+  background-color: var(--secondDark);
+  width: 38px;
+  height: 12px;
+  border-radius: 8px;
+  transition: all 0.25s ease-in-out;
+}
+.current-indicator
+{
+  background-color: var(--fourthGreen);
+  transform: scale(1);
+  transition: all 0.25s ease-in-out;
+  pointer-events: all;
+}
+.dezactivated-arrow
+{
+  cursor: none;
+  pointer-events: none;
+}
+/*CATEGORII SI TEXTUL PRINCIPAL RESPONSIVE*/
+@media(max-width: 1280px)
+{
+    .product-container 
+    {
+        width:  930px;
+    }
+}
+
+@media(max-width: 1020px)
+{
+  .product-container 
+    {
+      width: 610px;
+    }
+
+}
+
+@media(max-width: 700px)
+{
+  .product-box
+  {
+    width: 210px;
+    height: 302px;
+    border-radius: 0px;
+    border-style: none;
+  }
+  .last-product-box
+  {
+     border-style: solid;
+  }
+  .product-container 
+  {
+      width: 420px;
+      gap: 0;
+  }
+  .product-image-div
+  {
+    margin-top: 36px;
+  }
+  .product-image
+  {
+    width: 108px;
+    height: 117px;
+  }
+  .product-name-div
+  {
+    margin-top: 24px;
+  }
+  .product-name
+  {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .product-price-div
+  {
+    bottom: 12px;
+  }
+  .product-price
+  {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .product-currency
+  {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 470px)
+{
+  .product-box
+  {
+    width: 150px;
+    height: 255px;
+  }
+  .product-container 
+  {
+      width: 300px;
+  }
+  .product-image-div
+  {
+    margin-top: 24px;
+  }
+  .product-image
+  {
+    width: 77px;
+    height: 83px;
+  }
+  .product-name-div
+  {
+    margin-top: 32px;
+  }
+  .product-name
+  {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .product-price
+  {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .product-currency
+  {
+    font-size: 12px;
+  }
+/*  BUTOANE */
+  .slidershow-bttns-div
+  {
+    gap: 20px;
+  }
+  .slider-show-arrow
+  {
+    width: 24px;
+    height: 24px;
+    color: var(--secondDark);
+  }
+  .pre-btn,
+  .nxt-btn
+  {
+    padding: 13px;
+    width: 50px;
+    height: 50px;
+  }
+  .slider-show-indicator-flex
+  {
+    gap: 12px;
+  }
+  .slider-show-indicator
+  {
+    width: 25px;
+    height: 25px;
+    border-radius: 8px;
+  }
+  .slider-show-indicator-bonus
+  {
+    transform: scale(0.9);
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+
+  }
 }

@@ -10,45 +10,64 @@
 		<link rel="stylesheet" href="general_css.css">
 		<script defer src="general_js.js"></script>
 		<script defer src="script.js"></script>
+		<link rel = "stylesheet" href = "style.css"/>
 		<link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
 	</head>
-	<link rel = "stylesheet" href = "style.css"/>
+	
 	<body>
 		
 		<section class="header-top-bar-section">
-			<div class="header-top-bar">
-				
-				<div class="divers-logo-div">
-					<img class="divers-logo" src="divers.png" alt="Divers Logo">
-				</div>
-				
-				<div class="header-top-bar-content">
-					<div class="top-bar-content-item-flex">
-						<h2 class="top-bar-content-text">Produse</h3>
-						<ion-icon class="top-bar-content-icon" name="bag-handle"></ion-icon>
-					</div>
-					<div class="top-bar-content-item-flex">
-						<h2 class="top-bar-content-text">Despre</h3>
-						<ion-icon class="top-bar-content-icon" name="information-circle"></ion-icon>
-					</div>
-					<div class="top-bar-content-item-flex">
-						<h2 class="top-bar-content-text">Contacte</h3>
-						<ion-icon class="top-bar-content-icon" name="people"></ion-icon>
-					</div>
-					<div class="top-bar-content-item-flex">
-						<h2 class="top-bar-content-text">Stiri</h3>
-						<ion-icon class="top-bar-content-icon" name="newspaper"></ion-icon>
-					</div>
+			<div class="header-top-bar" id="second-top-bar">
+				<div class="divers-logo-div" id="second-divers-logo-div">
+					<img class="divers-logo" id="second-divers-logo" src="divers.png" alt="Divers Logo">
 				</div>
 			</div>
-			<div class="header-top-bar-bonus"></div>
+			<div class="header-top-bar-bonus" id="second-header-top-bar-bonus"></div>
+			<div class="the-whole-top-bar">
+					<div class="header-top-bar">
+					
+					<div class="divers-logo-div">
+						<img class="divers-logo" src="divers.png" alt="Divers Logo">
+					</div>
+					
+					<div class="header-top-bar-content">
+						<a class="header-top-bar-link" href="main.html">
+							<div class="top-bar-content-item-flex">
+								<h2 class="top-bar-content-text">Produse</h3>
+								<ion-icon class="top-bar-content-icon" name="bag-handle"></ion-icon>
+							</div>
+						</a>
+						<a class="header-top-bar-link" href="about_us.html">
+							<div class="top-bar-content-item-flex">
+								<h2 class="top-bar-content-text">Despre</h3>
+								<ion-icon class="top-bar-content-icon" name="information-circle"></ion-icon>
+							</div>
+						</a>
+						<a class="header-top-bar-link" href="contact_us.html">
+							<div class="top-bar-content-item-flex">
+								<h2 class="top-bar-content-text">Contacte</h3>
+								<ion-icon class="top-bar-content-icon" name="people"></ion-icon>
+							</div>
+						</a>
+						<a class="header-top-bar-link" href="stiri.html">
+							<div class="top-bar-content-item-flex">
+								<h2 class="top-bar-content-text">Stiri</h3>
+								<ion-icon class="top-bar-content-icon" name="newspaper"></ion-icon>
+							</div>
+						</a>
+						
+					</div>
+				</div>
+				<div class="header-top-bar-bonus"></div>
+			</div>
+			
 		</section>
 
 		<section class="welcome-section" id="welcome-section">
 			
 			<div class="welcome-text-div">
-				<h1 class="naked-styled-header">Bine ati venit la <span class="green-styled-text">Divers Angro Shop</span>!</h1>
+				<h1 class="naked-styled-header">Bine ati venit la <span class="green-styled-text">Divers Angro Shop!</span></h1>
 			</div>
 			<div class="welcome-text-description">
 				<h2 class="naked-header">Uitati-va in jur si descoperiti cum va putem ajuta. <br> Multumim pentru vizita!</h2>
@@ -64,7 +83,7 @@
 			
 		</section>
 
-		<section class="category-section" id="category-section">
+		<!-- <section class="category-section" id="category-section">
 			<div class="products-page-header-div header">
 				<h2 class="products-page-header">Categorii</h2>
 			</div>
@@ -136,16 +155,164 @@
 			</div>
 
 		</section>
-
+ -->
 		<section class="products-section">
 			<section class="dispozitive-digitale">
-				<div class="products-page-header-div header">
-					<h2 class="products-page-header">Dispozitive Digitale</h2>
+				<div class="products-page-header-div">
+					<h3 class="products-page-header">Dispozitive Digitale</h3>
 				</div>
-				<div class="products-slidershow">
-					
-				</div>
-			</section>
+	            <div class="product-slidershow">
+	                <div class="product-container" id="product-container01">
+	                    
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 1.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 2.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 3.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 4.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 5.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 6.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 7.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 8.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                </div>
+	            </div>
+	            
+	            <div class="slidershow-bttns-div">
+	                <button class="pre-btn" id="pre-btn01">
+	                <ion-icon class="slider-show-arrow" name="caret-back-outline"></ion-icon>
+	                </button>
+	                <div class="slider-show-indicator-flex" id="slider-show-indicator-flex01">
+	                    <button class="slider-show-indicator">
+	                        <div class="slider-show-indicator-bonus current-indicator"></div>
+	                    </button>
+	                    <button class="slider-show-indicator">
+	                        <div class="slider-show-indicator-bonus"></div>
+	                    </button>
+	                </div>
+	                
+	                <button class="nxt-btn" id="nxt-btn01">
+	                <ion-icon class="slider-show-arrow" name="caret-forward-outline"></ion-icon>
+	                </button>
+	            </div>
+	        </section>
 		</section>
 
 
