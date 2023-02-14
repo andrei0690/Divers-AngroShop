@@ -5,663 +5,488 @@
 		<link rel="icon" href="icon-divers.png">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>slide menu</title>
+		<title>Divers Angro Shop</title>
 		<script src="https://kit.fontawesome.com/8383e75d7d.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="general_css.css">
+		<script defer src="general_js.js"></script>
+		<script defer src="script.js"></script>
+		<link rel = "stylesheet" href = "style.css"/>
+		<link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
 	</head>
-	<link rel = "stylesheet" href = "style.css"/>
+	
 	<body>
-		<div class = "promotion">
-			<i onclick = "destroy_promotion()" class="fa-solid fa-x"></i>
-			<h1>Promotii:</h1>
-			<div class = "pro_container">
-				<img draggable = "false" src = "gro.png"/>
-				<p>Produs Ieftin</p>
-			</div>
-		</div>
-		<a name = "head"></a>
 		
-		<div class = "theme">
-			<div class = "closing_btn" onclick = "delete_menu()">
-				<i class="fa-regular fa-circle-xmark"></i>
-			</div>
-			<ul class = "list-el">
-				<li onclick = "change_theme()" class = "dark-light">Tema Întunecată <i class="fa-solid fa-moon"></i></li>
-				<a target = "_blank" href = "contact_us.html"><li><i class="fa-solid fa-phone-volume"></i> Contacte</li></a>
-				<a target = "_blank" href = "about_us.html"><li><i class="fa-solid fa-address-book"></i> Despre Noi</li></a>
-				<a target = "_blank" href = "stiri.html"><li><i class="fa-regular fa-newspaper"></i> Noutati</li></a>
-				<p>Categorii: </p>
-				<a href = "#petrecere"><li class = "categorie"><i class="fa-solid fa-cake-candles"></i> Petrecere / Distracții</li></a>
-				<a href = "#jucarii"><li class = "categorie"><i class="fa-solid fa-car-side"></i> Lumea Copiilor</li></a>
-				<a href = "#rechizite"><li class = "categorie"><i class="fa-solid fa-pen-ruler"></i> Rechizite Școlare</li></a>
-				<a href = "#suvenire"><li class = "categorie"><i class="fa-solid fa-gem"></i> Suvenire</li></a>
-				<a href = "#accesorii"><li class = "categorie"><i class="fa-solid fa-bag-shopping"></i> Accesorii</li></a>
-				<a href = "#haine"><li class = "categorie"><i class="fa-solid fa-shirt"></i> Îmbrăcăminte</li></a>
-				<a href = "#bucatarie"><li class = "categorie"><i class="fa-solid fa-kitchen-set"></i> Ustensile de Bucătărie</li></a>
-				<a href = "#dispozitive"><li class = "categorie"><i class="fa-solid fa-battery-half"></i> Dispozitive Digitale</li></a>
-				<a href = "#casnice"><li class = "categorie"><i class="fa-solid fa-house"></i> Produse Casnice</li></a>
-				<a href = "#igiena"><li class = "categorie"><i class="fa-solid fa-bath"></i> Produse Igienice</li></a>
-				<br>
-				<br>
-			</ul>
-		</div>
-		<div class = "banner">
-			<div id = "menubtn" onclick = "active()">
-				<i class="fa-solid fa-bars"></i>
-			</div>
-			<div class = "divers-img">
-				<a href = "#head"><img draggable = "false" height = "90" src = "divers.png"/></a>
-			</div>
-			<div class = "links">
-				<div class = "category">
-					<a id = "category_select" class = "ban_link"><i class="fa-solid fa-dolly"></i> Categorii <i class="fa-solid fa-caret-down"></i></a>
-					<ul class = "dropdown">
-						<a href = "#petrecere"><li><i class="fa-solid fa-cake-candles"></i> Petrecere / Distractii</li></a>
-						<a href ="#jucarii"><li><i class="fa-solid fa-car-side"></i> Lumea Copiilor</li></a>
-						<a href ="#rechizite"><li><i class="fa-solid fa-pen-ruler"></i> Rechizite Scolare</li></a>
-						<a href ="#suvenire"><li><i class="fa-solid fa-gem"></i> Suvenire</li></a>
-						<a href ="#accesorii"><li><i class="fa-solid fa-bag-shopping"></i> Accesorii</li></a>
-						<a href ="#haine"><li><i class="fa-solid fa-shirt"></i> Imbracaminte</li></a>
-						<a href ="#bucatarie"><li><i class="fa-solid fa-kitchen-set"></i> Ustensile de Bucatarie</li></a>
-						<a href ="#dispozitive"><li><i class="fa-solid fa-battery-half"></i> Dispozitive Digitale</li></a>
-						<a href ="#casnice"><li><i class="fa-solid fa-house"></i> Produse Casnice</li></a>
-						<a href ="#igiena"><li><i class="fa-solid fa-bath"></i> Produse Igienice</li></a>
-					</ul>
+		<section class="header-top-bar-section">
+			<div class="header-top-bar" id="second-top-bar">
+				<div class="divers-logo-div" id="second-divers-logo-div">
+					<img class="divers-logo" id="second-divers-logo" src="divers.png" alt="Divers Logo">
 				</div>
-				<a class = "ban_link" target = "_blank" href = "contact_us.html"><i class="fa-solid fa-phone-volume"></i> Contacte</a>
-				<a class = "ban_link" target = "_blank" href = "about_us.html"><i class="fa-solid fa-address-book"></i> About Divers</a>
-				<a class = "ban_link" target = "_blank" href = "stiri.html"><i class="fa-regular fa-newspaper"></i></i> Noutati</a>
-				<a id = "moon_sun" onclick = "change_theme()"><i class="fa-solid fa-moon"></i></a>
 			</div>
-		</div>
-		<div class = "container">
-			<a name = "petrecere"></a>
-			<h1 class = "category_name"><span class = "dash">--</span> Petrecere <span class="dash">--</span></h1>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
+			<div class="header-top-bar-bonus" id="second-header-top-bar-bonus"></div>
+			<div class="the-whole-top-bar">
+					<div class="header-top-bar">
+					
+					<div class="divers-logo-div">
+						<img class="divers-logo" src="divers.png" alt="Divers Logo">
+					</div>
+					
+					<div class="header-top-bar-content">
+						<a class="header-top-bar-link" href="main.html">
+							<div class="top-bar-content-item-flex">
+								<h2 class="top-bar-content-text">Produse</h3>
+								<ion-icon class="top-bar-content-icon" name="bag-handle"></ion-icon>
+							</div>
+						</a>
+						<a class="header-top-bar-link" href="about_us.html">
+							<div class="top-bar-content-item-flex">
+								<h2 class="top-bar-content-text">Despre</h3>
+								<ion-icon class="top-bar-content-icon" name="information-circle"></ion-icon>
+							</div>
+						</a>
+						<a class="header-top-bar-link" href="contact_us.html">
+							<div class="top-bar-content-item-flex">
+								<h2 class="top-bar-content-text">Contacte</h3>
+								<ion-icon class="top-bar-content-icon" name="people"></ion-icon>
+							</div>
+						</a>
+						<a class="header-top-bar-link" href="stiri.html">
+							<div class="top-bar-content-item-flex">
+								<h2 class="top-bar-content-text">Stiri</h3>
+								<ion-icon class="top-bar-content-icon" name="newspaper"></ion-icon>
+							</div>
+						</a>
+						
+					</div>
 				</div>
-				<p class = "nume">Farfurie din carton 23cm</p>
-				<p class = "pret"><span class = "price">19.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Confeti 40cm ps0465</p>
-				<p class = "pret"><span class = "price">33.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Felicitare</p>
-				<p class = "pret"><span class = "price">8.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Lumânări FERVERC pentru tort</p>
-				<p class = "pret"><span class = "price">36.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Pahare Happy 10ps</p>
-				<p class = "pret"><span class = "price">12.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Baloane 10 bucăți</p>
-				<p class = "pret"><span class = "price">15.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">COIF Party lucitor 16cm</p>
-				<p class = "pret"><span class = "price">6.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Baloane Cifre 32cm</p>
-				<p class = "pret"><span class = "price">21.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<a name = "jucarii"></a>
-			<h1 class = "category_name"><span class = "dash">--</span> Lumea Copiilor <span class="dash">--</span></h1>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Mașină 946</p>
-				<p class = "pret"><span class = "price">37.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Dinozaur</p>
-				<p class = "pret"><span class = "price">122.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Transformers</p>
-				<p class = "pret"><span class = "price">173.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Set Mingi pentru Tenis</p>
-				<p class = "pret"><span class = "price">58.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Set 2 eroi</p>
-				<p class = "pret"><span class = "price">109.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Gameboy Tetris</p>
-				<p class = "pret"><span class = "price">73.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Bule de Săpun</p>
-				<p class = "pret"><span class = "price">9.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Constructor Nik-2104pcs 36088</p>
-				<p class = "pret"><span class = "price">262.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<a name = "rechizite"></a>
-			<h1 class = "category_name"><span class = "dash">--</span> Rechizite Școlare <span class="dash">--</span></h1>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Creioane 24 culori - 72 lei</p>
-				<p class = "pret"><span class = "price">72.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Set Compas 2 piese</p>
-				<p class = "pret"><span class = "price">42.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Acuarelă 12 culori</p>
-				<p class = "pret"><span class = "price">30.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Bandă corectoare 5x8mm</p>
-				<p class = "pret"><span class = "price">17.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Plastelină TVETIC 12 culori 180g</p>
-				<p class = "pret"><span class = "price">29 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Caiet 36 foi matematică/dictanto</p>
-				<p class = "pret"><span class = "price">7.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Foarfece HUDOJNIK</p>
-				<p class = "pret"><span class = "price">23.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Pix cu bilă</p>
-				<p class = "pret"><span class = "price">7.00 lei </span><sup><span class = "dis"></span><sup></p>
+				<div class="header-top-bar-bonus"></div>
 			</div>
 			
-			<a name = "suvenire"></a>
-			<h1 class = "category_name"><span class = "dash">--</span> Suveniere <span class="dash">--</span></h1>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Vază Albert Eistein ceramică 25cm ds6474</p>
-				<p class = "pret"><span class = "price">204.00 lei </span><sup><span class = "dis"></span><sup></p>
+		</section>
+
+		<section class="welcome-section" id="welcome-section">
+			
+			<div class="welcome-text-div">
+				<h1 class="naked-styled-header">Bine ati venit la <span class="green-styled-text">Divers Angro Shop!</span></h1>
 			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Suport de Moldova</p>
-				<p class = "pret"><span class = "price">89.00 lei </span><sup><span class = "dis"></span><sup></p>
+			<div class="welcome-text-description">
+				<h2 class="naked-header">Uitati-va in jur si descoperiti cum va putem ajuta. <br> Multumim pentru vizita!</h2>
 			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Drapelul Moldovei</p>
-				<p class = "pret"><span class = "price">5.00 lei </span><sup><span class = "dis"></span><sup></p>
+			<div class="go-to-category-button-div">
+				<a href="#category-section">
+					<button class="go-to-category-button">
+						<ion-icon class="simple-icon" name="caret-down-outline"></ion-icon>	
+					</button>
+				</a>
+				
 			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Suvenir Pușculiță Iepuraș</p>
-				<p class = "pret"><span class = "price">62.00 lei </span><sup><span class = "dis"></span><sup></p>
+			
+		</section>
+
+		<!-- <section class="category-section" id="category-section">
+			<div class="products-page-header-div header">
+				<h2 class="products-page-header">Categorii</h2>
 			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
+
+			<div class="category-grid">
+				<div class="category-box">
+					<div class="category-box-content">
+						<svg class="category-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+						  <path d="M15 1.784l-.796.796a1.125 1.125 0 101.591 0L15 1.784zM12 1.784l-.796.796a1.125 1.125 0 101.591 0L12 1.784zM9 1.784l-.796.796a1.125 1.125 0 101.591 0L9 1.784zM9.75 7.547c.498-.02.998-.035 1.5-.042V6.75a.75.75 0 011.5 0v.755c.502.007 1.002.021 1.5.042V6.75a.75.75 0 011.5 0v.88l.307.022c1.55.117 2.693 1.427 2.693 2.946v1.018a62.182 62.182 0 00-13.5 0v-1.018c0-1.519 1.143-2.829 2.693-2.946l.307-.022v-.88a.75.75 0 011.5 0v.797zM12 12.75c-2.472 0-4.9.184-7.274.54-1.454.217-2.476 1.482-2.476 2.916v.384a4.104 4.104 0 012.585.364 2.605 2.605 0 002.33 0 4.104 4.104 0 013.67 0 2.605 2.605 0 002.33 0 4.104 4.104 0 013.67 0 2.605 2.605 0 002.33 0 4.104 4.104 0 012.585-.364v-.384c0-1.434-1.022-2.7-2.476-2.917A49.138 49.138 0 0012 12.75zM21.75 18.131a2.604 2.604 0 00-1.915.165 4.104 4.104 0 01-3.67 0 2.604 2.604 0 00-2.33 0 4.104 4.104 0 01-3.67 0 2.604 2.604 0 00-2.33 0 4.104 4.104 0 01-3.67 0 2.604 2.604 0 00-1.915-.165v2.494c0 1.036.84 1.875 1.875 1.875h15.75c1.035 0 1.875-.84 1.875-1.875v-2.494z" />
+						</svg>
+
+						<h3 class="category-text">Aniversare</h3>
+					</div>
 				</div>
-				<p class = "nume">Suvenir Înger</p>
-				<p class = "pret"><span class = "price">122.00 lei </span><sup><span class = "dis"></span><sup></p>
+				<div class="category-box">
+					<div class="category-box-content">
+						<ion-icon class="category-icon" name="car-sport"></ion-icon>
+						<h3 class="category-text">Lumea Copiilor</h3>
+					</div>
+				</div>
+				<div class="category-box">
+					<div class="category-box-content">
+						<i class="fa-solid fa-pen category-font-icon"></i>
+						<h3 class="category-text">Rechizite</h3>
+					</div>
+				</div>
+				<div class="category-box">
+					<div class="category-box-content">
+						<i class="fa-solid fa-gift category-font-icon"></i>
+						<h3 class="category-text">Suvenire</h3>
+					</div>
+				</div>
+				<div class="category-box">
+					<div class="category-box-content">
+						<ion-icon class="category-icon" style="width: 48px; height: 48px;" name="diamond"></ion-icon>
+						<h3 class="category-text">Accesorii</h3>
+					</div>
+				</div>
+				<div class="category-box">
+					<div class="category-box-content">
+						<i class="fa-solid fa-shirt category-font-icon"></i>
+						<h3 class="category-text">Imbracaminte</h3>
+					</div>
+				</div>
+				<div class="category-box">
+					<div class="category-box-content">
+						<ion-icon class="category-icon" name="restaurant"></ion-icon>
+						<h3 class="category-text">Ustensile de <br> Bucatarie</h3>
+					</div>
+				</div>
+				<div class="category-box">
+					<div class="category-box-content">
+						<ion-icon class="category-icon" name="battery-charging"></ion-icon>
+						<h3 class="category-text">Dispozitive Digitale</h3>
+					</div>
+				</div>
+				<div class="category-box">
+					<div class="category-box-content">
+						<ion-icon class="category-icon" name="color-palette"></ion-icon>
+						<h3 class="category-text">Produse Cosmetice</h3>
+					</div>
+				</div>
+				<div class="category-box" id="last-category-box">
+					<div class="category-box-content">
+						<i class="fa-solid fa-soap category-font-icon" style="margin-bottom: 10px;"></i>
+						<h3 class="category-text">Produse Igienice</h3>
+					</div>
+				</div>
 			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
+
+		</section>
+ -->
+		<section class="products-section">
+			<section class="dispozitive-digitale">
+				<div class="products-page-header-div">
+					<h3 class="products-page-header">Dispozitive Digitale</h3>
 				</div>
-				<p class = "nume">Decor Grădină Ciupercuțe</p>
-				<p class = "pret"><span class = "price">137.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Pușculiță SUNDUK Moldova d186+368</p>
-				<p class = "pret"><span class = "price">78.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Sfesnic Peace</p>
-				<p class = "pret"><span class = "price">169.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<a name = "accesorii"></a>
-			<h1 class = "category_name"><span class = "dash">--</span> Accesorii <span class="dash">--</span></h1>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Centură nszto2</p>
-				<p class = "pret"><span class = "price">165.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Umbrelă im786</p>
-				<p class = "pret"><span class = "price">69.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Set Parfumuri DeLuxee</p>
-				<p class = "pret"><span class = "price">350.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Portmoneu m5/22 m6/22</p>
-				<p class = "pret"><span class = "price">86.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Geantă Vanilla pentru femei</p>
-				<p class = "pret"><span class = "price">364.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Geantă din piele pentru dame</p>
-				<p class = "pret"><span class = "price">436.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Umbrelă im7871</p>
-				<p class = "pret"><span class = "price">117.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Portmoneu 3/22</p>
-				<p class = "pret"><span class = "price">98.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<a name = "haine"></a>
-			<h1 class = "category_name"><span class = "dash">--</span> Îmbracăminte <span class="dash">--</span></h1>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Pantaloni băieți</p>
-				<p class = "pret"><span class = "price">114.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Papuci de cameră pentru copii IEPURE</p>
-				<p class = "pret"><span class = "price">79.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Hanorac cu Glugă</p>
-				<p class = "pret"><span class = "price">249.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Mănuși pentru copii</p>
-				<p class = "pret"><span class = "price">118.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Adidași Bărbați z09</p>
-				<p class = "pret"><span class = "price">399.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Caloși Sabo fără călcâie bărbați</p>
-				<p class = "pret"><span class = "price">99.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Șosete Bărbați b2601</p>
-				<p class = "pret"><span class = "price">24.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Cămașă bărbați albastră</p>
-				<p class = "pret"><span class = "price">231.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<a name = "bucatarie"></a>
-			<h1 class = "category_name"><span class = "dash">--</span> Ustensile de bucătărie <span class="dash">--</span></h1>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Tel INOX 20cm rmo2-3</p>
-				<p class = "pret"><span class = "price">19.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Container pentru Condimente</p>
-				<p class = "pret"><span class = "price">81.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Set linguri din oțel inoxidabil vmo398</p>
-				<p class = "pret"><span class = "price">68.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Cuțit pentru carne cu mâner de lemn</p>
-				<p class = "pret"><span class = "price">225.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Farfurie adâncă Opal vs5286</p>
-				<p class = "pret"><span class = "price">42.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Spatulă Bianca 32cm Silicon FISSMAN</p>
-				<p class = "pret"><span class = "price">109.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Sucitor din lemn</p>
-				<p class = "pret"><span class = "price">74.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Răzătoare oțel inoxidabil gm-10</p>
-				<p class = "pret"><span class = "price">99.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<a name = "dispozitive"></a>
-			<h1 class = "category_name"><span class = "dash">--</span> Dispozitive Digitale <span class="dash">--</span></h1>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Mouse cu fir</p>
-				<p class = "pret"><span class = "price">53.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Usb cool led color light strip 4m</p>
-				<p class = "pret"><span class = "price">368.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Căști W6 31/W633</p>
-				<p class = "pret"><span class = "price">79.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Cablu USB 1m micro</p>
-				<p class = "pret"><span class = "price">39.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Lanternă Camping 3AA baterie</p>
-				<p class = "pret"><span class = "price">128.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">C73 Glorious Dual Holder yllw</p>
-				<p class = "pret"><span class = "price">155.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Duracell lithium 2032</p>
-				<p class = "pret"><span class = "price">30.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">AAA alcaline box pack</p>
-				<p class = "pret"><span class = "price">8.00 lei/bucata </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<a name = "casnice"></a>
-			<h1 class = "category_name"><span class = "dash">--</span> Casnice <span class="dash">--</span></h1>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Clește Rufe York 20 bucăți</p>
-				<p class = "pret"><span class = "price">20.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Set containere pentru mâncare</p>
-				<p class = "pret"><span class = "price">40.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Umerașe pentru copii</p>
-				<p class = "pret"><span class = "price">40.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Set tavă din aluminiu cu capac</p>
-				<p class = "pret"><span class = "price">31.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Caserolă plastic</p>
-				<p class = "pret"><span class = "price">7.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Fino folie din aluminiu 8mx45cm</p>
-				<p class = "pret"><span class = "price">43.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Capace metalice TWIST-OFF 20 bucăți</p>
-				<p class = "pret"><span class = "price">41.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Pachete pentru copt 35x40cm 5 bucăți</p>
-				<p class = "pret"><span class = "price">17.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-				<a name = "igiena"></a>
-			<h1 class = "category_name"><span class = "dash">--</span> Produse Igienice <span class="dash">--</span></h1>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Master Cleaner Sgrassatore 750ml</p>
-				<p class = "pret"><span class = "price">59.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Lenor la Desirable 1440ml</p>
-				<p class = "pret"><span class = "price">89.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Theo Săpun Lichid gel higgiene</p>
-				<p class = "pret"><span class = "price">28.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Aura discuri de vată 120 bucăți</p>
-				<p class = "pret"><span class = "price">17.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Bețișoare Igienice 100 piese</p>
-				<p class = "pret"><span class = "price">10.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Signal periuță de dinți White System</p>
-				<p class = "pret"><span class = "price">42.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Șervețele de masă Soffione</p>
-				<p class = "pret"><span class = "price">8.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>
-			<div class = "box">
-				<div class = "product-photo">
-					<img draggable = "false" width = "100%" height = "95%" src = "icon-divers.png"/>
-				</div>
-				<p class = "nume">Pastă de Dinți Active Fresh 75ml</p>
-				<p class = "pret"><span class = "price">19.00 lei </span><sup><span class = "dis"></span><sup></p>
-			</div>	
+	            <div class="product-slidershow">
+	                <div class="product-container" id="product-container01">
+	                    
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 1.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 2.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 3.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 4.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 5.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 6.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 7.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                    <div class="product-box">
+	                        <div class="product-image-div">
+	                            <img class="product-image" src="ProductSimplu.png" alt="Poza">
+	                        </div>
+	                        <div class="product-name-div">
+	                            <h4 class="product-name">
+	                            Tableta Apple Ipad 2021 Pro Edition Max Golden Range 8.
+	                            </h4>
+	                        </div>
+	                        <div class="product-price-div">
+	                            <h4 class="product-price">
+	                            7 790<span class="product-currency"> MDL</span>
+	                            </h4>
+	                        </div>
+	                        
+	                    </div>
+	                </div>
+	            </div>
+	            
+	            <div class="slidershow-bttns-div">
+	                <button class="pre-btn" id="pre-btn01">
+	                <ion-icon class="slider-show-arrow" name="caret-back-outline"></ion-icon>
+	                </button>
+	                <div class="slider-show-indicator-flex" id="slider-show-indicator-flex01">
+	                    <button class="slider-show-indicator">
+	                        <div class="slider-show-indicator-bonus current-indicator"></div>
+	                    </button>
+	                    <button class="slider-show-indicator">
+	                        <div class="slider-show-indicator-bonus"></div>
+	                    </button>
+	                </div>
+	                
+	                <button class="nxt-btn" id="nxt-btn01">
+	                <ion-icon class="slider-show-arrow" name="caret-forward-outline"></ion-icon>
+	                </button>
+	            </div>
+	        </section>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<section class="bonus-space">
+			
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="backup-div">
+			<button class="backup-button">
+				<i class="fa-solid fa-arrow-up"></i>
+			</button>
 		</div>
-		<a href = "#head">
-		<div class = "arrow">
-			<i class="fa-solid fa-arrow-up"></i>
-		</div>
-		</a>
-		<p class = "copyright"><big>© </big>2019-2023 Divers-AgroShop All Rights Reserved</p>
+
+
+		<section class="end-section-start">
+			<div class="desktop-end-start">
+				<div class="custom-shape-divider-bottom-1674320019">
+				   <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				       <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+				   </svg>
+				</div>
+			</div>
+			<div class="phone-end-start">
+				<div class="custom-shape-divider-bottom-1674592108">
+				    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				        <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+				    </svg>
+				</div>
+			</div>
+			
+		</section>
+		<section class="end-section">
+			<div class="end-section-content">
+				<div class="end-section-div hidden">
+					<div class="end-section-div-header">
+						
+						<h3 class="end-section-header">Contacte</h3>
+
+					</div>
+
+					<div class="end-section-items" id="end-section-first-table">
+						<div class="end-section-description">
+							<span class="green-text-glow end-section-description-sign">~</span>
+							<h3 class="end-section-text">
+								
+								Abonează-te la rețelele noastre de socializare și fii primul care află de cele mai bune oferte!
+								
+							</h3>
+							<span class="green-text-glow end-section-description-sign">~</span>
+						</div>
+						<div class="end-section-item">
+							<h4 class="green-text-glow end-section-text"><i class="fa-solid fa-phone green-text-glow"></i></h4>
+							<h4 class="end-section-text">+37368960404</h4>
+						</div>
+						<div class="end-section-item">
+							<h4 class="green-text-glow end-section-text"><i class="fa-solid fa-envelope green-text-glow"></i></h4>
+							<h4 class="end-section-text">diverslv20@gmail.com</h4>
+						</div>
+						<div class="end-section-item">
+							<a class="link" href="https://www.facebook.com/Divers-Angro-Shop-100710148355685/">
+								<h4 class="green-text-glow end-section-text"><i class="fa-brands fa-facebook link-icon green-text-glow"></i></h4>
+							</a>
+							<a class="link" href="https://www.facebook.com/Divers-Angro-Shop-100710148355685/">
+								<h4 class="end-section-text end-section-link">Divers Angro Shop</h4>
+							</a>
+						</div>
+						<div class="end-section-item">
+							<h4 class="green-text-glow end-section-text"><i class="fa-solid fa-house green-text-glow"></i></h4>
+							<h4 class="end-section-text">Ștefan cel Mare 68, 6301 Leova, Moldova</h4>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="end-section-div hidden" id="end-section-second-table">
+					<div class="end-section-div-header">
+						
+						<h3 class="end-section-header">Pagini Divers</h3>
+
+					</div>
+					
+					<div class="end-section-items">
+						<div class="end-section-description">
+							<span class="green-text-glow end-section-description-sign">~</span>
+							<h3 class="end-section-text">
+								
+								Toate paginile web folositoare in baza site-ului
+								
+							</h3>
+							<span class="green-text-glow end-section-description-sign">~</span>
+						</div>
+						<div class="end-section-item">
+							<a class="link" href="about_us.html">
+								<h4 class="green-text-glow end-section-text"><i class="fa-regular fa-address-card green-text-glow"></i></h4>
+							</a>
+							<a class="link" href="about_us.html">
+								<h4 class="end-section-text end-section-link">Despre Noi</h4>
+							</a>
+						</div>
+						<div class="end-section-item">
+							<a class="link" href="contact_us.html">
+								<h4 class="green-text-glow end-section-text"><i class="fa-solid fa-message green-text-glow"></i></h4>
+							</a>
+							<a class="link" href="contact_us.html">
+								<h4 class="end-section-text end-section-link">Contacteaza-ne</h4>
+							</a>
+						</div>
+						<div class="end-section-item">
+							<a class="link" href="main.html">
+								<h4 class="end-section-text green-text-glow"><i class="fa-solid fa-cart-shopping green-text-glow"></i></h4>
+							</a>
+							<a class="link" href="main.html">
+								<h4 class="end-section-text end-section-link">Produse</h4>
+							</a>
+						</div>
+						<div class="end-section-item">
+							<a class="link" href="stiri.html">
+								<h4 class="green-text-glow end-section-text"><i class="fa-solid fa-file green-text-glow"></i></h4>
+							</a>
+							<a class="link" href="stiri.html">
+								<h4 class="end-section-text end-section-link">Noutăți și evenimente</h4>
+							</a>
+						</div>
+
+					</div>
+
+				</div>
+
+				
+				
+			</div>
+			<!-- <div class="copyright-div">
+				<h3 class="end-section-text"> <i class="fa-regular fa-copyright"></i> Copyright Divers 2023-2024 All Rights Reserved</h3>
+			</div> -->
+
+		</section>
+
+
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	</body>
-	<script type="text/javascript" src="script.js"></script>
+	
 </html>
