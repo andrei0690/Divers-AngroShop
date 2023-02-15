@@ -392,3 +392,33 @@ function scroll4Right(productContainer)
     let containerWidth = containerDimensions.width;
     productContainer.scrollLeft -= containerWidth + containerWidth + containerWidth + containerWidth;
 }
+
+// Responsive layout text
+
+
+
+const welcomeText = document.querySelector('.naked-styled-header')
+
+    //Bine ati venit la <span class="green-styled-text">Divers Angro Shop!</span>
+
+if(window.innerWidth <= 950)
+    {
+        welcomeText.innerHTML = 'Bine ati venit la <br><span class="green-styled-text">Divers Angro Shop!</span>'
+    }
+else
+{
+    welcomeText.innerHTML = 'Bine ati venit la <span class="green-styled-text">Divers Angro Shop!</span>'
+}
+
+window.addEventListener('resize', () =>
+{
+    if(window.innerWidth <= 950)
+    {
+        welcomeText.innerHTML = 'Bine ati venit la <br><span class="green-styled-text">Divers Angro Shop!</span>'
+    }
+    else
+    {
+        welcomeText.innerHTML = 'Bine ati venit la <span class="green-styled-text">Divers Angro Shop!</span>'
+    }
+    
+})
