@@ -337,6 +337,11 @@
   {
     font-size: 14px;
   }
+	/*HEADER  */
+	.products-page-header
+	{
+		font-size: 40px;
+	}
 }
 
 @media(max-width: 470px)
@@ -413,4 +418,11 @@
     border-radius: 4px;
 
   }
+}
+@media(max-width: 400px)
+{
+	.products-page-header
+	{
+		font-size: 32px;
+	}
 }
