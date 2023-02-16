@@ -39,6 +39,7 @@ nxtBtn01.addEventListener('click', () => {
     {
         dezactivate_Arrow(preBtn01, 350)
     }
+    dezactivate_Indicators(sliderShowIndicatorFlex01, 350);
     
 
 })
@@ -70,6 +71,7 @@ preBtn01.addEventListener('click', () => {
     {
         dezactivate_Arrow(preBtn01, 350)
     }
+    dezactivate_Indicators(sliderShowIndicatorFlex01, 350);
     
     
     
@@ -130,7 +132,8 @@ sliderShowIndicators01.forEach(indicator =>
 
             scroll_to_Indicator(neededScrolls, productContainer01);
             currentIndicatorIndexSliderShow01 += neededScrolls;
-            dezactivate_All_Arrows(preBtn01, nxtBtn01)
+            dezactivate_All_Arrows(preBtn01, nxtBtn01);
+            dezactivate_Indicators(sliderShowIndicatorFlex01, 350);
         }
 
 ))
@@ -149,6 +152,7 @@ window.addEventListener('resize', () =>
         transformatTablet01 = false;
         transformatTel01 = false;
         scroll4Right(productContainer01);
+        currentIndicatorIndexSliderShow01 = 0;
     }
     if(window.innerWidth <= 1280 && transformatTablet01 == false && window.innerWidth >= 1021)
     {
@@ -160,6 +164,7 @@ window.addEventListener('resize', () =>
         transformatTablet01 = true;
         transformatTel01 = false;
         scroll4Right(productContainer01);
+        currentIndicatorIndexSliderShow01 = 0;
     }
     if(window.innerWidth <= 1020 && transformatTel01 == false)
     {
@@ -172,12 +177,15 @@ window.addEventListener('resize', () =>
         transformatTablet01 = false;
         scroll4Right(productContainer01);
         transformatTel01 = true;
+        currentIndicatorIndexSliderShow01 = 0;
     }
+
     let sliderShowIndicators01 = Array.from(sliderShowIndicatorFlex01.children);
-    currentIndicatorIndexSliderShow01 = 0;
+    
+
     sliderShowIndicators01.forEach(indicator =>
         
-        indicator.addEventListener('click', (e) =>
+        indicator.addEventListener('click', () =>
         {
             let pastIndicatorIndex = get_current_index(sliderShowIndicatorFlex01);
 
@@ -192,6 +200,7 @@ window.addEventListener('resize', () =>
             scroll_to_Indicator(neededScrolls, productContainer01);
             currentIndicatorIndexSliderShow01 += neededScrolls;
             dezactivate_All_Arrows(preBtn01, nxtBtn01)
+            dezactivate_Indicators(sliderShowIndicatorFlex01, 350);
 
         }
 
@@ -199,11 +208,6 @@ window.addEventListener('resize', () =>
     
     ))
 })
-
-
-
-
-
 
 
 // USEFULL FUNCTIONS
@@ -226,7 +230,27 @@ function dezactivate_All_Arrows(arrow01, arrow02)
         dezactivate_Arrow(arrow02, 350)
     }
 }
-
+function dezactivate_Indicator(indicator, ms)
+{
+    indicator.classList.add('dezactivated-arrow');
+    setTimeout(() =>
+        {
+            indicator.classList.remove('dezactivated-arrow');
+        }, ms);
+}
+function dezactivate_Indicators(sliderShowIndicatorFlex, ms)
+{
+    indicators = Array.from(sliderShowIndicatorFlex.children);
+    indicators.forEach((i) =>
+    {
+        i.classList.add('dezactivated-arrow');
+        setTimeout(() =>
+        {
+            i.classList.remove('dezactivated-arrow');
+        }, ms);
+    })
+    
+}
 function dezactivate_Arrow(arrow, ms)
 {
     arrow.classList.add('dezactivated-arrow');

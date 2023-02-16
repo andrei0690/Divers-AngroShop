@@ -434,12 +434,16 @@
 {
   .product-box
   {
-    width: 150px;
-    height: 255px;
+	width: calc(100% / 2);
+    height: 305px;
   }
   .product-container 
   {
-      width: 300px;
+    width: 100%;
+  }
+  .product-slidershow
+  {
+	  padding: 0px;
   }
   .product-image-div
   {
@@ -447,8 +451,8 @@
   }
   .product-image
   {
-    width: 77px;
-    height: 83px;
+    width: 107px;
+    height: 116px;
   }
   .product-name-div
   {
@@ -456,21 +460,22 @@
   }
   .product-name
   {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .product-price
   {
-    font-size: 16px;
+    font-size: 24px;
     line-height: 16px;
   }
   .product-currency
   {
-    font-size: 12px;
+    font-size: 14px;
   }
 /*  BUTOANE */
   .slidershow-bttns-div
   {
+  	margin-top: 16px;
     gap: 20px;
   }
   .slider-show-arrow
@@ -499,8 +504,8 @@
   .slider-show-indicator-bonus
   {
     transform: scale(0.9);
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     border-radius: 4px;
 
   }
