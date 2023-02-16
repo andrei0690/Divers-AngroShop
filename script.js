@@ -426,7 +426,7 @@ if(window.innerWidth <= 1150)
     {
         ustensileBucatarie.innerHTML = 'Ustensile de <br> Bucatarie';
     }
-if(window.innerWidth <= 950)
+if(window.innerWidth <= 960)
     {
         welcomeText.innerHTML = 'Bine ati venit la <br><span class="green-styled-text">Divers Angro Shop!</span>'
     }
@@ -445,7 +445,7 @@ window.addEventListener('resize', () =>
     {
         ustensileBucatarie.innerHTML = 'Ustensile de <br> Bucatarie';
     }
-    if(window.innerWidth <= 950)
+    if(window.innerWidth <= 960)
     {
         welcomeText.innerHTML = 'Bine ati venit la <br><span class="green-styled-text">Divers Angro Shop!</span>'
     }
