@@ -7,6 +7,7 @@ currentIndicatorIndexSliderShow01 = 0;
 let sliderShowIndicatorFlex01 = document.querySelector("#slider-show-indicator-flex01");
 let transformatTablet01 = false;
 let transformatTel01 = false;
+let indicatorTimeout01;
 
 // BUTONS CLICK EVENTS 1st CAROUSEL 
 
@@ -39,7 +40,7 @@ nxtBtn01.addEventListener('click', () => {
     {
         dezactivate_Arrow(preBtn01, 350)
     }
-    dezactivate_Indicators(sliderShowIndicatorFlex01, 350);
+    dezactivate_Indicators(sliderShowIndicatorFlex01, 350, indicatorTimeout01);
     
 
 })
@@ -71,7 +72,7 @@ preBtn01.addEventListener('click', () => {
     {
         dezactivate_Arrow(preBtn01, 350)
     }
-    dezactivate_Indicators(sliderShowIndicatorFlex01, 350);
+    dezactivate_Indicators(sliderShowIndicatorFlex01, 350, indicatorTimeout01);
     
     
     
@@ -133,7 +134,7 @@ sliderShowIndicators01.forEach(indicator =>
             scroll_to_Indicator(neededScrolls, productContainer01);
             currentIndicatorIndexSliderShow01 += neededScrolls;
             dezactivate_All_Arrows(preBtn01, nxtBtn01);
-            dezactivate_Indicators(sliderShowIndicatorFlex01, 350);
+            dezactivate_Indicators(sliderShowIndicatorFlex01, 550, indicatorTimeout01);
         }
 
 ))
@@ -199,8 +200,9 @@ window.addEventListener('resize', () =>
 
             scroll_to_Indicator(neededScrolls, productContainer01);
             currentIndicatorIndexSliderShow01 += neededScrolls;
-            dezactivate_All_Arrows(preBtn01, nxtBtn01)
-            dezactivate_Indicators(sliderShowIndicatorFlex01, 350);
+            dezactivate_All_Arrows(preBtn01, nxtBtn01);
+            clearTimeout(indicatorTimeout01);
+            dezactivate_Indicators(sliderShowIndicatorFlex01, 550, indicatorTimeout01);
 
         }
 
@@ -230,21 +232,13 @@ function dezactivate_All_Arrows(arrow01, arrow02)
         dezactivate_Arrow(arrow02, 350)
     }
 }
-function dezactivate_Indicator(indicator, ms)
-{
-    indicator.classList.add('dezactivated-arrow');
-    setTimeout(() =>
-        {
-            indicator.classList.remove('dezactivated-arrow');
-        }, ms);
-}
-function dezactivate_Indicators(sliderShowIndicatorFlex, ms)
+function dezactivate_Indicators(sliderShowIndicatorFlex, ms, indicatorTimeout)
 {
     indicators = Array.from(sliderShowIndicatorFlex.children);
     indicators.forEach((i) =>
     {
         i.classList.add('dezactivated-arrow');
-        setTimeout(() =>
+        let indicatorTimeout = setTimeout(() =>
         {
             i.classList.remove('dezactivated-arrow');
         }, ms);
