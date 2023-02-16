@@ -1,4 +1,58 @@
-
+.welcome-text-div
+{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 120px;
+}
+.naked-styled-header
+{
+	font-family: Dangrek;
+	font-size: 64px;
+	line-height: 86px;
+	font-weight: 400;
+	color: var(--white);
+}
+.green-styled-text
+{
+	color: var(--fourthGreen);
+	font-family: Dangrek;
+}
+.welcome-text-description
+{
+	margin-top: 16px;
+}
+.naked-header
+{
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 48px;
+	text-align: center;
+	color: var(--white);
+}
+.go-to-category-button-div
+{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-top: 120px;
+}
+.go-to-category-button
+{
+	cursor: pointer;
+	border-style: none;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	background-color: var(--fourthGreen);
+	border-radius: 100%;
+	padding: 18px;
+}
 .products-page-header-div
 {
 	width: 100%;
@@ -22,10 +76,11 @@
 }
 .category-grid
 {
-	margin-top: 96px;
+	margin-top: var(--distance);
 	display: grid;
 	width: 100%;
 	justify-content: center;
+	align-content: center;
 	grid-template-columns: 312px 312px 312px;
 	gap: 64px;
 }
@@ -279,6 +334,121 @@
     }
 }
 
+@media(max-width: 1150px)
+{
+	.category-box
+	{
+		width: 222px;
+		height: 131px;
+	}
+	.category-box-content
+	{
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+	.category-text
+	{
+		font-size: 18px;
+		line-height: 32px;
+	}
+	.category-icon
+	{
+		width: 48px;
+		height: 48px;
+	}
+	.category-font-icon
+	{
+		font-size: 32px;
+	}
+	.category-grid
+	{
+		grid-template-columns: 222px 222px 222px;
+	}
+	#diamond-icon
+	{
+		width: 40px;
+		height: 40px;
+	}
+	#bucatarie-icon
+	{
+		width: 40px;
+		height: 40px;
+	}
+}
+@media(max-width: 1000px)
+{
+	.welcome-text-div
+	{
+		margin-top: 64px;
+	}
+}
+@media(max-width: 960px)
+{
+	.naked-styled-header
+	{
+		font-size: 64px;
+		line-height: 72px;
+	}
+	.naked-header
+	{
+		font-size: 24px;
+		line-height: 32px;
+	}
+	.welcome-text-description
+	{
+		margin-top: 40px;
+	}
+	.go-to-category-button-div
+	{
+		margin-top: 64px;
+	}
+}
+@media(max-width: 850px)
+{
+	.category-grid
+	{
+		gap: 24px;
+	}
+}
+@media(max-width: 750px)
+{
+	.category-box
+	{
+		width: 100%;
+		min-height: 80px;
+
+		height: 15vw;
+		border-radius: 0;
+	}
+	.category-box-content
+	{
+		flex-direction: row;
+		gap: 8px;
+	}
+	.category-text
+	{
+		font-size: 18px;
+		line-height: 32px;
+	}
+	.category-icon
+	{
+		width: 48px;
+		height: 48px;
+	}
+	.category-font-icon
+	{
+		font-size: 32px;
+	}
+	.category-grid
+	{
+		grid-template-columns: 1fr;
+	}
+	#last-category-box
+	{
+		grid-column-end: 2;
+	}
+}
 @media(max-width: 1020px)
 {
   .product-container 
@@ -343,17 +513,41 @@
 		font-size: 40px;
 	}
 }
-
+@media(max-width: 550px)
+{
+	.naked-styled-header
+	{
+		font-size: 48px;
+		line-height: 64px;
+	}
+	.naked-header
+	{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.welcome-text-description
+	{
+		margin-top: 24px;
+	}
+	.go-to-category-button-div
+	{
+		margin-top: 64px;
+	}
+}
 @media(max-width: 470px)
 {
   .product-box
   {
-    width: 150px;
-    height: 255px;
+	width: calc(100% / 2);
+    height: 305px;
   }
   .product-container 
   {
-      width: 300px;
+    width: 100%;
+  }
+  .product-slidershow
+  {
+	  padding: 0px;
   }
   .product-image-div
   {
@@ -361,8 +555,8 @@
   }
   .product-image
   {
-    width: 77px;
-    height: 83px;
+    width: 107px;
+    height: 116px;
   }
   .product-name-div
   {
@@ -370,21 +564,22 @@
   }
   .product-name
   {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .product-price
   {
-    font-size: 16px;
+    font-size: 24px;
     line-height: 16px;
   }
   .product-currency
   {
-    font-size: 12px;
+    font-size: 14px;
   }
 /*  BUTOANE */
   .slidershow-bttns-div
   {
+  	margin-top: 16px;
     gap: 20px;
   }
   .slider-show-arrow
@@ -413,8 +608,8 @@
   .slider-show-indicator-bonus
   {
     transform: scale(0.9);
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     border-radius: 4px;
 
   }
@@ -424,5 +619,19 @@
 	.products-page-header
 	{
 		font-size: 32px;
+	}
+	.naked-styled-header
+	{
+		font-size: 40px;
+		line-height: 48px;
+	}
+	.naked-header
+	{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.welcome-text-description
+	{
+		margin-top: 16px;
 	}
 }
