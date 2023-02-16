@@ -398,9 +398,16 @@ function scroll4Right(productContainer)
 
 
 const welcomeText = document.querySelector('.naked-styled-header')
+const ustensileBucatarie = document.querySelector('#ustensile-de-bucatarie');
 
-    //Bine ati venit la <span class="green-styled-text">Divers Angro Shop!</span>
-
+if(window.innerWidth <= 1150)
+    {
+        ustensileBucatarie.innerHTML = 'Ustensile de Bucatarie';
+    }
+    else
+    {
+        ustensileBucatarie.innerHTML = 'Ustensile de <br> Bucatarie';
+    }
 if(window.innerWidth <= 950)
     {
         welcomeText.innerHTML = 'Bine ati venit la <br><span class="green-styled-text">Divers Angro Shop!</span>'
@@ -412,6 +419,14 @@ else
 
 window.addEventListener('resize', () =>
 {
+    if(window.innerWidth <= 1150)
+    {
+        ustensileBucatarie.innerHTML = 'Ustensile de Bucatarie';
+    }
+    else
+    {
+        ustensileBucatarie.innerHTML = 'Ustensile de <br> Bucatarie';
+    }
     if(window.innerWidth <= 950)
     {
         welcomeText.innerHTML = 'Bine ati venit la <br><span class="green-styled-text">Divers Angro Shop!</span>'
