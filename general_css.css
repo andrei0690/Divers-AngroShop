@@ -197,6 +197,7 @@ a
 	justify-content: center;
 	position: relative;
 	background-color: var(--thirdDark);
+	padding-bottom: 96px;
 	height: 100%;
 }
 
@@ -341,9 +342,39 @@ a
 	transition-delay: 0.1s;
 }
 /*BACKUP*/
+
+/*BACKUP BUTTON*/
+
+.created-backup-button-section
+{
+	display: flex;
+	padding-bottom: 25px;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+#created-backup-div
+{
+	opacity: 1;
+	pointer-events: all;
+	transform: translateX(0);
+	filter: blur(0);
+	position: static;
+	margin-top: 3vw;
+	z-index: 10;
+}
+#created-backup-button
+{
+
+	width: 80px;
+	height: 80px;
+}
 .backup-div
 {
-	z-index: 10;
+	z-index: 50;
 	position: fixed;
 	bottom: 50px;
 	right: 50px;
@@ -358,13 +389,14 @@ a
 .backup-button
 {
 	border-radius: 100%;
-	padding: clamp(14px,1.4vw,34px) clamp(15px,1.7vw,35px);
+	width: 80px;
+	height: 80px;
 	cursor: pointer;
 	border-style: none;
 	background-color: var(--fourthGreen);
 	color: var(--secondDark);
 	box-shadow: 0 0 3px 1px rgba(38, 47, 36, 0.5);
-	font-size: 27px;
+	font-size: 32px;
 }
 .backup-button:active
 {
@@ -395,6 +427,7 @@ a
 	transform: translateX(50%);
 	transition: all 0.25s;
 }
+
 /*MORE MAIN PAGE ITEMS*/
 
 .the-whole-top-bar
@@ -542,7 +575,14 @@ a
 {
 	color: var(--secondDark);
 }
-
+@media(min-width: 0px)
+{
+	.display-backup-button-div
+	{
+		opacity: 0;
+		pointer-events: none;
+	}
+}
 @media(min-width: 550px)
 {
 	.end-section-text
@@ -570,7 +610,6 @@ a
 		width: 85%;
 	}
 }
-
 
 @media(max-width: 1000px)
 {
@@ -625,11 +664,23 @@ a
 		align-content: center;
 		justify-content: center;
 	}
-	
-	
+
 
 }
-
+@media(min-width: 1000px)
+{
+	.display-backup-button-div
+	{
+		opacity: 1;
+		pointer-events: all;
+	}
+	#created-backup-div
+	{
+		display: none;
+		opacity: 0;
+		pointer-events: none;
+	}
+}
 @media(max-width: 750px)
 {
 	.top-bar-content-text
@@ -646,6 +697,12 @@ a
 		height: 100%;
 		width: 32px;
 		margin: 0;
+	}
+	#created-backup-button
+	{
+		width: 64px;
+		height: 64px;
+		font-size: 24px;
 	}
 	
 }

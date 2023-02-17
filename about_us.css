@@ -1,3 +1,4 @@
+
 .about-us-section
 {
 	background-position: -25px;
@@ -37,86 +38,6 @@
   background-position: -25px;
   filter: brightness(200.5);
   z-index: 0;
-}
-/*BACKUP BUTTON*/
-.created-backup-button-div-html
-{
-
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	width: 100%;
-
-}
-#created-backup-div
-{
-	opacity: 1;
-	pointer-events: all;
-	transform: translateX(0);
-	filter: blur(0);
-	position: static;
-	margin-top: 3vw;
-	z-index: 10;
-}
-#created-backup-button
-{
-
-	width: 55px;
-	height: 60px;
-}
-.backup-div
-{
-	z-index: 10;
-	position: fixed;
-	bottom: 50px;
-	right: 50px;
-	opacity: 0;
-	pointer-events: none;
-	transform: translateY(100%);
-	filter: blur(3px);
-	transition: all 0.25s;
-
-	
-}
-.backup-button
-{
-	border-radius: 100%;
-	padding: clamp(14px,1.4vw,34px) clamp(15px,1.7vw,35px);
-	cursor: pointer;
-	border-style: none;
-	background-color: var(--fourthGreen);
-	color: var(--secondDark);
-	box-shadow: 0 0 3px 1px rgba(38, 47, 36, 0.5);
-	font-size: 27px;
-}
-.backup-button:active
-{
-	background-color: var(--fourthGreen);
-	color: var(--secondDark);
-
-}
-.fixed-backup-button
-{
-	position: fixed;
-	right: 50px;
-}
-.display-backup-button-div
-{
-	opacity: 1;
-	filter: blur(0px);
-	pointer-events: all;
-	transform: translateY(0);
-	
-}
-.postion-backup-button-div
-{
-	position: absolute;
-	--top: 0;
-	top: var(--top);
-
-	right: 50%;
-	transform: translateX(50%);
-	transition: all 0.25s;
 }
 
 .top-bar-section
@@ -192,7 +113,7 @@
 	z-index: 10;
 	top: 0px;
 	position: fixed;
-	height: 5px;
+	height: 8px;
 	width: var(--progress);
 	background-color: var(--superlightGreen);
 	border-style: none;
@@ -653,11 +574,7 @@ input[name="staff-r"]
 	{
 		border-width: 1vw;
 	}
-	.display-backup-button-div
-	{
-		opacity: 0;
-		pointer-events: none;
-	}
+	
 	.slidershow
 	{
 	  width: 100%;
@@ -708,12 +625,7 @@ input[name="staff-r"]
 	{
 		border: none;
 	}
-	#created-backup-button
-	{
-
-		width: 85px;
-		height: 95px;
-	}
+	
 }
 
 @media(min-width: 950px)
@@ -726,17 +638,7 @@ input[name="staff-r"]
 	{
 		border-width: 0.6vw;
 	}
-	.display-backup-button-div
-	{
-		opacity: 1;
-		pointer-events: all;
-	}
-	#created-backup-div
-	{
-		display: none;
-		opacity: 0;
-		pointer-events: none;
-	}
+	
 	.slidershow
 	{
 	  width: 70vw;
