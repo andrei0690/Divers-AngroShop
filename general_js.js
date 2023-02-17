@@ -142,10 +142,10 @@ window.addEventListener('scroll', () => {
 	{
 		backUpButton.classList.remove('display-backup-button-div');
 	}
-	if (scrollPercent >= 95) 
-  	{
-  		setBackupButton();
-	}
+	// if (scrollPercent >= 95) 
+  // 	{
+  // 		setBackupButton();
+	// }
 
 })
 
