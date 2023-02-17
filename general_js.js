@@ -95,12 +95,37 @@ greenTexts.forEach(greenText =>
 
 // BACKUP BUTTON
 
-// BackUp Button
-
-// Calculam procentul la pagina ca sa apara butonul mereu dupa o anumita josime
-
 const backupButtons = document.querySelectorAll('.backup-button');
 const backUpButton = document.querySelector('.backup-div');
+const createdBackupDiv = document.querySelector('#created-backup-div');
+const createdBackupButton = document.querySelector('#created-backup-button');
+const endSection =  document.querySelector('.end-section');
+const endSectionStart = document.querySelector('.end-section-start')
+buttonMoved = false;
+
+let setbuttontimeout;
+clearTimeout(setbuttontimeout);
+unsetBackupButton();
+scrollPercent = getScrollPercent();
+if(scrollPercent >= 95 )
+{
+	setbuttontimeout = setTimeout(setBackupButton, 500);
+}
+
+//Backup Button elimina buguri
+
+window.addEventListener("resize", () =>
+{
+  clearTimeout(setbuttontimeout);
+  unsetBackupButton();
+  scrollPercent = getScrollPercent();
+  if(scrollPercent >= 95 )
+  {
+    setbuttontimeout = setTimeout(setBackupButton, 500);
+  }
+})
+  
+
 
 window.addEventListener('scroll', () => {
     
@@ -109,18 +134,19 @@ window.addEventListener('scroll', () => {
     const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100;
 
 
-
   	if (scrollPercent >= 23) 
   	{
-  		if(globalbackupbuttons == 1)
-  		{
-  			backUpButton.classList.add('display-backup-button-div');
-  		}
-	 }
-	 else
-	 {
+  		backUpButton.classList.add('display-backup-button-div');
+	}
+	else
+	{
 		backUpButton.classList.remove('display-backup-button-div');
-	 }
+	}
+	if (scrollPercent >= 95) 
+  	{
+  		setBackupButton();
+	}
+
 })
 
 // Cand apesi te duce sus 
@@ -135,22 +161,22 @@ backupButtons.forEach(button =>
 })
 
 // Cand vede ultima sectiune sa dispara
-const diversOrarDiv = document.querySelector('.divers-orar-div');
-const createdBackupButtonDivHTML = document.querySelector('.created-backup-button-div-html');
-const createdBackupDiv = document.querySelector('#created-backup-div');
-const createdBackupButton = document.querySelector('#created-backup-button');
-const OrarSection = document.querySelector('.orar-info-section');
-const endSection =  document.querySelector('.end-section');
-const endSectionStart = document.querySelector('.end-section-start')
-globalbackupbuttons = 1;
-buttonMoved = false;
 
+function getScrollPercent()
+{
+  const {scrollTop, scrollHeight} = document.documentElement;
+
+  const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100;
+
+  return scrollPercent;
+}
 function setBackupButton()
 {
-      let orarSectionRect = endSectionStart.offsetTop;
-      
+      let BackupBttnSectionRect = endSectionStart.offsetTop;
+      let backupOffset = window.innerWidth / 15;
+      BackupBttnSectionRect = BackupBttnSectionRect - backupOffset;
       backUpButton.classList.add('positioned-backup-button');
-      backupbuttontopVar = orarSectionRect + 'px';
+      backupbuttontopVar = BackupBttnSectionRect + 'px';
 
       backUpButton.classList.add('postion-backup-button-div');
       backUpButton.style.setProperty('--top', backupbuttontopVar);
@@ -191,26 +217,3 @@ const backUpbuttonObserver = new IntersectionObserver((entries) =>
 
 
 backUpbuttonObserver.observe(endSectionStart);
-
-function dissapearBackupButton()
-{
-  backUpButton.classList.add('dissapear-backup-button-div');
-  backUpButton.classList.remove('display-backup-button-div');
-
-}
-
-function createBackupButton()
-{
-   let realCreatedBackupButtonDiv = document.createElement('div');
-   realCreatedBackupButtonDiv.classList.add('display-backup-button-div');
-   realCreatedBackupButtonDiv.style.marginTop = '25px';
-
-   let realCreatedBackupButton = document.createElement('button');
-   realCreatedBackupButton.classList.add('backup-button');
-   realCreatedBackupButton.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
-
-   realCreatedBackupButtonDiv.appendChild(realCreatedBackupButton);
-
-   createdBackupButtonDivHTML.appendChild(realCreatedBackupButtonDiv);
-   
-}
