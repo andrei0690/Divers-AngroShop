@@ -411,9 +411,9 @@ a
 }
 .display-backup-button-div
 {
-	opacity: 1;
+	opacity: 0;
 	filter: blur(0px);
-	pointer-events: all;
+	pointer-events: none;
 	transform: translateY(0);
 	
 }
@@ -563,53 +563,9 @@ a
 {
 	transition: all 0.15s;
 }
-.header-top-bar-link:active
-{
-	background-color: var(--fourthGreen);
-}
-.header-top-bar-link:active .top-bar-content-icon
-{
-	color: var(--secondDark);
-}
-.header-top-bar-link:active .top-bar-content-text
-{
-	color: var(--secondDark);
-}
-@media(min-width: 0px)
-{
-	.display-backup-button-div
-	{
-		opacity: 0;
-		pointer-events: none;
-	}
-}
-@media(min-width: 550px)
-{
-	.end-section-text
-	{
-		font-size: 2.8vw;
-	}
-	.end-section-header
-	{
-		font-size: 4.5vw;
-	}
-	.end-section-description-sign
-	{
-		font-size: 4.5vw;
-	}
-	.divers-header
-	{
-		font-size: var(--mdescriptionbig);
-	}
-	.divers-description
-	{
-		font-size: var(--msmallbig);
-	}
-	.end-section-content
-	{
-		width: 85%;
-	}
-}
+
+
+
 
 @media(max-width: 1000px)
 {
@@ -664,23 +620,21 @@ a
 		align-content: center;
 		justify-content: center;
 	}
-
+	.header-top-bar-link:active
+	{
+		background-color: var(--fourthGreen);
+	}
+	.header-top-bar-link:active .top-bar-content-icon
+	{
+		color: var(--secondDark);
+	}
+	.header-top-bar-link:active .top-bar-content-text
+	{
+		color: var(--secondDark);
+	}
 
 }
-@media(min-width: 1000px)
-{
-	.display-backup-button-div
-	{
-		opacity: 1;
-		pointer-events: all;
-	}
-	#created-backup-div
-	{
-		display: none;
-		opacity: 0;
-		pointer-events: none;
-	}
-}
+
 @media(max-width: 750px)
 {
 	.top-bar-content-text
@@ -716,7 +670,47 @@ a
 		height: 24px;
 	}
 }
-
+@media(min-width: 550px)
+{
+	.end-section-text
+	{
+		font-size: 2.8vw;
+	}
+	.end-section-header
+	{
+		font-size: 4.5vw;
+	}
+	.end-section-description-sign
+	{
+		font-size: 4.5vw;
+	}
+	.divers-header
+	{
+		font-size: var(--mdescriptionbig);
+	}
+	.divers-description
+	{
+		font-size: var(--msmallbig);
+	}
+	.end-section-content
+	{
+		width: 85%;
+	}
+}
+@media(min-width: 1000px)
+{
+	.display-backup-button-div
+	{
+		opacity: 1;
+		pointer-events: all;
+	}
+	#created-backup-div
+	{
+		display: none;
+		opacity: 0;
+		pointer-events: none;
+	}
+}
 @media(min-width: 1350px)
 {
 
