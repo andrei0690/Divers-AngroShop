@@ -1,3 +1,35 @@
+.error-text
+{
+ color: var(--fourthGreen);
+}
+.error-background
+{
+  background-color: var(--thirdDark);
+}
+.products-page-header-div
+{
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background-color: var(--fourthGreen);
+}
+.products-page-header
+{
+	font-family: Dangrek;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 86px;
+	text-align: center;
+	color: var(--secondDark);
+}
+
+.header-name
+{
+	color: var(--white);
+	font-size: 32px;
+	font-weight: 900;
+}
 #name-input
 {
 	transition-delay: 0.1s;
@@ -168,11 +200,10 @@
 
 .info-div
 {
+	margin-top: 24px;
 	display: flex;
 	align-content: center;
 	justify-content: center;
-	font-weight: 700;
-	font-size: 8vw;
 	color: var(--white);
 }
 
@@ -182,7 +213,7 @@
 	color: var(--white);
 	font-weight: 700;
 	text-align: center;
-	margin-top: var(--distnac);
+	margin-top: 24px;
 	font-size: var(--mheader);
 	grid-template-columns: 250px 500px;
 	justify-content: center;
@@ -194,8 +225,8 @@
 ::placeholder
 {
 	color: var(--white);
-	opacity: 0.95;
-	font-size: 25px;
+	opacity: 0.85;
+	font-size: 24px;
 }
 
 .input-user
@@ -203,14 +234,20 @@
 	padding: 15px 5px 15px 10px;
 	width: 100%;
 	text-align: center;
-	background-color: var(--secondDark);
-	border-style: solid;
-	border-color: var(--superlightGreen);
-	border-radius: var(--smallerBorderRadius);
+	background-color: var(--thirdDark);
+	border-radius: 8px;
+	border: none;
 	color: var(--white);
 	font-size: 21px;
 	font-weight: 500;
 	outline: none;
+}
+.input-user::placeholder
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 2.5%;
 }
 .input-user:focus
 {
@@ -234,9 +271,11 @@
 	margin-top: var(--distance);
 	width: 100%;
 	text-align: center;
-	background-color: var(--secondDark);
-	border-style: none none solid none;
-	border-color: var(--superlightGreen);
+	background-color: var(--thirdDark);
+	border: none;
+	border-radius: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	color: var(--white);
 	font-size: 23px;
 	font-weight: 500;
@@ -254,7 +293,6 @@
 	align-items: center;
 	justify-content: center;
 	color: var(--white);
-	font-size: 8vw;
 	font-weight: 700;
 	text-align: center;
 }
@@ -264,16 +302,20 @@
 	width: 1000px;
 	height: 500px;
 	padding-left: 10px;
+	padding-right: 10px;
 	padding-top: 10px;
-	background-color: var(--secondDark);
-	border-style: solid;
-	border-width: 1px;
-	border-color: var(--superlightGreen);
-	border-radius: var(--niceBorderRadius);
+	background-color: var(--thirdDark);
+	border: none;
+	border-radius: 8px;
 	color: var(--white);
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 500;
 	outline: none;
+}
+.description-input::placeholder
+{
+	font-size: 20px;
+	font-weight: 500;
 }
 .description-input:focus
 {
@@ -288,24 +330,44 @@
 }
 .submit-button
 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 	cursor: pointer;
-	padding: 30px 60px;
-	background-color: var(--fourthGreen);
-	border-color: var(--fourthGreen);
-	color: var(--secondDark);
-	border-style: solid;
-	border-width: 2px;
-	border-radius: var(--smallerBorderRadius);
+	width: 240px;
+	height: 120px;
+	background-color: var(--thirdDark);
+	border: none;
+	color: var(--white);
+	border-radius: 8px;
 	font-size: 31px;
 	font-weight: 700;
 	transition: all 0.1s;
 
 }
+.submit-button:hover .send-icon
+{
+	margin-left: 16px;	
+	transition: all 0.25s;
+	color: var(--secondDark);
+}
+
+.send-icon
+{
+	margin-left: 8px;
+	color: var(--fourthGreen);
+}
+.submit-button:hover .submit-text
+{
+	margin-left: 16px;
+	transition: margin 0.25s;
+}
 .submit-button:hover
 {
-	background-color: var(--secondDark);
-	border-color: var(--white);
-	color: var(--white);
+	background-color: var(--fourthGreen);
+	color: var(--secondDark);
 }
 
 @media(min-width: 0px)
