@@ -181,11 +181,6 @@ window.addEventListener('scroll', () => {
 	{
 		backUpButton.classList.remove('display-backup-button-div');
 	}
-	// if (scrollPercent >= 95) 
-  // 	{
-  // 		setBackupButton();
-	// }
-
 })
 
 // Cand apesi te duce sus 
@@ -238,14 +233,13 @@ const backUpbuttonObserver = new IntersectionObserver((entries) =>
 	entries.forEach((entry) =>
 	{
 
-    const {scrollTop, scrollHeight} = document.documentElement;
+    scrollPercent = getScrollPercent();
 
-    const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100;
     if(entry.isIntersecting && buttonMoved == false)
     {
       setBackupButton();
     }
-    if(!entry.isIntersecting && buttonMoved == true && scrollPercent <= 95)
+    if(!entry.isIntersecting && buttonMoved == true)
     {
       unsetBackupButton();
     }
