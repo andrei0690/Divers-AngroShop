@@ -51,18 +51,18 @@ const staggerAnimationObserver = new IntersectionObserver((entries) =>
 	})
 })
 
-const staggerAnimationRightObserver = new IntersectionObserver((entries) =>
-{
-	entries.forEach((entry) =>
-	{
-		if(entry.isIntersecting)
-		{
-			entry.target.classList.add("stagger-right-animation");
-		}
+// const staggerAnimationRightObserver = new IntersectionObserver((entries) =>
+// {
+// 	entries.forEach((entry) =>
+// 	{
+// 		if(entry.isIntersecting)
+// 		{
+// 			entry.target.classList.add("stagger-right-animation");
+// 		}
 
 		
-	})
-})
+// 	})
+// })
 
 const hiddenHeaders = document.querySelectorAll('.header');
 
@@ -72,7 +72,7 @@ const downElements = document.querySelectorAll('.down-up-preset');
 
 const leftStaggerElements = document.querySelectorAll('.stagger-animation-staged');
 
-const rightStaggerElements = document.querySelectorAll('.stagger-right-animation-staged');
+// const rightStaggerElements = document.querySelectorAll('.stagger-right-animation-staged');
 
 hiddenElements.forEach((el) =>
 {
@@ -94,10 +94,10 @@ leftStaggerElements.forEach((el) =>
 	staggerAnimationObserver.observe(el);
 })
 
-rightStaggerElements.forEach((el) =>
-{
-	staggerAnimationRightObserver.observe(el);
-})
+// rightStaggerElements.forEach((el) =>
+// {
+// 	staggerAnimationRightObserver.observe(el);
+// })
 // FUZZ LA TEXT
 
 let scrolling = false;
