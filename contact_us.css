@@ -1,3 +1,14 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button 
+{
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Remove the default number input styling */
+input[type=number] {
+	-moz-appearance: textfield;
+}
 .error-text
 {
  color: var(--fourthGreen);
@@ -8,6 +19,7 @@
 }
 .products-page-header-div
 {
+	margin-top: 32px;
 	width: 100%;
 	display: flex;
 	align-content: center;
