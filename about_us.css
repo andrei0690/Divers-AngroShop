@@ -1,7 +1,7 @@
 
 .about-us-section
 {
-	background-position: -25px;
+	background-position: 35px;
 	background-image: url("Background-Photos//DiversBackgroundfourthGreen.png");
 	background-size: contain;
 }
@@ -20,8 +20,6 @@
 .adresa-info-section
 {
 	position: relative;
-	/*background-position: -25px;
-	background-image: url("Background-Photos//DiversBackgroundfourthDark.png");*/
 }
 #adresa-div
 {
@@ -35,8 +33,8 @@
   width: 100%; height: 100%;
   background-image: url("Background-Photos//DiversBackgroundthirdDark.png");
   background-size: contain;
-  background-position: -25px;
-  filter: brightness(200.5);
+  background-position: 35px;
+  filter: brightness(2);
   z-index: 0;
 }
 

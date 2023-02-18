@@ -2393,17 +2393,17 @@ const welcomeText = document.querySelector('.naked-styled-header')
 const ustensileBucatarie = document.querySelector('#ustensile-de-bucatarie-text');
 
 if(window.innerWidth <= 1150)
-    {
-        ustensileBucatarie.innerHTML = 'Ustensile de Bucatarie';
-    }
-    else
-    {
-        ustensileBucatarie.innerHTML = 'Ustensile de <br> Bucatarie';
-    }
+{
+    ustensileBucatarie.innerHTML = 'Ustensile de Bucatarie';
+}
+else
+{
+    ustensileBucatarie.innerHTML = 'Ustensile de <br> Bucatarie';
+}
 if(window.innerWidth <= 960)
-    {
-        welcomeText.innerHTML = 'Bine ati venit la <br><span class="green-styled-text">Divers Angro Shop!</span>'
-    }
+{
+    welcomeText.innerHTML = 'Bine ati venit la <br><span class="green-styled-text">Divers Angro Shop!</span>'
+}
 else
 {
     welcomeText.innerHTML = 'Bine ati venit la <span class="green-styled-text">Divers Angro Shop!</span>'
