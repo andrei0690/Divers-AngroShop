@@ -38,11 +38,41 @@ const downAnimationObserver = new IntersectionObserver((entries) =>
 	})
 })
 
+const staggerAnimationObserver = new IntersectionObserver((entries) =>
+{
+	entries.forEach((entry) =>
+	{
+		if(entry.isIntersecting)
+		{
+			entry.target.classList.add("stagger-animation");
+		}
+
+		
+	})
+})
+
+// const staggerAnimationRightObserver = new IntersectionObserver((entries) =>
+// {
+// 	entries.forEach((entry) =>
+// 	{
+// 		if(entry.isIntersecting)
+// 		{
+// 			entry.target.classList.add("stagger-right-animation");
+// 		}
+
+		
+// 	})
+// })
+
 const hiddenHeaders = document.querySelectorAll('.header');
 
 const hiddenElements = document.querySelectorAll('.hidden');
 
 const downElements = document.querySelectorAll('.down-up-preset');
+
+const leftStaggerElements = document.querySelectorAll('.stagger-animation-staged');
+
+// const rightStaggerElements = document.querySelectorAll('.stagger-right-animation-staged');
 
 hiddenElements.forEach((el) =>
 {
@@ -59,6 +89,15 @@ downElements.forEach((el) =>
 	downAnimationObserver.observe(el);
 })
 
+leftStaggerElements.forEach((el) =>
+{
+	staggerAnimationObserver.observe(el);
+})
+
+// rightStaggerElements.forEach((el) =>
+// {
+// 	staggerAnimationRightObserver.observe(el);
+// })
 // FUZZ LA TEXT
 
 let scrolling = false;
@@ -142,11 +181,6 @@ window.addEventListener('scroll', () => {
 	{
 		backUpButton.classList.remove('display-backup-button-div');
 	}
-	// if (scrollPercent >= 95) 
-  // 	{
-  // 		setBackupButton();
-	// }
-
 })
 
 // Cand apesi te duce sus 
@@ -199,14 +233,13 @@ const backUpbuttonObserver = new IntersectionObserver((entries) =>
 	entries.forEach((entry) =>
 	{
 
-    const {scrollTop, scrollHeight} = document.documentElement;
+    scrollPercent = getScrollPercent();
 
-    const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100;
     if(entry.isIntersecting && buttonMoved == false)
     {
       setBackupButton();
     }
-    if(!entry.isIntersecting && buttonMoved == true && scrollPercent <= 85)
+    if(!entry.isIntersecting && buttonMoved == true)
     {
       unsetBackupButton();
     }
