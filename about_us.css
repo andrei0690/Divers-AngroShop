@@ -1,4 +1,21 @@
-
+.products-page-header-div
+{
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background-color: var(--fourthGreen);
+	margin-bottom: var(--distance);
+}
+.products-page-header
+{
+	font-family: Dangrek;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 86px;
+	text-align: center;
+	color: var(--secondDark);
+}
 .about-us-section
 {
 	background-position: 35px;
@@ -213,7 +230,7 @@ input[name="r"]
   margin-left: -80%;
 }
 
-.divers-header-div
+/*.divers-header-div
 {
 	display: flex;
 	background-color: var(--fourthGreen);
@@ -227,7 +244,7 @@ input[name="r"]
 	font-weight: 700;
 	font-family: Dangrek;
 	color: var(--secondDark);
-}
+}*/
 .divers-description-div
 {	
 	display: flex;
