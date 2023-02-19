@@ -122,7 +122,7 @@ greenTexts.forEach(greenText =>
 	  
 	  if(!scrolling)
 	  {
-	  	greenText.style.textShadow = '1px 0px 0.15em var(--fourthGreen)';
+	  	greenText.style.textShadow = '0px 0px 0.15em var(--superlightGreen)';
 	  }
 
 

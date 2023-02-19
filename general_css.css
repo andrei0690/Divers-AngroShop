@@ -255,7 +255,7 @@ a
 .green-text-glow
 {
 	color: var(--fourthGreen);
-	text-shadow: 1px 0px 0.15em var(--fourthGreen);
+	text-shadow: 1px 0px 0.10em var(--fourthGreen);
 }
 
 /*END SECTION*/
