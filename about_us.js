@@ -126,7 +126,7 @@ function carousel_remove_fill_all()
 
   carouselBars.forEach(bar =>
   {
-    bar.style.background = 'var(--thirdDark)';
+    bar.style.background = 'var(--secondDark)';
   })
 }
 

@@ -158,9 +158,8 @@
   width: 7vw;
   border-radius: 8px;
   height: 20px;
-  background-color: var(--thirdDark);
   border-style: solid;
-  border-color: var(--fourthGreen);
+  border-color: var(--superlightGreen);
   border-width: 3px 4px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -642,8 +641,8 @@ input[name="staff-r"]
 	
 	.slidershow
 	{
-	  width: 70vw;
-	  height: 42vw;
+	  width: 60vw;
+	  height: 36vw;
 	  overflow: hidden;
 	}
 }
