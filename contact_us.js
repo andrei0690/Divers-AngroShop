@@ -16,7 +16,6 @@ const submitDiv = document.querySelector('.submit-div');
 let submitButton = document.querySelector('.submit-button');
 let sendIcon;
 
-let transformed;
 let changeValuestimeout;
 let changeValuestimeout02;
 
@@ -79,7 +78,6 @@ submitButton.addEventListener('click', (e) => {
             succesPopupMessage.style.color = 'var(--fourthGreen)';
             submitButton.innerHTML = 'Erroare';
             succesPopupMessage.innerHTML = 'Am detectat o problema';
-            console.log('adaugat');
         }
         submitDiv.style.pointerEvents = 'none';
         transformed = true;
@@ -93,18 +91,25 @@ submitButton.addEventListener('click', (e) => {
 )
 
 
-
-if(transformed == false)
+submitButton.addEventListener('mouseover', () =>
 {
-    submitButton.addEventListener('mouseover', () =>
-    {
-        let sendIcon = document.querySelector('.send-icon');
-        sendIcon.innerHTML = '-->';
-    })
+    sendIcon = document.querySelector('.send-icon');
+    sendIcon.innerHTML = '-->';
+})
 
-    submitButton.addEventListener('mouseout', () =>
+
+submitButton.addEventListener('mouseout', () =>
+{
+    try
     {
-        let sendIcon = document.querySelector('.send-icon');
+        sendIcon = document.querySelector('.send-icon');
         sendIcon.innerHTML = '>';
-    })
-}
+
+    }
+    catch
+    {
+
+    }
+    
+})
+
