@@ -99,32 +99,32 @@
 }
 .progress-bar-anim
 {
+	z-index: 251;
 	background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 	background-size: 400% 400%;
 	animation: gradient 2.5s ease infinite;
 }
-
+#header-top-bar-bonus-progress
+{
+	--progress: 0;
+	width: var(--progress);
+	background-color: var(--fourthGreen);
+}
 .progress-bar
 {
 	--progress: 0;
 
 	z-index: 250;
-	top: 0px;
+	top: 88px;
 	position: fixed;
 	height: 8px;
 	width: var(--progress);
-	background-color: var(--superlightGreen);
-	border-style: none;
-	box-shadow: 0 1px 3px 1px rgba(38, 47, 36, 0.5);
-
-
-	transform: translateX(-100%);
-}
-.progress-bar.progressBarAnim
-{
+	background-color: var(--fourthGreen);
+	border: none;
 	opacity: 1;
-	transform: translateX(0%);
+	box-shadow: 0 1px 3px 1px rgba(38, 47, 36, 0.5);
 }
+
 
 /*CARUSEL*/
 .carousel
@@ -136,7 +136,7 @@
 }
 .slidershow
 {
-  height: 42vw;
+  height: 40vw;
   overflow: hidden;
   border-style: solid none;
 	border-width: 0.8vw;
@@ -149,16 +149,19 @@
   margin-top: 1.5vw;
   height: 100%;
   justify-content: center;
+  gap: 8px;
   align-content: center;
 
 }
 .bar
 {
   width: 7vw;
-  border-radius: 3px;
+  border-radius: 8px;
   height: 20px;
-  border: 2px solid var(--superlightGreen);
-  margin: 6px;
+  background-color: var(--thirdDark);
+  border-style: solid;
+  border-color: var(--fourthGreen);
+  border-width: 3px 4px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 

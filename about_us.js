@@ -25,7 +25,7 @@ updateStaffSection();
 // Progress Bar
 
 const progressBar = document.querySelector('.progress-bar');
-
+const progressBarwithBonus = document.querySelector('#header-top-bar-bonus-progress');
 window.addEventListener('scroll', () => {
   
 
@@ -35,22 +35,12 @@ window.addEventListener('scroll', () => {
 
   if(scrollPercent == 100)
   {
-    progressBar.classList.add('progress-bar-anim');
+    progressBarwithBonus.classList.add('progress-bar-anim');
   }
   else
   {
-    progressBar.classList.remove('progress-bar-anim');
+    progressBarwithBonus.classList.remove('progress-bar-anim');
   }
-
-  if (window.pageYOffset > 100) 
-  {
-		progressBar.classList.add('progressBarAnim');
-
-	}
-	else
-	{
-		progressBar.classList.remove('progressBarAnim');
-	}
 })
 
 function updateProgressBar() 
@@ -136,7 +126,7 @@ function carousel_remove_fill_all()
 
   carouselBars.forEach(bar =>
   {
-    bar.style.background = 'none';
+    bar.style.background = 'var(--thirdDark)';
   })
 }
 
