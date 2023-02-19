@@ -273,7 +273,7 @@ a
 	justify-content: center;
 	position: relative;
 	background-color: var(--thirdDark);
-	padding-bottom: 796px;
+	padding-bottom: 96px;
 	height: 100%;
 }
 
@@ -791,6 +791,7 @@ a
 		opacity: 0;
 		pointer-events: none;
 	}
+	
 }
 @media(min-width: 1350px)
 {
@@ -824,4 +825,12 @@ a
 		display: none;
 	}
 
+}
+
+@media(max-width: 1000px)
+{
+	.end-section
+	{
+		padding-bottom: 192px;
+	}
 }
