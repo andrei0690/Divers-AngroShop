@@ -84,27 +84,27 @@ fill_radio();
 // Click and change slide
 carouselRadiop01.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar01.style.backgroundColor = 'var(--superlightGreen)';
+  carouselBar01.style.backgroundColor = 'var(--thirdGreen)';
   reset_carousel();
 })
 carouselRadiop02.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar02.style.backgroundColor = 'var(--superlightGreen)';
+  carouselBar02.style.backgroundColor = 'var(--thirdGreen)';
   reset_carousel();
 })
 carouselRadiop03.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar03.style.backgroundColor = 'var(--superlightGreen)';
+  carouselBar03.style.backgroundColor = 'var(--thirdGreen)';
   reset_carousel();
 })
 carouselRadiop04.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar04.style.backgroundColor = 'var(--superlightGreen)';
+  carouselBar04.style.backgroundColor = 'var(--thirdGreen)';
   reset_carousel();
 })
 carouselRadiop05.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar05.style.backgroundColor = 'var(--superlightGreen)';
+  carouselBar05.style.backgroundColor = 'var(--thirdGreen)';
   reset_carousel();
 })
 
@@ -196,27 +196,27 @@ function fill_radio() {
   if(arrayofCarouselRadios[0].checked)
   {
     carousel_remove_fill_all();
-    carouselBar01.style.backgroundColor = 'var(--superlightGreen)';
+    carouselBar01.style.backgroundColor = 'var(--thirdGreen)';
   }
   if(arrayofCarouselRadios[1].checked)
   {
     carousel_remove_fill_all();
-    carouselBar02.style.backgroundColor = 'var(--superlightGreen)';
+    carouselBar02.style.backgroundColor = 'var(--thirdGreen)';
   }
   if(arrayofCarouselRadios[2].checked)
   {
     carousel_remove_fill_all();
-    carouselBar03.style.backgroundColor = 'var(--superlightGreen)';
+    carouselBar03.style.backgroundColor = 'var(--thirdGreen)';
   }
   if(arrayofCarouselRadios[3].checked)
   {
     carousel_remove_fill_all();
-    carouselBar04.style.backgroundColor = 'var(--superlightGreen)';
+    carouselBar04.style.backgroundColor = 'var(--thirdGreen)';
   }
   if(arrayofCarouselRadios[4].checked)
   {
     carousel_remove_fill_all();
-    carouselBar05.style.backgroundColor = 'var(--superlightGreen)';
+    carouselBar05.style.backgroundColor = 'var(--thirdGreen)';
   }
 }
 

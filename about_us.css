@@ -159,7 +159,7 @@
   border-radius: 8px;
   height: 20px;
   border-style: solid;
-  border-color: var(--superlightGreen);
+  border-color: var(--thirdGreen);
   border-width: 3px 4px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
