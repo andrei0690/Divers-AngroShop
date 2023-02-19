@@ -391,7 +391,7 @@ input[name="staff-r"]
 }
 .owner-bar
 {
-	background-color: var(--fourthGreen);
+	background-color: var(--thirdDark);
 	width: 100%;
 /*	filter: brightness(1.25);*/
 	height: clamp(0.25vw,0.50vw,0.75vw);

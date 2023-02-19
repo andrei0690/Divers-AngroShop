@@ -428,14 +428,6 @@ function fill_staff_radio(){
 
 // Cand sunt pe Desktop sa nu existe caruselul, deci sa existe 3 fotografii si nume
 
-const ownerbarElements = document.querySelectorAll('.owner-');
-
-function removeOwnerbars() {
-  ownerbarElements.forEach(e =>
-  {
-    e.classList.add('owner--dissapear');
-  })
-}
 function getScrollPercent()
 {
   const {scrollTop, scrollHeight} = document.documentElement;
@@ -444,31 +436,12 @@ function getScrollPercent()
 
   return scrollPercent;
 }
-function addOwnerbars() {
-  ownerbarElements.forEach(e =>
-  {
-    e.classList.remove('owner--dissapear');
-  })
-}
+
 
 window.addEventListener("resize", () =>
 {
   //Update la staff carusel
   updateStaffSection();
-  
-  //Piramida la staff
-  if(window.innerWidth >= 1350)
-  {
-     proprietarHeader.innerHTML = 'Echipa Noastra';
-     addOwnerbars();
-
-  }
-  else
-  {
-    proprietarHeader.innerHTML = 'Proprietar';
-    removeOwnerbars();
-  }
-
 });
 
 function updateStaffSection()
@@ -737,19 +710,4 @@ function createStaffSlideShow()
   staffCarouselContainerAll.appendChild(staffSliderShow);
   staffCarouselContainerAll.appendChild(staffNavigation);
 
-}
-
-
-
-// Resize pentru piramida
-
-if(window.innerWidth >= 1350)
-{
-     proprietarHeader.innerHTML = 'Echipa Noastra';
-     addOwnerbars();
-}
-else
-{
-    proprietarHeader.innerHTML = 'Proprietar';
-    removeOwnerbars();
 }
