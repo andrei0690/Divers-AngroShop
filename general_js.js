@@ -145,22 +145,30 @@ buttonMoved = false;
 let setbuttontimeout;
 clearTimeout(setbuttontimeout);
 unsetBackupButton();
-scrollPercent = getScrollPercent();
-if(scrollPercent >= 95 )
-{
-	setbuttontimeout = setTimeout(setBackupButton, 500);
-}
+const {scrollTop, scrollHeight} = document.documentElement;
+const scrollpixels = Math.round(scrollTop);
 
+let offsetStartEndSect = endSectionStart.offsetTop;
+
+if(scrollpixels >= offsetStartEndSect)
+{
+	setBackupButton();
+}
 //Backup Button elimina buguri
 
 window.addEventListener("resize", () =>
 {
   clearTimeout(setbuttontimeout);
   unsetBackupButton();
-  scrollPercent = getScrollPercent();
-  if(scrollPercent >= 95 )
+  
+  const {scrollTop, scrollHeight} = document.documentElement;
+  const scrollpixels = Math.round(scrollTop);
+
+  let offsetStartEndSect = endSectionStart.offsetTop;
+
+  if(scrollpixels >= offsetStartEndSect)
   {
-    setbuttontimeout = setTimeout(setBackupButton, 500);
+    setBackupButton();
   }
 })
   
@@ -168,14 +176,12 @@ window.addEventListener("resize", () =>
 
 window.addEventListener('scroll', () => {
     
-    const {scrollTop, scrollHeight} = document.documentElement;
-
-    const scrollPercent = scrollTop / (scrollHeight - window.innerHeight) * 100;
+	let scrollPercent = getScrollPercent();
 
 
-  	if (scrollPercent >= 23) 
-  	{
-  		backUpButton.classList.add('display-backup-button-div');
+	if (scrollPercent >= 23) 
+	{
+		backUpButton.classList.add('display-backup-button-div');
 	}
 	else
 	{
@@ -233,13 +239,16 @@ const backUpbuttonObserver = new IntersectionObserver((entries) =>
 	entries.forEach((entry) =>
 	{
 
-    scrollPercent = getScrollPercent();
+		const {scrollTop, scrollHeight} = document.documentElement;
+  	const scrollpixels = Math.round(scrollTop);
+
+		let offsetStartEndSect = endSectionStart.offsetTop;
 
     if(entry.isIntersecting && buttonMoved == false)
     {
       setBackupButton();
     }
-    if(!entry.isIntersecting && buttonMoved == true)
+    if(!entry.isIntersecting && buttonMoved == true && scrollpixels <= offsetStartEndSect)
     {
       unsetBackupButton();
     }
