@@ -683,7 +683,7 @@ function createStaffSlideShow()
   let staffCarouselPreviousCreatedArrow = document.createElement('button');
   staffCarouselPreviousCreatedArrow.classList.add('carousel-staff-arrow');
   staffCarouselPreviousCreatedArrow.setAttribute('id', 'previous-carousel-staff-arrow');
-  staffCarouselPreviousCreatedArrow.innerHTML = '<';
+  staffCarouselPreviousCreatedArrow.innerHTML = '<ion-icon name="caret-back"></ion-icon>';
 
   let staffBar01 = document.createElement('label');
   staffBar01.for = 'staff-r1';
@@ -704,7 +704,7 @@ function createStaffSlideShow()
   let staffCarouselNextCreatedArrow = document.createElement('button');
   staffCarouselNextCreatedArrow.classList.add('carousel-staff-arrow');
   staffCarouselNextCreatedArrow.setAttribute('id', 'next-carousel-staff-arrow');
-  staffCarouselNextCreatedArrow.innerHTML = '>';
+  staffCarouselNextCreatedArrow.innerHTML = '<ion-icon name="caret-forward"></ion-icon>';
 
   //
 
