@@ -104,20 +104,21 @@ section
 
 @keyframes stagger-left-animation
 {
-	45%
+	40%
 	{
-		transform: translateX(75px);
+		filter: blur(0px);
+		opacity: 1;
+		transform: translateX(0px);
 	}
-
-	85%
+	75%
 	{
-		transform: translateX(-50px);
+		transform: translateX(-10%);
 	}
 	100%
 	{
-		transform: translateX(0);
 		filter: blur(0px);
 		opacity: 1;
+		transform: translateX(0);
 	}
 
 }
@@ -132,7 +133,7 @@ section
 {
 	opacity: 0;
 	filter: blur(2.5px);
-	transform: translateX(-10%);
+	transform: translateX(-100%);
 }
 
 
@@ -255,7 +256,7 @@ a
 .green-text-glow
 {
 	color: var(--fourthGreen);
-	text-shadow: 1px 0px 0.15em var(--fourthGreen);
+	text-shadow: 1px 0px 0.10em var(--fourthGreen);
 }
 
 /*END SECTION*/

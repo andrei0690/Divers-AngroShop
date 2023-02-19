@@ -25,7 +25,7 @@ updateStaffSection();
 // Progress Bar
 
 const progressBar = document.querySelector('.progress-bar');
-
+const progressBarwithBonus = document.querySelector('#header-top-bar-bonus-progress');
 window.addEventListener('scroll', () => {
   
 
@@ -35,22 +35,12 @@ window.addEventListener('scroll', () => {
 
   if(scrollPercent == 100)
   {
-    progressBar.classList.add('progress-bar-anim');
+    progressBarwithBonus.classList.add('progress-bar-anim');
   }
   else
   {
-    progressBar.classList.remove('progress-bar-anim');
+    progressBarwithBonus.classList.remove('progress-bar-anim');
   }
-
-  if (window.pageYOffset > 100) 
-  {
-		progressBar.classList.add('progressBarAnim');
-
-	}
-	else
-	{
-		progressBar.classList.remove('progressBarAnim');
-	}
 })
 
 function updateProgressBar() 
@@ -94,27 +84,27 @@ fill_radio();
 // Click and change slide
 carouselRadiop01.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar01.style.backgroundColor = 'var(--superlightGreen)';
+  carouselBar01.style.backgroundColor = 'var(--thirdGreen)';
   reset_carousel();
 })
 carouselRadiop02.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar02.style.backgroundColor = 'var(--superlightGreen)';
+  carouselBar02.style.backgroundColor = 'var(--thirdGreen)';
   reset_carousel();
 })
 carouselRadiop03.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar03.style.backgroundColor = 'var(--superlightGreen)';
+  carouselBar03.style.backgroundColor = 'var(--thirdGreen)';
   reset_carousel();
 })
 carouselRadiop04.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar04.style.backgroundColor = 'var(--superlightGreen)';
+  carouselBar04.style.backgroundColor = 'var(--thirdGreen)';
   reset_carousel();
 })
 carouselRadiop05.addEventListener('change', (e) => {
   carousel_remove_fill_all();
-  carouselBar05.style.backgroundColor = 'var(--superlightGreen)';
+  carouselBar05.style.backgroundColor = 'var(--thirdGreen)';
   reset_carousel();
 })
 
@@ -136,7 +126,7 @@ function carousel_remove_fill_all()
 
   carouselBars.forEach(bar =>
   {
-    bar.style.background = 'none';
+    bar.style.background = 'var(--secondDark)';
   })
 }
 
@@ -206,27 +196,27 @@ function fill_radio() {
   if(arrayofCarouselRadios[0].checked)
   {
     carousel_remove_fill_all();
-    carouselBar01.style.backgroundColor = 'var(--superlightGreen)';
+    carouselBar01.style.backgroundColor = 'var(--thirdGreen)';
   }
   if(arrayofCarouselRadios[1].checked)
   {
     carousel_remove_fill_all();
-    carouselBar02.style.backgroundColor = 'var(--superlightGreen)';
+    carouselBar02.style.backgroundColor = 'var(--thirdGreen)';
   }
   if(arrayofCarouselRadios[2].checked)
   {
     carousel_remove_fill_all();
-    carouselBar03.style.backgroundColor = 'var(--superlightGreen)';
+    carouselBar03.style.backgroundColor = 'var(--thirdGreen)';
   }
   if(arrayofCarouselRadios[3].checked)
   {
     carousel_remove_fill_all();
-    carouselBar04.style.backgroundColor = 'var(--superlightGreen)';
+    carouselBar04.style.backgroundColor = 'var(--thirdGreen)';
   }
   if(arrayofCarouselRadios[4].checked)
   {
     carousel_remove_fill_all();
-    carouselBar05.style.backgroundColor = 'var(--superlightGreen)';
+    carouselBar05.style.backgroundColor = 'var(--thirdGreen)';
   }
 }
 
@@ -438,14 +428,6 @@ function fill_staff_radio(){
 
 // Cand sunt pe Desktop sa nu existe caruselul, deci sa existe 3 fotografii si nume
 
-const ownerbarElements = document.querySelectorAll('.owner-');
-
-function removeOwnerbars() {
-  ownerbarElements.forEach(e =>
-  {
-    e.classList.add('owner--dissapear');
-  })
-}
 function getScrollPercent()
 {
   const {scrollTop, scrollHeight} = document.documentElement;
@@ -454,31 +436,12 @@ function getScrollPercent()
 
   return scrollPercent;
 }
-function addOwnerbars() {
-  ownerbarElements.forEach(e =>
-  {
-    e.classList.remove('owner--dissapear');
-  })
-}
+
 
 window.addEventListener("resize", () =>
 {
   //Update la staff carusel
   updateStaffSection();
-  
-  //Piramida la staff
-  if(window.innerWidth >= 1350)
-  {
-     proprietarHeader.innerHTML = 'Echipa Noastra';
-     addOwnerbars();
-
-  }
-  else
-  {
-    proprietarHeader.innerHTML = 'Proprietar';
-    removeOwnerbars();
-  }
-
 });
 
 function updateStaffSection()
@@ -693,7 +656,7 @@ function createStaffSlideShow()
   let staffCarouselPreviousCreatedArrow = document.createElement('button');
   staffCarouselPreviousCreatedArrow.classList.add('carousel-staff-arrow');
   staffCarouselPreviousCreatedArrow.setAttribute('id', 'previous-carousel-staff-arrow');
-  staffCarouselPreviousCreatedArrow.innerHTML = '<';
+  staffCarouselPreviousCreatedArrow.innerHTML = '<ion-icon name="caret-back"></ion-icon>';
 
   let staffBar01 = document.createElement('label');
   staffBar01.for = 'staff-r1';
@@ -714,7 +677,7 @@ function createStaffSlideShow()
   let staffCarouselNextCreatedArrow = document.createElement('button');
   staffCarouselNextCreatedArrow.classList.add('carousel-staff-arrow');
   staffCarouselNextCreatedArrow.setAttribute('id', 'next-carousel-staff-arrow');
-  staffCarouselNextCreatedArrow.innerHTML = '>';
+  staffCarouselNextCreatedArrow.innerHTML = '<ion-icon name="caret-forward"></ion-icon>';
 
   //
 
@@ -747,19 +710,4 @@ function createStaffSlideShow()
   staffCarouselContainerAll.appendChild(staffSliderShow);
   staffCarouselContainerAll.appendChild(staffNavigation);
 
-}
-
-
-
-// Resize pentru piramida
-
-if(window.innerWidth >= 1350)
-{
-     proprietarHeader.innerHTML = 'Echipa Noastra';
-     addOwnerbars();
-}
-else
-{
-    proprietarHeader.innerHTML = 'Proprietar';
-    removeOwnerbars();
 }
