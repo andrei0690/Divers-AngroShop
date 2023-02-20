@@ -1,64 +1,386 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel = "stylesheet" href = "style_stiri.css">
-		<title>Noutăți Divers</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/8383e75d7d.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="style_stiri.css">
+		<link rel="stylesheet" href="general_css.css">
+		<link rel="icon" href="icon-divers.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Dangrek&display=swap" rel="stylesheet">
+		<script defer src="stiri_script.js"></script>
+		<script defer src="general_js.js" ></script>
+		<title>Divers Angro Shop</title>
 	</head>
 	<body>
-		<header>
-			<div class = "banner">
-				<div class = "divers">
-					<img height = "120" src = "divers.png" draggable = "false"/>
+		<div class="backup-div">
+			<button class="backup-button">
+				<ion-icon name="caret-up-outline"></ion-icon>
+			</button>
+		</div>
+		<section class="header-top-bar-section">
+			<div class="header-top-bar" id="second-top-bar">
+				
+					<div class="divers-logo-div" id="second-divers-logo-div">
+						<a href="main.html">
+							<img class="divers-logo" id="second-divers-logo" src="divers.png" alt="Divers Logo">
+						</a>
+					</div>
+				
+			</div>
+			<div class="header-top-bar-bonus" id="second-header-top-bar-bonus"></div>
+			<div class="the-whole-top-bar">
+					<div class="header-top-bar">
+					<a href="main.html">
+						<div class="divers-logo-div">
+							<img class="divers-logo" src="divers.png" alt="Divers Logo">
+						</div>
+					</a>
+					<div class="header-top-bar-content">
+						<a class="header-top-bar-link" href="main.html">
+							<div class="top-bar-content-item-flex">
+								<h2 class="top-bar-content-text">Produse</h3>
+								<ion-icon class="top-bar-content-icon" name="bag-handle"></ion-icon>
+							</div>
+						</a>
+						<a class="header-top-bar-link" href="about_us.html">
+							<div class="top-bar-content-item-flex">
+								<h2 class="top-bar-content-text">Despre</h3>
+								<ion-icon class="top-bar-content-icon" name="information-circle"></ion-icon>
+							</div>
+						</a>
+						<a class="header-top-bar-link" href="contact_us.html">
+							<div class="top-bar-content-item-flex">
+								<h2 class="top-bar-content-text">Contacte</h3>
+								<ion-icon class="top-bar-content-icon" name="people"></ion-icon>
+							</div>
+						</a>
+						<a class="header-top-bar-link" href="stiri.html">
+							<div class="top-bar-content-item-flex">
+								<h2 class="top-bar-content-text">Stiri</h3>
+								<ion-icon class="top-bar-content-icon" name="newspaper"></ion-icon>
+							</div>
+						</a>
+						
+					</div>
+				</div>
+				<div class="header-top-bar-bonus"></div>
+			</div>
+			
+		</section>
+
+
+
+
+
+
+
+
+		<!-- INSTRUCTIUNI 
+			1/ BAGA NEWS-urile | CELE MAI NOI SUS | CELE MAI VECHI JOS
+			2/ FOTOGRAFIILE LE PUI IN News-Photos
+			3/ NU ATINGE NIMIC LEGAT DE CSS
+			4/ NU UITA SA PUI SI LINKU-rile LA POSTARI | DACA NU STII CUM DOAR APESI PE O FOTOGRAFIE SI IN DREAPTA SCRIE *VEZI POSTAREA*, SI COPII URL-ul
+			5/ NUMELE LA IMAGINI LE BAGI TU | DE PREFERAT CEVA DE GENU | Divers-News-2021-04-14
+			6/ DOAR COPII CUTIILE SI SCHIMBI DATELE | NIMIC BONUS
+			7/ MAI JOS AI MAI MULTE INSTRUCTIUNI
+			8/ MULT NOROC :) | (STERGE TOATE INSTRUCTIUNILE CAND AI INTELES CE TREBUIE SA FACI.)-->
+
+		
+		<section class="news-section">
+			
+			<!-- IN ASTA BAGI NEWS-urile-->
+			<div class="news-grid">
+
+
+				<!-- ASTA ESTE O INTREAGA CUTIE -->
+				<div class="news-contents stagger-animation-staged">
+						<!-- ASTAI LINKUL LA POSTUL DE LA CARE AI LUAT INFORMATIA -->
+						<a href="https://www.facebook.com/permalink.php?story_fbid=pfbid0Xh7vccsrX67UvxLXBSpVr2p3waDWzQByww3fZz6F26Mfzpg6MXtxh3mLhr1Z4cUDl&id=100710148355685">
+							<div class="news-background">
+									
+								
+									<div class="news-point"></div>
+								
+									<div class="news-title-div">
+										<!-- AICI SCRII TITLUL(BAGA-l DIN PARTEA TA | NU UITA DE DIACRITICE) -->
+										<h2 class="news-title">Rechizite noi pentru anul școlar!</h2>
+									</div>
+
+									<div class="news-paragraph-div">
+										<!-- AICI BAGA DESCRIEREA | SCRI-o FIX CUM AU SCRIS-o SI EI -->
+										<p class="news-paragraph">Mai e încă puțin și elevii se întorc la școală,la Divers găsești tot de ce ai nevoie pentru noul an școlar de la rechizite școlare pină la povești,și toate activitățile pentru ce-i mici. Anul acesta dispunem de o gamă largă de evaluări cărți de lectură, manuale didactice , teste, dicționare...</p>
+									</div>
+									
+									<div class="news-image-div">
+										<!-- AICI BAGA IMAGINEA -->
+										<img class="news-image" src="News-Photos/diversStire01.jpg" alt="Divers-News-Image">
+									</div>
+							</div>
+						</a>
+						
+					</div>
+
+				
+					<div class="news-contents stagger-animation-staged">
+						<!-- ASTAI LINKUL LA POSTUL DE LA CARE AI LUAT INFORMATIA -->
+						<a href="https://www.facebook.com/permalink.php?story_fbid=pfbid036LPJ1cRXTnzP8HkvhwgnmLeUC9cZ1bei81ZQnDizobNdHc9Gg3H1UQkgjki6Hru7l&id=100710148355685">
+							<div class="news-background">
+								
+									<div class="news-point"></div>
+									
+									<div class="news-title-div">
+										<h2 class="news-title">Modele Noi!</h2>
+									</div>
+
+									<div class="news-paragraph-div">
+										<p class="news-paragraph">Modele noi în stoc ,de la Disney doar la DIVERS</p>
+									</div>
+									
+									<div class="news-image-div">
+										<img class="news-image" src="News-Photos/diversStire02.jpg" alt="Divers-News-Image">
+									</div>
+								
+							</div>
+						</a>
+					</div>
+
+					<div class="news-contents stagger-animation-staged">
+						<!-- ASTAI LINKUL LA POSTUL DE LA CARE AI LUAT INFORMATIA -->
+						<a href="https://www.facebook.com/permalink.php?story_fbid=pfbid036LPJ1cRXTnzP8HkvhwgnmLeUC9cZ1bei81ZQnDizobNdHc9Gg3H1UQkgjki6Hru7l&id=100710148355685">
+							<div class="news-background">
+								
+									<div class="news-point"></div>
+									
+									<div class="news-title-div">
+										<h2 class="news-title">Modele Noi!</h2>
+									</div>
+
+									<div class="news-paragraph-div">
+										<p class="news-paragraph">Modele noi în stoc ,de la Disney doar la DIVERS</p>
+									</div>
+									
+									<div class="news-image-div">
+										<img class="news-image" src="News-Photos/diversStire02.jpg" alt="Divers-News-Image">
+									</div>
+								
+							</div>
+						</a>
+					</div>
+					
+					<div class="news-contents stagger-animation-staged">
+						<!-- ASTAI LINKUL LA POSTUL DE LA CARE AI LUAT INFORMATIA -->
+						<a href="https://www.facebook.com/permalink.php?story_fbid=pfbid0Xh7vccsrX67UvxLXBSpVr2p3waDWzQByww3fZz6F26Mfzpg6MXtxh3mLhr1Z4cUDl&id=100710148355685">
+							<div class="news-background">
+									
+								
+									<div class="news-point"></div>
+								
+									<div class="news-title-div">
+										<h2 class="news-title">Rechizite noi pentru anul școlar!</h2>
+									</div>
+
+									<div class="news-paragraph-div">
+										<p class="news-paragraph">Mai e încă puțin și elevii se întorc la școală,la Divers găsești tot de ce ai nevoie pentru noul an școlar de la rechizite școlare pină la povești,și toate activitățile pentru ce-i mici. Anul acesta dispunem de o gamă largă de evaluări cărți de lectură, manuale didactice , teste, dicționare...</p>
+									</div>
+									
+									<div class="news-image-div">
+										<img class="news-image" src="News-Photos/diversStire01.jpg" alt="Divers-News-Image">
+									</div>
+									
+									
+								
+							</div>
+						</a>
+						
+					</div>
+					
+					<div class="news-contents stagger-animation-staged">
+						<!-- ASTAI LINKUL LA POSTUL DE LA CARE AI LUAT INFORMATIA -->
+						<a href="https://www.facebook.com/permalink.php?story_fbid=pfbid0Xh7vccsrX67UvxLXBSpVr2p3waDWzQByww3fZz6F26Mfzpg6MXtxh3mLhr1Z4cUDl&id=100710148355685">
+							<div class="news-background">
+									
+								
+									<div class="news-point"></div>
+								
+									<div class="news-title-div">
+										<h2 class="news-title">Rechizite noi pentru anul școlar!</h2>
+									</div>
+
+									<div class="news-paragraph-div">
+										<p class="news-paragraph">Mai e încă puțin și elevii se întorc la școală,la Divers găsești tot de ce ai nevoie pentru noul an școlar de la rechizite școlare pină la povești,și toate activitățile pentru ce-i mici. Anul acesta dispunem de o gamă largă de evaluări cărți de lectură, manuale didactice , teste, dicționare...</p>
+									</div>
+									
+									<div class="news-image-div">
+										<img class="news-image" src="News-Photos/diversStire01.jpg" alt="Divers-News-Image">
+									</div>
+									
+									
+								
+							</div>
+						</a>
+						
+					</div>
+					<div class="news-contents stagger-animation-staged">
+						<!-- ASTAI LINKUL LA POSTUL DE LA CARE AI LUAT INFORMATIA -->
+						<a href="https://www.facebook.com/permalink.php?story_fbid=pfbid0Xh7vccsrX67UvxLXBSpVr2p3waDWzQByww3fZz6F26Mfzpg6MXtxh3mLhr1Z4cUDl&id=100710148355685">
+							<div class="news-background">
+									
+								
+									<div class="news-point"></div>
+								
+									<div class="news-title-div">
+										<h2 class="news-title">Rechizite noi pentru anul școlar!</h2>
+									</div>
+
+									<div class="news-paragraph-div">
+										<p class="news-paragraph">Mai e încă puțin și elevii se întorc la școală,la Divers găsești tot de ce ai nevoie pentru noul an școlar de la rechizite școlare pină la povești,și toate activitățile pentru ce-i mici. Anul acesta dispunem de o gamă largă de evaluări cărți de lectură, manuale didactice , teste, dicționare...</p>
+									</div>
+									
+									<div class="news-image-div">
+										<img class="news-image" src="News-Photos/diversStire01.jpg" alt="Divers-News-Image">
+									</div>
+									
+									
+								
+							</div>
+						</a>
+						
+					</div>
+				
+				
+			
+		</section>
+
+		<section class="created-backup-button-section" style="margin-top: 25px;">
+				<div class="backup-div" id="created-backup-div">
+					<button class="backup-button" id="created-backup-button">
+						<ion-icon name="caret-up-outline"></ion-icon>
+					</button>
+				</div>
+		</section>
+		<section class="end-section-start">
+		<div class="desktop-end-start">
+			<div class="custom-shape-divider-bottom-1674320019">
+			   <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+			       <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+			   </svg>
+			</div>
+		</div>
+		<div class="phone-end-start">
+			<div class="custom-shape-divider-bottom-1674592108">
+			    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+			        <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+			    </svg>
+			</div>
+		</div>
+		
+	</section>
+	<section class="end-section">
+	<div class="all-end-section">
+		<div class="end-section-content">
+			<div class="end-section-div hidden">
+				<div class="end-section-div-header">
+					
+					<h3 class="end-section-header">Contacte</h3>
+				</div>
+				<div class="end-section-items" id="end-section-first-table">
+					<div class="end-section-description">
+						<span class="green-text-glow end-section-description-sign">~</span>
+						<h3 class="end-section-text">
+						
+						Abonează-te la rețelele noastre de socializare și fii primul care află de cele mai bune oferte!
+						
+						</h3>
+						<span class="green-text-glow end-section-description-sign">~</span>
+					</div>
+					<div class="end-section-item">
+						<h4 class="green-text-glow end-section-text"><i class="fa-solid fa-phone green-text-glow"></i></h4>
+						<h4 class="end-section-text">+37368960404</h4>
+					</div>
+					<div class="end-section-item">
+						<h4 class="green-text-glow end-section-text"><i class="fa-solid fa-envelope green-text-glow"></i></h4>
+						<h4 class="end-section-text">diverslv20@gmail.com</h4>
+					</div>
+					<div class="end-section-item">
+						<a class="link" href="https://www.facebook.com/Divers-Angro-Shop-100710148355685/">
+							<h4 class="green-text-glow end-section-text"><i class="fa-brands fa-facebook link-icon green-text-glow"></i></h4>
+						</a>
+						<a class="link" href="https://www.facebook.com/Divers-Angro-Shop-100710148355685/">
+							<h4 class="end-section-text end-section-link">Divers Angro Shop</h4>
+						</a>
+					</div>
+					<div class="end-section-item">
+						<h4 class="green-text-glow end-section-text"><i class="fa-solid fa-house green-text-glow"></i></h4>
+						<h4 class="end-section-text">Ștefan cel Mare 68, 6301 Leova, Moldova</h4>
+					</div>
 				</div>
 			</div>
-			<h1 class = "header">Noutăți și evenimente</h1>
-		</header>
-		<main>
-			<div class = "news">
-				<div class = "new">
-					<div class = "photo">
-						<img src = "brad.png"/>
-					</div>
-					<p class = "description">Magazinul Divers Agro Shop vă oferă o varietate mare de brazi artificiali, de diferite mărimi și culori. Și cel mai important - la un preț accesibil pentru fiecare.</p>
+			<div class="end-section-div hidden" id="end-section-second-table">
+				<div class="end-section-div-header">
+					<h3 class="end-section-header">Pagini Divers</h3>
 				</div>
-				<div class = "new">
-					<div class = "photo">
-						<img src = "cadou.png"/>
+				
+				<div class="end-section-items">
+					<div class="end-section-description">
+						<span class="green-text-glow end-section-description-sign">~</span>
+						<h3 class="end-section-text">
+						
+						O listă cuprinzătoare de toate paginile prezentate pe acest website
+						
+						</h3>
+						<span class="green-text-glow end-section-description-sign">~</span>
 					</div>
-					<p class = "description">De sarbatori trebuie sa fim mai buni,de asta la magaziunul Divers Agro Shop poti gasi o varietate de cutii pentru cadouri pe care le poti oferi celor dragi</p>
-				</div>
-				<div class = "new">
-					<div class = "photo">
-						<img src = "vouncher.png"/>
+					<div class="end-section-item">
+						<a class="link" href="about_us.html">
+							<h4 class="green-text-glow end-section-text"><i class="fa-regular fa-address-card green-text-glow"></i></h4>
+						</a>
+						<a class="link" href="about_us.html">
+							<h4 class="end-section-text end-section-link">Despre Noi</h4>
+						</a>
 					</div>
-					<p class = "description">Ai nevoie sa faci un cadou și nu știi ce? Vino la DIVERS și ia un Voucher pe placul tau.</p>
-				</div>
-				<div class = "new">
-					<div class = "photo">
-						<img src = "rechizite.png"/>
+					<div class="end-section-item">
+						<a class="link" href="contact_us.html">
+							<h4 class="green-text-glow end-section-text"><i class="fa-solid fa-message green-text-glow"></i></h4>
+						</a>
+						<a class="link" href="contact_us.html">
+							<h4 class="end-section-text end-section-link">Contacteaza-ne</h4>
+						</a>
 					</div>
-					<p class = "description">Vino la Divers Agro Shop pentru cele mai bune preturi la rechizite scolare,avem tot ce ii trebuie unui scolar de nota 10.</p>
-				</div>
-				<div class = "new">
-					<div class = "photo">
-						<img src = "haina.png"/>
+					<div class="end-section-item">
+						<a class="link" href="main.html">
+							<h4 class="end-section-text green-text-glow"><i class="fa-solid fa-cart-shopping green-text-glow"></i></h4>
+						</a>
+						<a class="link" href="main.html">
+							<h4 class="end-section-text end-section-link">Produse</h4>
+						</a>
 					</div>
-					<p class = "description">Salopete, pulovere, pantaloni, scurte, malete și multe alte haine pentru cei mai mici le puteți procura la Divers Angro Shop Leova.</p>
-				</div>
-				<div class = "new">
-					<div class = "photo">
-						<img src = "papuci.png"/>
+					<div class="end-section-item">
+						<a class="link" href="stiri.html">
+							<h4 class="green-text-glow end-section-text"><i class="fa-solid fa-file green-text-glow"></i></h4>
+						</a>
+						<a class="link" href="stiri.html">
+							<h4 class="end-section-text end-section-link">Noutăți și evenimente</h4>
+						</a>
 					</div>
-					<p class = "description">Modele noi de incaltaminte în stoc, la cele mai mici preturi doar la Divers Agro Shop.</p>
 				</div>
 			</div>
-		</main>
-		<footer>
-			<p class = "copyright"><big>© </big>2019-2023 Divers-AgroShop All Rights Reserved</p>
-		</footer>
+			
+			
+		</div>
+		
+	</div>
+
+	<div class="copyright-div">
+		<h3 class="end-section-text"><i class="fa-regular fa-copyright"></i> Copyright Divers 2023-2024 All Rights Reserved</h3>
+	</div>
+	
+	
+</section>
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	</body>
-	<script type="text/javascript" src = "stiri_script.js"></script>
 </html>
