@@ -35,11 +35,11 @@ window.addEventListener('scroll', () => {
 
   if(scrollPercent == 100)
   {
-    progressBarwithBonus.classList.add('progress-bar-anim');
+    progressBar.classList.add('progress-bar-anim');
   }
   else
   {
-    progressBarwithBonus.classList.remove('progress-bar-anim');
+    progressBar.classList.remove('progress-bar-anim');
   }
 })
 

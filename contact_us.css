@@ -17,25 +17,6 @@ input[type=number] {
 {
   background-color: var(--thirdDark);
 }
-.products-page-header-div
-{
-	margin-top: 32px;
-	width: 100%;
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	background-color: var(--fourthGreen);
-}
-.products-page-header
-{
-	font-family: Dangrek;
-	font-weight: 400;
-	font-size: 48px;
-	line-height: 86px;
-	text-align: center;
-	color: var(--secondDark);
-}
-
 .header-name
 {
 	color: var(--white);
