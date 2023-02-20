@@ -58,23 +58,6 @@ section
 	border-radius: 100%;
 	padding: 18px;
 }
-.products-page-header-div
-{
-	width: 100%;
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	background-color: var(--fourthGreen);
-}
-.products-page-header
-{
-	font-family: Dangrek;
-	font-weight: 400;
-	font-size: 48px;
-	line-height: 86px;
-	text-align: center;
-	color: var(--secondDark);
-}
 .category-section
 {
 	margin-top: 150px;
@@ -587,11 +570,6 @@ section
   {
     font-size: 14px;
   }
-	/*HEADER  */
-	.products-page-header
-	{
-		font-size: 40px;
-	}
 }
 @media(max-width: 550px)
 {
@@ -696,10 +674,7 @@ section
 }
 @media(max-width: 400px)
 {
-	.products-page-header
-	{
-		font-size: 32px;
-	}
+	
 	.naked-styled-header
 	{
 		font-size: 40px;

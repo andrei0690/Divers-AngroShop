@@ -122,7 +122,23 @@ section
 	}
 
 }
-
+.products-page-header-div
+{
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background-color: var(--fourthGreen);
+}
+.products-page-header
+{
+	font-family: Dangrek;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 86px;
+	text-align: center;
+	color: var(--secondDark);
+}
 .stagger-animation
 {
 	animation-name: stagger-left-animation;
@@ -753,6 +769,13 @@ a
 	}
 	
 }
+@media(max-width: 700px)
+{
+	.products-page-header
+	{
+		font-size: 40px;
+	}
+}
 
 
 @media(max-width: 450px)
@@ -761,6 +784,13 @@ a
 	{
 		width: 24px;
 		height: 24px;
+	}
+}
+@media(max-width: 400px)
+{
+	.products-page-header
+	{
+		font-size: 32px;
 	}
 }
 @media(min-width: 550px)
