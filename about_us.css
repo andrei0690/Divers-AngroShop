@@ -1,3 +1,7 @@
+.products-page-header-div
+{
+	margin-bottom: var(--distance);
+}
 .about-us-section
 {
 	background-position: 35px;
