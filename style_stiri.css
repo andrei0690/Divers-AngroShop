@@ -1,3 +1,21 @@
+.products-page-header-div
+{
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background-color: var(--fourthGreen);
+	margin-bottom: var(--distance);
+}
+.products-page-header
+{
+	font-family: Dangrek;
+	font-weight: 400;
+	font-size: 48px;
+	line-height: 86px;
+	text-align: center;
+	color: var(--secondDark);
+}
 body
 {
 	user-select: text;
