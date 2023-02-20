@@ -1,4 +1,108 @@
-.empty-space
+body
 {
-	margin-top: 1000px;
+	user-select: text;
+}
+.news-grid
+{
+	user-select: text;
+	display: grid;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 48px;
+	width: 80%;
+	grid-template-columns: auto auto;
+	grid-row-gap: 48px;
+	grid-column-gap: 88px;
+}
+
+.news-contents
+{
+	user-select: text;
+	position: relative;
+	background-color: var(--thirdDark);
+	height: auto;
+	border: none;
+	border-radius: 16px;
+}
+.news-point
+{
+
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	right: 24px;
+	top: 24px;
+	background-color: var(--fourthGreen);
+}
+.news-title-div
+{
+	margin-top: 24px;
+	margin-left: 24px;	
+	margin-right: 48px;
+}
+.news-title
+{
+	z-index: 10;
+	user-select: text;
+	font-size: 24px;
+	font-weight: 900;
+	color: var(--white);
+}
+.news-paragraph-div
+{
+	margin-left: 24px;
+	margin-right: 24px;
+	margin-top: 24px;
+}
+.news-paragraph
+{
+	user-select: text;
+	color: var(--white);
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 700;
+}
+.news-image-div
+{
+	margin: 24px;
+	border-radius: 24px;
+	width: calc(100% - 48px);
+	height: auto;
+	background-color: var(--white);
+
+}
+.news-image
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 24px;
+}
+
+@media(max-width: 1000px)
+{
+	.news-grid
+	{
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 24px;
+		width: 80%;
+		grid-template-columns: auto;
+
+	}
+}
+
+@media(max-width: 550px)
+{
+	.news-grid
+	{
+		width: 90%;
+	}
+}
+@media(max-width: 380px)
+{
+	.news-paragraph
+	{
+		font-size: 18px;
+	}
 }
