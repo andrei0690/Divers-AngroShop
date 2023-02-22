@@ -538,22 +538,22 @@ a
 	position: relative;
 	display: none;
 }
+
+#second-header-top-bar-bonus
+{
+	position: absolute;
+	top: 88px;
+}
 #second-divers-logo-div
 {
 	width: 100%;
 	display: flex;
 	margin: 0;
 }
-#second-header-top-bar-bonus
-{
-	position: absolute;
-	top: 88px;
-}
 #second-divers-logo
 {
 	height: 100%;
-	width: 280px;
-	margin-bottom: 8px;
+	width: 240px;
 }
 .header-top-bar
 {
@@ -748,18 +748,12 @@ a
 {
 	.top-bar-content-text
 	{
-		display: none;
+		font-size: 14px;
 	}
 	.header-top-bar-content
 	{
 		justify-content: center;
 		gap: 0;
-	}
-	.top-bar-content-item-flex
-	{
-		height: 100%;
-		width: 32px;
-		margin: 0;
 	}
 	#created-backup-button
 	{
@@ -774,9 +768,9 @@ a
 	.products-page-header
 	{
 		font-size: 40px;
+		line-height: 64px;
 	}
 }
-
 
 @media(max-width: 450px)
 {
@@ -785,9 +779,6 @@ a
 		width: 24px;
 		height: 24px;
 	}
-}
-@media(max-width: 400px)
-{
 	.products-page-header
 	{
 		font-size: 32px;
@@ -822,6 +813,18 @@ a
 }
 @media(min-width: 1000px)
 {
+	.end-section-text
+	{
+		font-size: 2.5vw;
+	}
+	.end-section-header
+	{
+		font-size: 4.2vw;
+	}
+	.end-section-description-sign
+	{
+		font-size: 4.2vw;
+	}
 	.display-backup-button-div
 	{
 		opacity: 1;

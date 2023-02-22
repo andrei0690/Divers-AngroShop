@@ -539,33 +539,33 @@ function create3Photos() {
   staffPhotoDiv03.classList.add('staff-photo-div');
 
   let staffName01 = document.createElement('h4');
-  staffName01.innerHTML = '<span class="green-text-glow">~</span>Aurora<span class="green-text-glow">~</span>';
+  staffName01.innerHTML = '<span class="green-text-glow">~</span>Veronica Paduraru<span class="green-text-glow">~</span>';
   staffName01.classList.add('staff-name')
 
   let staffName02 = document.createElement('h4');
-  staffName02.innerHTML = '<span class="green-text-glow">~</span>Artemis<span class="green-text-glow">~</span>';
+  staffName02.innerHTML = '<span class="green-text-glow">~</span>Topala Alina<span class="green-text-glow">~</span>';
   staffName02.classList.add('staff-name')
 
   let staffName03 = document.createElement('h4');
-  staffName03.innerHTML = '<span class="green-text-glow">~</span>Astros<span class="green-text-glow">~</span>';
+  staffName03.innerHTML = '<span class="green-text-glow">~</span>Mirela Valeanu<span class="green-text-glow">~</span>';
   staffName03.classList.add('staff-name')
 
 
   let staffPhoto01 = document.createElement('img');
   staffPhoto01.classList.add('staff-photo');
   staffPhoto01.setAttribute('id', 'staff-row-photo01');
-  staffPhoto01.src = 'staff02.jpg';
+  staffPhoto01.src = 'Staff-Photos/staff01.png';
   let staffPhoto02 = document.createElement('img');
   staffPhoto02.classList.add('staff-photo');
 
   staffPhoto02.setAttribute('id', 'staff-row-photo02');
-  staffPhoto02.src = 'staff02.jpg';
+  staffPhoto02.src = 'Staff-Photos/staff02.png';
 
   let staffPhoto03 = document.createElement('img');
   staffPhoto03.classList.add('staff-photo');
 
   staffPhoto03.setAttribute('id', 'staff-row-photo03');
-  staffPhoto03.src = 'staff02.jpg';
+  staffPhoto03.src = 'Staff-Photos/staff03.png';
 
   staffPhotoDiv01.appendChild(staffName01);
   staffPhotoDiv02.appendChild(staffName02);
@@ -626,26 +626,26 @@ function createStaffSlideShow()
   staffSlide03.classList.add('staff-slide');
 
   let staffName01 = document.createElement('div');
-  staffName01.innerHTML = '<span class="green-text-glow">~</span>Aurora<span class="green-text-glow">~</span>';
+  staffName01.innerHTML = '<span class="green-text-glow">~</span>Veronica Paduraru<span class="green-text-glow">~</span>';
   staffName01.classList.add('staff-name');
   let staffName02 = document.createElement('div');
-  staffName02.innerHTML = '<span class="green-text-glow">~</span>Artemis<span class="green-text-glow">~</span>';
+  staffName02.innerHTML = '<span class="green-text-glow">~</span>Topala Alina<span class="green-text-glow">~</span>';
   staffName02.classList.add('staff-name');
   let staffName03 = document.createElement('div');
-  staffName03.innerHTML = '<span class="green-text-glow">~</span>Astros<span class="green-text-glow">~</span>';
+  staffName03.innerHTML = '<span class="green-text-glow">~</span>Mirela Valeanu<span class="green-text-glow">~</span>';
   staffName03.classList.add('staff-name');
 
 
   let staffImage01 = document.createElement('img');
-  staffImage01.src = 'staff02.jpg';
+  staffImage01.src = 'Staff-Photos/staff01.png';
   staffImage01.alt = 'Staff de la Divers';
 
   let staffImage02 = document.createElement('img');
-  staffImage02.src = 'staff02.jpg';
+  staffImage02.src = 'Staff-Photos/staff02.png';
   staffImage02.alt = 'Staff de la Divers';
 
   let staffImage03 = document.createElement('img');
-  staffImage03.src = 'staff02.jpg';
+  staffImage03.src = 'Staff-Photos/staff03.png';
   staffImage03.alt = 'Staff de la Divers';
  
  //
