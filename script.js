@@ -522,7 +522,7 @@ if(window.innerWidth >= 1280)
 
     
 }
-if(window.innerWidth <= 1280 && transformatTablet03 == false && window.innerWidth >= 1031)
+if(window.innerWidth <= 1280 && transformatTablet03 == false && window.innerWidth >= 1021)
 {
     sliderShowIndicatorFlex03.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex03);
@@ -533,7 +533,7 @@ if(window.innerWidth <= 1280 && transformatTablet03 == false && window.innerWidt
     transformatTablet03 = true;
     transformatTel03 = false;
 }
-if(window.innerWidth <= 1030 && transformatTel03 == false)
+if(window.innerWidth <= 1020 && transformatTel03 == false)
 {
     sliderShowIndicatorFlex03.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex03);
@@ -586,7 +586,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer03);
         currentIndicatorIndexSliderShow03 = 0;
     }
-    if(window.innerWidth <= 1280 && transformatTablet03 == false && window.innerWidth >= 1031)
+    if(window.innerWidth <= 1280 && transformatTablet03 == false && window.innerWidth >= 1021)
     {
         sliderShowIndicatorFlex03.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex03);
@@ -598,7 +598,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer03);
         currentIndicatorIndexSliderShow03 = 0;
     }
-    if(window.innerWidth <= 1030 && transformatTel03 == false)
+    if(window.innerWidth <= 1020 && transformatTel03 == false)
     {
         sliderShowIndicatorFlex03.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex03);
@@ -737,7 +737,7 @@ if(window.innerWidth >= 1280)
 
     
 }
-if(window.innerWidth <= 1280 && transformatTablet04 == false && window.innerWidth >= 1041)
+if(window.innerWidth <= 1280 && transformatTablet04 == false && window.innerWidth >= 1021)
 {
     sliderShowIndicatorFlex04.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex04);
@@ -748,7 +748,7 @@ if(window.innerWidth <= 1280 && transformatTablet04 == false && window.innerWidt
     transformatTablet04 = true;
     transformatTel04 = false;
 }
-if(window.innerWidth <= 1040 && transformatTel04 == false)
+if(window.innerWidth <= 1020 && transformatTel04 == false)
 {
     sliderShowIndicatorFlex04.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex04);
@@ -801,7 +801,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer04);
         currentIndicatorIndexSliderShow04 = 0;
     }
-    if(window.innerWidth <= 1280 && transformatTablet04 == false && window.innerWidth >= 1041)
+    if(window.innerWidth <= 1280 && transformatTablet04 == false && window.innerWidth >= 1021)
     {
         sliderShowIndicatorFlex04.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex04);
@@ -813,7 +813,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer04);
         currentIndicatorIndexSliderShow04 = 0;
     }
-    if(window.innerWidth <= 1040 && transformatTel04 == false)
+    if(window.innerWidth <= 1020 && transformatTel04 == false)
     {
         sliderShowIndicatorFlex04.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex04);
@@ -954,7 +954,7 @@ if(window.innerWidth >= 1280)
 
     
 }
-if(window.innerWidth <= 1280 && transformatTablet05 == false && window.innerWidth >= 1051)
+if(window.innerWidth <= 1280 && transformatTablet05 == false && window.innerWidth >= 1021)
 {
     sliderShowIndicatorFlex05.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex05);
@@ -965,7 +965,7 @@ if(window.innerWidth <= 1280 && transformatTablet05 == false && window.innerWidt
     transformatTablet05 = true;
     transformatTel05 = false;
 }
-if(window.innerWidth <= 1050 && transformatTel05 == false)
+if(window.innerWidth <= 1020 && transformatTel05 == false)
 {
     sliderShowIndicatorFlex05.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex05);
@@ -1018,7 +1018,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer05);
         currentIndicatorIndexSliderShow05 = 0;
     }
-    if(window.innerWidth <= 1280 && transformatTablet05 == false && window.innerWidth >= 1051)
+    if(window.innerWidth <= 1280 && transformatTablet05 == false && window.innerWidth >= 1021)
     {
         sliderShowIndicatorFlex05.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex05);
@@ -1030,7 +1030,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer05);
         currentIndicatorIndexSliderShow05 = 0;
     }
-    if(window.innerWidth <= 1050 && transformatTel05 == false)
+    if(window.innerWidth <= 1020 && transformatTel05 == false)
     {
         sliderShowIndicatorFlex05.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex05);
@@ -1170,7 +1170,7 @@ if(window.innerWidth >= 1280)
 
     
 }
-if(window.innerWidth <= 1280 && transformatTablet06 == false && window.innerWidth >= 1061)
+if(window.innerWidth <= 1280 && transformatTablet06 == false && window.innerWidth >= 1021)
 {
     sliderShowIndicatorFlex06.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex06);
@@ -1181,7 +1181,7 @@ if(window.innerWidth <= 1280 && transformatTablet06 == false && window.innerWidt
     transformatTablet06 = true;
     transformatTel06 = false;
 }
-if(window.innerWidth <= 1060 && transformatTel06 == false)
+if(window.innerWidth <= 1020 && transformatTel06 == false)
 {
     sliderShowIndicatorFlex06.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex06);
@@ -1246,7 +1246,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer06);
         currentIndicatorIndexSliderShow06 = 0;
     }
-    if(window.innerWidth <= 1060 && transformatTel06 == false)
+    if(window.innerWidth <= 1020 && transformatTel06 == false)
     {
         sliderShowIndicatorFlex06.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex06);
@@ -1386,7 +1386,7 @@ if(window.innerWidth >= 1280)
 
     
 }
-if(window.innerWidth <= 1280 && transformatTablet07 == false && window.innerWidth >= 1071)
+if(window.innerWidth <= 1280 && transformatTablet07 == false && window.innerWidth >= 1021)
 {
     sliderShowIndicatorFlex07.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex07);
@@ -1397,7 +1397,7 @@ if(window.innerWidth <= 1280 && transformatTablet07 == false && window.innerWidt
     transformatTablet07 = true;
     transformatTel07 = false;
 }
-if(window.innerWidth <= 1070 && transformatTel07 == false)
+if(window.innerWidth <= 1020 && transformatTel07 == false)
 {
     sliderShowIndicatorFlex07.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex07);
@@ -1450,7 +1450,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer07);
         currentIndicatorIndexSliderShow07 = 0;
     }
-    if(window.innerWidth <= 1280 && transformatTablet07 == false && window.innerWidth >= 1071)
+    if(window.innerWidth <= 1280 && transformatTablet07 == false && window.innerWidth >= 1021)
     {
         sliderShowIndicatorFlex07.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex07);
@@ -1462,7 +1462,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer07);
         currentIndicatorIndexSliderShow07 = 0;
     }
-    if(window.innerWidth <= 1070 && transformatTel07 == false)
+    if(window.innerWidth <= 1020 && transformatTel07 == false)
     {
         sliderShowIndicatorFlex07.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex07);
@@ -1601,7 +1601,7 @@ if(window.innerWidth >= 1280)
 
     
 }
-if(window.innerWidth <= 1280 && transformatTablet08 == false && window.innerWidth >= 1081)
+if(window.innerWidth <= 1280 && transformatTablet08 == false && window.innerWidth >= 1021)
 {
     sliderShowIndicatorFlex08.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex08);
@@ -1612,7 +1612,7 @@ if(window.innerWidth <= 1280 && transformatTablet08 == false && window.innerWidt
     transformatTablet08 = true;
     transformatTel08 = false;
 }
-if(window.innerWidth <= 1080 && transformatTel08 == false)
+if(window.innerWidth <= 1020 && transformatTel08 == false)
 {
     sliderShowIndicatorFlex08.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex08);
@@ -1665,7 +1665,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer08);
         currentIndicatorIndexSliderShow08 = 0;
     }
-    if(window.innerWidth <= 1280 && transformatTablet08 == false && window.innerWidth >= 1081)
+    if(window.innerWidth <= 1280 && transformatTablet08 == false && window.innerWidth >= 1021)
     {
         sliderShowIndicatorFlex08.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex08);
@@ -1677,7 +1677,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer08);
         currentIndicatorIndexSliderShow08 = 0;
     }
-    if(window.innerWidth <= 1080 && transformatTel08 == false)
+    if(window.innerWidth <= 1020 && transformatTel08 == false)
     {
         sliderShowIndicatorFlex08.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex08);
@@ -1817,7 +1817,7 @@ if(window.innerWidth >= 1280)
 
     
 }
-if(window.innerWidth <= 1280 && transformatTablet09 == false && window.innerWidth >= 1091)
+if(window.innerWidth <= 1280 && transformatTablet09 == false && window.innerWidth >= 1021)
 {
     sliderShowIndicatorFlex09.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex09);
@@ -1828,7 +1828,7 @@ if(window.innerWidth <= 1280 && transformatTablet09 == false && window.innerWidt
     transformatTablet09 = true;
     transformatTel09 = false;
 }
-if(window.innerWidth <= 1090 && transformatTel09 == false)
+if(window.innerWidth <= 1020 && transformatTel09 == false)
 {
     sliderShowIndicatorFlex09.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex09);
@@ -1881,7 +1881,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer09);
         currentIndicatorIndexSliderShow09 = 0;
     }
-    if(window.innerWidth <= 1280 && transformatTablet09 == false && window.innerWidth >= 1091)
+    if(window.innerWidth <= 1280 && transformatTablet09 == false && window.innerWidth >= 1021)
     {
         sliderShowIndicatorFlex09.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex09);
@@ -1893,7 +1893,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer09);
         currentIndicatorIndexSliderShow09 = 0;
     }
-    if(window.innerWidth <= 1090 && transformatTel09 == false)
+    if(window.innerWidth <= 1020 && transformatTel09 == false)
     {
         sliderShowIndicatorFlex09.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex09);
@@ -2033,7 +2033,7 @@ if(window.innerWidth >= 1280)
 
     
 }
-if(window.innerWidth <= 1280 && transformatTablet10 == false && window.innerWidth >= 1101)
+if(window.innerWidth <= 1280 && transformatTablet10 == false && window.innerWidth >= 1021)
 {
     sliderShowIndicatorFlex10.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex10);
@@ -2044,7 +2044,7 @@ if(window.innerWidth <= 1280 && transformatTablet10 == false && window.innerWidt
     transformatTablet10 = true;
     transformatTel10 = false;
 }
-if(window.innerWidth <= 1100 && transformatTel10 == false)
+if(window.innerWidth <= 1020 && transformatTel10 == false)
 {
     sliderShowIndicatorFlex10.innerHTML = '';
     create_Indicator(sliderShowIndicatorFlex10);
@@ -2097,7 +2097,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer10);
         currentIndicatorIndexSliderShow10 = 0;
     }
-    if(window.innerWidth <= 1280 && transformatTablet10 == false && window.innerWidth >= 1101)
+    if(window.innerWidth <= 1280 && transformatTablet10 == false && window.innerWidth >= 1021)
     {
         sliderShowIndicatorFlex10.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex10);
@@ -2109,7 +2109,7 @@ window.addEventListener('resize', () =>
         scroll4Right(productContainer10);
         currentIndicatorIndexSliderShow10 = 0;
     }
-    if(window.innerWidth <= 1100 && transformatTel10 == false)
+    if(window.innerWidth <= 1020 && transformatTel10 == false)
     {
         sliderShowIndicatorFlex10.innerHTML = '';
         create_Indicator(sliderShowIndicatorFlex10);
