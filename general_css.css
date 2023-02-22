@@ -779,9 +779,6 @@ a
 		width: 24px;
 		height: 24px;
 	}
-}
-@media(max-width: 400px)
-{
 	.products-page-header
 	{
 		font-size: 32px;
@@ -816,6 +813,18 @@ a
 }
 @media(min-width: 1000px)
 {
+	.end-section-text
+	{
+		font-size: 2.5vw;
+	}
+	.end-section-header
+	{
+		font-size: 4.2vw;
+	}
+	.end-section-description-sign
+	{
+		font-size: 4.2vw;
+	}
 	.display-backup-button-div
 	{
 		opacity: 1;
