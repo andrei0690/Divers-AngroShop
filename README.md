@@ -38,8 +38,8 @@ Deschideți directorul proiectului în editorul dvs. de cod preferat.
 Deschideți fișierul index.html în browserul dvs. pentru a vizualiza pagina principală.
 
 Contribuitori
+Arseni Andrei: https://github.com/andrei0690
 Gisca Artur: https://github.com/Arsitur
-Arseni Andrei: https://github.com/Andrei0690
 
 Mulțumiri
 Dorim să le mulțumim instructorului nostru de dezvoltare web și colegilor noștri pentru sprijinul și feedback-ul acordat pe parcursul acestui proiect. De asemenea, dorim să mulțumim Divers Angro Shop pentru că ne-a oferit oportunitatea de a crea acest site web și de a promova afacerea lor.
