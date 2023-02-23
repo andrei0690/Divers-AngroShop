@@ -539,15 +539,15 @@ function create3Photos() {
   staffPhotoDiv03.classList.add('staff-photo-div');
 
   let staffName01 = document.createElement('h4');
-  staffName01.innerHTML = '<span class="green-text-glow">~</span>Veronica Paduraru<span class="green-text-glow">~</span>';
+  staffName01.innerHTML = '<span class="green-text-glow">~</span>Veronica<span class="green-text-glow">~</span>';
   staffName01.classList.add('staff-name')
 
   let staffName02 = document.createElement('h4');
-  staffName02.innerHTML = '<span class="green-text-glow">~</span>Topala Alina<span class="green-text-glow">~</span>';
+  staffName02.innerHTML = '<span class="green-text-glow">~</span>Alina<span class="green-text-glow">~</span>';
   staffName02.classList.add('staff-name')
 
   let staffName03 = document.createElement('h4');
-  staffName03.innerHTML = '<span class="green-text-glow">~</span>Mirela Valeanu<span class="green-text-glow">~</span>';
+  staffName03.innerHTML = '<span class="green-text-glow">~</span>Mirela<span class="green-text-glow">~</span>';
   staffName03.classList.add('staff-name')
 
 
@@ -626,13 +626,13 @@ function createStaffSlideShow()
   staffSlide03.classList.add('staff-slide');
 
   let staffName01 = document.createElement('div');
-  staffName01.innerHTML = '<span class="green-text-glow">~</span>Veronica Paduraru<span class="green-text-glow">~</span>';
+  staffName01.innerHTML = '<span class="green-text-glow">~</span>Veronica<span class="green-text-glow">~</span>';
   staffName01.classList.add('staff-name');
   let staffName02 = document.createElement('div');
-  staffName02.innerHTML = '<span class="green-text-glow">~</span>Topala Alina<span class="green-text-glow">~</span>';
+  staffName02.innerHTML = '<span class="green-text-glow">~</span>Alina<span class="green-text-glow">~</span>';
   staffName02.classList.add('staff-name');
   let staffName03 = document.createElement('div');
-  staffName03.innerHTML = '<span class="green-text-glow">~</span>Mirela Valeanu<span class="green-text-glow">~</span>';
+  staffName03.innerHTML = '<span class="green-text-glow">~</span>Mirela<span class="green-text-glow">~</span>';
   staffName03.classList.add('staff-name');
 
 
